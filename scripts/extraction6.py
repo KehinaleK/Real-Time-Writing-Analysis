@@ -164,21 +164,43 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
     ## Le deuxième contient la valeur (ex : L), le start time, le end time et le nom de la touche pressée
 
 
+    # We initialize an empty list named 'running_burst'. We will construct each burst individually,
+    # character by character, and then asign it to the charBurst instance of our Row class for now.
     raw_rows = []
     running_burst = []
     id = file_name.strip(".idfx")
     control = "+"
     tool = "TW"
     n_burst = 0
-    
+
+    # We declare control keys, keys that do not impact the position of the cursor.
+    CTRL_KEYS = ["VK_LMENU", "VK_TAB", "VK_APPS", "VK_ESCAPE", 
+                 "VK_F12", "VK_LCONTROL", "VK_RCONTROL", "VK_OEM_6", 
+                 "VK_SNAPSHOT", "VK_INSERT"]
+                # VK_LMENU, VK_TAB = menu,
+                # VK_F12 = shortcut to save, 
+                # VK_APPS = windows key on the bottom left, 
+                # VK_ESPACE = escape key,
+                # VK_LCONTROL, VK_CRONTROL = control keys,
+                # VK_SNAPSHOT = screenshot,
+                # VK_INSERT = change the writing mode.
+    SHIFT_KEYS = ["VK_LSHIFT", "VK_RSHIFT", "VK_CAPITAL"]
+
+    # We iterate through each event tag in the idfx file.
+    # These tags have child elements called "part"
+    # Each event has two parts elements, 
+    # the first one contains the position of the corresponding character and the length of the document.
+    # the second one contains the value (ex: "a"), the start time, the end time and the name of the key (ex: VK_A, VK_UP...).
     for event_tag in soup.find_all("event"):
         if event_tag["type"] == "keyboard":
+            # We only keep events with a "keyboard" type, others concern mouse or selection actions.
             part_tag_1 = event_tag.findNext("part")
             for child in part_tag_1.children:
                 if child.name == "position":
                     position = int(child.text)
                 elif child.name == "documentLength":
                     documentLength = int(child.text)
+                    # We retrieve the position and the docLength
             part_tag_2 = part_tag_1.findNext("part")
             for child in part_tag_2.children:
                 if child.name == "startTime":
@@ -189,26 +211,46 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
                     key = child.text
                 elif child.name == "value":
                     value = child.text
+                    # We retrieve the startTime, endTime and value
             
-            next_part_tag_1 = part_tag_2.findNext("part")
-            for next_child in next_part_tag_1.children:
-                if next_child.name == "position":
-                    next_position = next_child.text
-                elif next_child.name == "start":
-                    mov_next_position = next_child.text
-            
+            # We then find the next "event" tag. It allows us to know where a mouvement key such as "DOWN" takes us.
+            # As an example, if our event concerns a DOWN key, its position will be where it is pressed on in the text.
+            # If we wrote a word from position 125 to 130 and press DOWN at position 130, 130 becomes be the position of the DOWN key.
+            # By getting the next "event" element, we are able to retrieve the position of the next character and therefore the position
+            # where we landed after pressing the DOWN key. Really important ! For LEFT, RIGHT and RETURN key, the jump will always be 1 position.
+            next_event_tag = event_tag.findNext("event")
+
+            # We take the next "event" element only if its type is "keyboard".
+            while next_event_tag is not None and next_event_tag["type"] != "keyboard":
+                next_event_tag = next_event_tag.findNext("event")
+
+            if next_event_tag is not None and next_event_tag["type"] == "keyboard":
+                next_part_tag_1 = next_event_tag.findNext("part")
+                # When we find it, we retrieve its position.
+                for next_child in next_part_tag_1.children:
+                    if next_child.name == "position":
+                        next_position = next_child.text
+            else:
+                next_position = position
+                # If we do not find a next "keyboard" "event" element, we keep the current position as the next one.
+                # For instance, if the UP key is the last one to be pressed by the user, there is no next event and that 
+                # movement can be considered as "null" since it won't affect the rest.
+                
+            # print(file_name)
             # print("current 1", part_tag_1)
             # print("current 2", part_tag_2)
 
-            if value is not None: #Prend en compte les espaces, ils ne sont pas None
+
+            if value is not None: # Never found a None value but we never know. Might need to add a else condition if you find one.
+                # For mouvement and control characters, we add their corresponding symbols to our running burst alongside their initial and final positions.
                 if key == "VK_LEFT":
-                    running_burst.append(("⇦", position, mov_next_position))
+                    running_burst.append(("⇦", position, next_position))
                 elif key ==  "VK_RIGHT":
-                    running_burst.append(("⇨", position, mov_next_position))
+                    running_burst.append(("⇨", position, next_position))
                 elif key == "VK_UP":
-                    running_burst.append(("⇧", position, mov_next_position))
+                    running_burst.append(("⇧", position, next_position))
                 elif key == "VK_DOWN":
-                    running_burst.append(("⇩", position, mov_next_position))
+                    running_burst.append(("⇩", position, next_position))
                 elif key == "VK_BACK":
                     running_burst.append(("⌫", position, next_position))
                 elif key == "VK_DELETE":
@@ -217,27 +259,52 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
                     running_burst.append(("␣", position, next_position))
                 elif key == "VK_RETURN":
                     running_burst.append(("⏎", position, next_position))
-                elif key == "VK_LSHIFT" or key == "VK_RSHIFT" or key == "VK_CAPITAL" or key == "VK_APPS" or key == "VK_ESPACE":
+                elif key == "VK_END":
+                    running_burst.append(("⇲", position, next_position))
+                elif key == "VK_OEM_102":
+                    if value == "&lt;":
+                        running_burst.append(("<", position, next_position))
+                    elif value == "&gt;":
+                        running_burst.append((">", position, next_position))
+                elif key in CTRL_KEYS:
                     running_burst.append(("∅", position, next_position))
+                elif key in SHIFT_KEYS:
+                    running_burst.append(("⇪", position, next_position))
                 else:
                     running_burst.append((value, position, next_position))
 
-            # En début de burst, donc après que le premier caractère soit ajouté, on définie son startTime comme le début du burst        
+            # After adding the first character (letter, space or any other "keyboard" action),
+            # we define the start time of the burst as the start time of that first character.  
+            # Same logic for the start position of the burst.    
             if len(running_burst) == 1:
                 burstStart = startTime / 1000
                 posStart = position
     
+            # We find the second part of the next event to see if the pause between our current character
+            # and the next one is greater than the specified thresold. 
             next_part_tag_2 = next_part_tag_1.findNext("part")
             for next_child in next_part_tag_2.children:
                 if next_child.name == "startTime":
                     next_startTime = int(next_child.text)
+                    # We get the start time of the next character
                     if endTime != 0:
                         pause = round(((next_startTime / 1000) - (endTime / 1000)), 2)
+                        # We then get the duration of the pause between our current character
+                        # and the next one by finding the time interval between their end time
+                        # and start time.
                     else:
                         diff = (next_startTime - startTime) / 2
                         endTime = round((startTime + diff), 2)
                         pause = round(((next_startTime / 1000) - (endTime / 1000)), 2)
+                        # Some SHIFT keys have "0" as their endTime, don't ask me why.
+                        # To provide a value, I decided to find the differences between the start times
+                        # of the current character and the next one. Once we have it, we divide it by 2 
+                        # and add that value to the current character start time. It's arbitrary but I found
+                        # it to be the best solution. We could as well ignore pauses longer than the thresold
+                        # if the current character is a SHIFT. 
                     if pause > 1.5 :
+                        # If the found pause is greater than the thresold, we end our burst at the current character.
+                        # We can define every value that can be found in the csv file.
                         n_burst += 1
                         burstDur = round(((endTime / 1000) - burstStart),2)
                         pauseDur = pause
@@ -245,13 +312,12 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
                         burstPct = round((burstDur / cycleDur), 2)
                         pausePct = round((pauseDur / cycleDur), 2)
                         charBurst = running_burst
-                        # print(f"position : {position}")
-                        print(f"charBurst : {charBurst}")
                         burst = get_burst(charBurst)
                         burstLen = len(burst)
                         posEnd = position
                         docLen = documentLength
                         ratio = round((burstDur / pauseDur), 2)
+                        # We then fill our Row class.
                         burst_row = Row(id=id, control=control, tool=tool, n_burst=n_burst, 
                                           burstStart=burstStart, burstDur=burstDur, 
                                           pauseDur=pauseDur, cycleDur=cycleDur, 
@@ -259,11 +325,13 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
                                           burstLen=burstLen, burst=burst, 
                                           posStart=posStart, posEnd=posEnd, docLen=docLen, categ="",
                                           charBurst=charBurst, ratio=ratio)
+                        # Each row (that corresponds to a single burst) is added to our global list.
                         raw_rows.append(burst_row)
-                        running_burst = []
+                        running_burst = [] # Onto the next burst ! 
                     else:
                         continue
-
+                        # If the pause is not greater than the specified thresold, we keep on building
+                        # our running burst.
     return raw_rows
 
 
@@ -273,6 +341,7 @@ def divide_bursts(raw_rows):
     for burst in raw_rows:
         list_burst = Burst()
         list_curr = []
+        #print(burst)
         for i in range(len(burst.charBurst)):
             curr_burst = burst.charBurst[i]
             if curr_burst[0] in  ["⇦", "⇨", "⇧", "⇩", "⏎", "⌫"]:
@@ -298,6 +367,8 @@ def divide_bursts(raw_rows):
                     next_part = burst.charBurst[i+1]
                     if next_part[0] in ["⇦", "⇨", "⇧", "⇩", "⏎", "⌫"]:
                         curr = "".join([x[0] for x in list_curr])
+                        #
+                        # print(list_curr)
                         curr_bust_col = get_burst(curr)
                         posStart = list_curr[0][1]
                         posEnd = list_curr[-1][2]
@@ -374,28 +445,28 @@ def get_burst(charBurst):
     set_char = set(charBurst)
     if len(set_char) == 1:
         for char in set_char:
-            if char in ["⇦", "⇨", "⇧", "⇩", "⌫", "⏎", "∅"]:
+            if char in ["⇦", "⇨", "⇧", "⇩", "⌫", "⏎", "∅", "⇪"]:
                 burst = ""
                 return burst
             elif char == "␣":
                 burst = " "
                 return burst
-    
     if charBurst[0] == "⌫":
         while charBurst[0] == "⌫":
             new_burst = charBurst[1:]
             charBurst = new_burst
 
-    if charBurst[-1] == "⌫":
-        print("hello")
-        print(charBurst)
+    while True:
+
+        if not charBurst or charBurst[-1] != "⌫":
+            break
+
         count = 0
         i = -1
-        while charBurst[i] == "⌫":
+        while i >= -len(charBurst) and charBurst[i] == "⌫":
             count += 1
             i -= 1
-            if charBurst == "":
-                break
+        
         deletions = count * 2
         charBurst = charBurst[:-deletions]
     
@@ -407,11 +478,9 @@ def get_burst(charBurst):
 
 
     burst = ""
-    print(f"'{charBurst}'")
     if len(charBurst) > 1:
         for i in range(len(charBurst)):
             if charBurst[i] == "⌫":
-                print(i)
                 if i<len(charBurst):
                     if charBurst[i+1] != "⌫" and charBurst[i-1] != "⌫":
                         burst = burst[:-1]
@@ -424,7 +493,7 @@ def get_burst(charBurst):
                             j += 1
                         burst = burst[:-count]
                         i = j
-            elif charBurst[i] in ["⇦", "⇨", "⇧", "⇩", "⏎", "∅"]:
+            elif charBurst[i] in ["⇦", "⇨", "⇧", "⇩", "⏎", "∅", "⇪"]:
                 burst += "" 
             elif charBurst[i] == "␣":
                 burst += " "
@@ -433,7 +502,7 @@ def get_burst(charBurst):
 
     else:
         if charBurst != "":
-            if charBurst[0] in ["⇦", "⇨", "⇧", "⇩", "⌫", "⏎", "∅"]:
+            if charBurst[0] in ["⇦", "⇨", "⇧", "⇩", "⌫", "⏎", "∅", "⇪"]:
                 burst = ""
             elif charBurst[0] == "␣":
                 burst = " "
