@@ -69,8 +69,9 @@ class Row:
     cycleDur: float
     burstPct: float
     pausePct: float
-    burstLen: int
-    burst: str
+    burstLen1: int
+    burstLen2: int
+    burstLen3: int
     posStart: int
     posEnd: int
     docLen: int
@@ -138,7 +139,22 @@ def get_file_content(file_path: str) -> bs4.BeautifulSoup:
 
 def create_accents(value, accent):
 
+    """
+    This function allows to create accented characters based on the accent and the character given in argument.
+    It is used for diacritics that are not directly available on the keyboard such as : â, ê, î, ô, û, ŵ, ŷ, ẑ, ĉ, ĝ, ĥ, ĵ, ŝ...
+    For instance, in order to get a 'â', the user needs to press the '^' key  and then the 'a' key.
+    In the idfx files, the '^' key is represented by the 'VK_OEM_6' code and is then followed by the 'VK_A' one.
+    When the '^' is pressed, we add it to the burst. If it is the last one of that burst, we go onto the next one and separate the '^' from the 'a'.
+    However, is most bursts, if a letter is precedeed by a diacritic, these two are sent to this function and return the corresponding accented letter.
+    The last element of the burst, the isolated accent, is then removed from it.
+    
+    Parameter(s):
+        value = str : character to accentuate.
+        accent = str : accent to add to the character.
+    Returns:
+        new_value = str : accented character."""
 
+    # Circumflex accents.
     dict_hat = {
         "a" : "â", "c" : "ĉ", "e" : "ê",
         "g" : "ĝ", "h" : "ĥ","i" : "î",
@@ -147,22 +163,25 @@ def create_accents(value, accent):
         "z" : "ẑ",
     }
 
+    # Trema accents.
     dict_trem = {
         "a" : "ä", "e" : "ë",
         "i" : 'ï', "o" : 'ö', 
         "u" : 'ü', "y" : 'ÿ', 
     }
 
+    # Dictionary of all accents.
     dict_accents = {
         "^" : dict_hat,
         "¨" : dict_trem
     }
 
-    
+    # We use the accented character to find the corresponding dictionary.
     for key, val in dict_accents.items():
         if key == accent:
             corresponding_dict = val
     
+    # We use the corresponding dictionary to find the accented character.
     for key, val in corresponding_dict.items():
         if key == value:
             new_value = corresponding_dict[key]
@@ -328,7 +347,6 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
                         running_burst.append((value, position, next_position))
                     else:
                         if running_burst[-1][0] in DIACRITICS:
-                            print(f"OUI, {running_burst[-1][0]}")
                             position = running_burst[-1][1]
                             new_value = create_accents(value, running_burst[-1][0])
                             running_burst.pop(-1)
@@ -388,7 +406,7 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str) -> List[Row]:
                                           burstStart=burstStart, burstDur=burstDur, 
                                           pauseDur=pauseDur, cycleDur=cycleDur, 
                                           burstPct=burstPct, pausePct=pausePct, 
-                                          burstLen=0, burst="", 
+                                          burstLen1=0, burstLen2=0, burstLen3=0, 
                                           posStart=posStart, posEnd=posEnd, docLen=docLen, categ="",
                                           charBurst=charBurst, ratio=ratio)
                         # Each row (that corresponds to a single burst) is added to our global list.
@@ -418,7 +436,7 @@ def divide_bursts(raw_rows):
                                     n_burst=burst.n_burst, burstStart=burst.burstStart, 
                                     burstDur=burst.burstDur, pauseDur=burst.pauseDur, 
                                     cycleDur=burst.cycleDur, burstPct=burst.burstPct, pausePct=burst.pausePct, 
-                                    burstLen=burst.burstLen, burst=burst.burst, posStart=curr[1], posEnd=curr[2], 
+                                    burstLen1=burst.burstLen1, burstLen2=burst.burstLen2, burstLen3=burst.burstLen3, posStart=curr[1], posEnd=curr[2], 
                                     docLen=burst.docLen, categ=burst.categ, charBurst=curr[0], ratio = burst.ratio)
                 list_burst.rows.append(burst_part)
             else:
@@ -446,89 +464,182 @@ def divide_bursts(raw_rows):
                                 n_burst=burst.n_burst, burstStart=burst.burstStart, 
                                 burstDur=burst.burstDur, pauseDur=burst.pauseDur, 
                                 cycleDur=burst.cycleDur, burstPct=burst.burstPct, pausePct=burst.pausePct,
-                                burstLen=burst.burstLen, burst=burst.burst, posStart=posStart, posEnd=posEnd, 
-                                docLen=burst.docLen, categ=burst.categ, charBurst=curr, ratio = burst.ratio)
+                                burstLen1=burst.burstLen1, burstLen2=burst.burstLen2, burstLen3=burst.burstLen3, posStart=posStart, posEnd=posEnd, 
+                                docLen=burst.docLen, categ=burst.categ, charBurst=curr.replace("∅", "").replace("⇪", ""), ratio = burst.ratio)
                 list_burst.rows.append(burst_part)
                 list_curr.clear()
 
         bursts.bursts.append(list_burst)
-    
-
 
     return bursts
 
+def get_len(bursts):
+   
+    NON_LETTERS_OR_DEL = ["⇦", "⇨", "⇧", "⇩", "⏎", "⇲", "⇪", "∅"]
+    # We initialize an empty list named 'list_intervals'.
+    list_intervals = []
+    for index in range(len(bursts.bursts)-90):
+        burst = bursts.bursts[index] 
+        intervals_burst = []  
+        total_deletions = 0
+        total_added_chars = 0
+        first_row_charBurst = burst.rows[0].charBurst
+        answer = is_first_a_deletion(burst, first_row_charBurst)
+        # We focus on each row of a single burst and categorize it based on the position of its characters.
+        # for i in range(len(burst.rows)):
+        #     interval_row = ()
+        #     row = burst.rows[i]
+        #     row_charBurst = row.charBurst
+        #     # For rows that are not control characters, we get the positions where they start and end.
+        #     if row_charBurst != "⇦" and row_charBurst != "⇨" and row_charBurst != "⇧" and row_charBurst != "⇩" and row_charBurst !=  "⏎" and row_charBurst != "∅" and row_charBurst != "⇲" and row_charBurst != "⇪":
+        #         interval_row = (int(row.posStart), int(row.posEnd))
+        #         intervals_burst.append(interval_row)
+
+        #     # If the first row of the first burst is a deletion, we add it to the total_deletions.
+        #     # If it's a string of characters, we add its length to the total_added_chars.     
+        #     if i == 0: 
+        #         if row_charBurst == "⌫":
+        #             jumps = 0
+        #             first_deletion = True
+        #             if first_deletion:
+        #                 print(row)
+        #                 print(f"starts with deletion : {row_charBurst}")
+        #                 next_row = burst.rows[i+1]
+        #                 next_charBurst = next_row.charBurst
+        #                 row_charBurst = next_charBurst
+        #                 total_deletions += 1
+                        
+        #         if row_charBurst != "⌫":
+        #             first_deletion = False
+        #             if all(char not in NON_LETTERS_OR_DEL for char in row_charBurst):
+        #                 total_added_chars += len(row_charBurst)
+
+        #     # Else, if the row is a deletion, we checked whereas it was made within the burst or not.
+        #     elif i != 0:
+        #         if row.charBurst == "⌫":
+        #             for interval in intervals_burst:
+        #                 if interval[0] == row.posStart:
+        #                     total_deletions += 1
+        #                     total_added_chars -= 1
+        #                     break
+        #         else:
+        #            if all(char not in NON_LETTERS_OR_DEL for char in row_charBurst):
+        #                 total_added_chars += len(row_charBurst)
+                   
+        #     if row_charBurst != "⇦" and row_charBurst != "⇨" and row_charBurst != "⇧" and row_charBurst != "⇩" and row_charBurst !=  "⏎" and row_charBurst != "∅" and row_charBurst != "⇲" and row_charBurst != "⇪":
+        #         print(index, row_charBurst, total_deletions, total_added_chars)
+            
+
+        #list_intervals.append(intervals_burst)
+
+def is_first_a_deletion(burst, first_row_charBurst):
+    NON_LETTERS_OR_DEL = ["⇦", "⇨", "⇧", "⇩", "⏎", "⇲", "⇪", "∅"]
+
+    if first_row_charBurst == "⌫":
+        return True
+    else:
+        return False
+                    
+
 def get_categories(bursts):
 
+    """
+    This function allows to categorize each burst based on the position of its characters.
+    A burst can be categorized as three different types :
+    - Production (P) : the burst is production added to the text directly after its last character.
+    It can contains control characters, deletions or normal characters.
+    - Edge Revision (ER) : the burst is a revision of the preceeding burst. It can contain control characters, deletions or normal characters.
+    - Revision (R) : the burst is a revision of a higher burst. It can contain control characters, deletions or normal characters.
+
+    Revisions can be adding a caracter, a string of caracters, a space, deleting a character or a string of characters.
+    A burst can have multiple types since the user can use control characters to navigate through the text and make changes.
+    The beginning of a burst can be a production for instance and then the user moves towards the beginning of the text to make a revision.
+
+    We take the current class and add a new corresponding value to the 'categ' attribute.
+
+    Parameter(s):
+        bursts = Bursts object : object containing all the bursts of the text.
+    """
+
+    # We initialize an empty list named 'list_intervals'.
     list_intervals = []
     for index in range(len(bursts.bursts)):
         burst = bursts.bursts[index] 
         intervals_burst = []  
 
+        # We focus on each row of a single burst and categorize it based on the position of its characters.
         for i in range(len(burst.rows)):
             interval_row = ()
             row = burst.rows[i]
+            # For rows that are not control characters, we get the positions where they start and end.
             if row.charBurst != "⇦" and row.charBurst != "⇨" and row.charBurst != "⇧" and row.charBurst != "⇩" and row.charBurst !=  "⏎" and row.charBurst != "∅":
                 interval_row = (int(row.posStart), int(row.posEnd))
                 intervals_burst.append(interval_row)
- 
+
+            # The first row of the first burst is necessarlily a production.         
             if index == 0:
                 row.categ = "P"
+            # For the others, if a deletion or a insertion was made in the intervals of the preceeding burst, it is an edge revision.
             else:
                 for interval in list_intervals[-1]:
                     if row.posStart >= interval[0] and row.posStart < interval[1]:
                         row.categ = "RB"
                         break
-        
+                # If it was made in the intervals of a higher burst, it is a revision.
                 for burst_intervals in list_intervals[:-1]:
                     for interval in burst_intervals:
                         if row.posStart >= interval[0] and row.posStart < interval[1]:
                             row.categ = "R"
                             break
-
+                # If it was not made in any of the intervals, it is a production.
                 if row.categ == "":
                     row.categ = "P"
         
         list_intervals.append(intervals_burst)      
                
 
-# def get_burst(charBurst):
-# ### Cette fonction permet de créer la ligne "Burst du fichier csv"y
-#     ### Pour les cas ou un burst est une suite de caractères identiques
-#     # Le burst renvoyé est vide sauf si on a un espace ou un carac
+# def get_len(charBurst):
 
 #     NON_LETTERS_OR_DEL = ["⇦", "⇨", "⇧", "⇩", "⏎", "⇲", "⇪", "∅"]
-
 #     charBurst = "".join([x[0] for x in charBurst])
 #     set_char = set(charBurst)
+#     total_deletions = 0
 
-#     if len(charBurst) == 1:
-#         if charBurst[0] in ["⇦", "⇨", "⇧", "⇩", "⌫", "⌦", "⏎", "⇲", "∅", "⇪"]:
-
+#     # For bursts that are only composed of null or control characters, we return an empty string.
 #     if len(set_char) == 1:
 #         for char in set_char:
-#             if char in ["⇦", "⇨", "⇧", "⇩", "⌫", "⌦", "⏎", "∅", "⇪"]:
+#             if char in NON_LETTERS_OR_DEL:
 #                 burst = ""
-#                 return burst
+#                 return burst, total_deletions
+#             # For bursts that are only composed of spaces, we return them.
 #             elif char == "␣":
-#                 burst = " "
-#                 return burst
+#                 burst = " " * len(charBurst)
+#                 return burst, total_deletions
     
-#     for key in NON_LETTERS_OR_DEL:
-#         if key in charBurst:
-#             print("OUI")
-#             charBurst = charBurst.replace(key, "")
 
-            
+#     # We remove all the null or control characters from the burst.
+#     for key in NON_LETTERS_OR_DEL:
+#         for i in range(len(charBurst)):
+#             if key == charBurst[i]:
+
+#                 charBurst = charBurst.replace(key, "")
+    
+#     # We start by removing the initial left deletion characters from the burst.
+#     # Removing them does not erase a character added in the current burst.
 #     if charBurst[0] == "⌫":
 #         while charBurst[0] == "⌫":
 #             new_burst = charBurst[1:]
 #             charBurst = new_burst
+#             total_deletions += 1
 
+#     # We start by removing the final right deletion characters from the burst.
+#     # Removing them does not erase a character added in the current burst.
 #     if charBurst[-1] == "⌦":
 #         while charBurst[-1] == "⌦":
 #             new_burst = charBurst[:-1]
 #             charBurst = new_burst
     
+#     # We then handle deletion characters that impact the characters of the current burst.
 #     while True:
 #         if not charBurst or charBurst[0] != "⌦":
 #             break
@@ -603,15 +714,21 @@ def get_categories(bursts):
 
 def create_csv(table_path, list_all_bursts):
 
+    """This function creates a csv file based on the bursts of a corpus.
+    
+    Parameter(s):
+        table_path = str : path of the csv file.
+        list_all_bursts = List[Bursts] : list of all the bursts of the corpus."""
+
     with open(f"{table_path}.csv", "w") as file:
         structure = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        structure.writerow(["ID", "control", "tool", "n_burst", "burstStart", "burstDur", "pauseDur", "cycleDur", "burstPct", "pausePct", "burstLen", "burst", "posStart", "posEnd", "docLen", "categ", "charBurst", "ratio"])
+        structure.writerow(["ID", "control", "tool", "n_burst", "burstStart", "burstDur", "pauseDur", "cycleDur", "burstPct", "pausePct", "burstLen1", "burstLen2", "burstLen3", "posStart", "posEnd", "docLen", "categ", "charBurst", "ratio"])
         for bursts in list_all_bursts:
             for Burst in bursts.bursts: 
                 for row in Burst.rows:
                     if row.charBurst != "⇦" and row.charBurst != "⇨" and row.charBurst != "⇧" and row.charBurst != "⇩" and row.charBurst !=  "⏎" and row.charBurst != "∅":
-                        structure.writerow([row.id, row.control, row.tool, row.n_burst, row.burstStart, row.burstDur, row.pauseDur, row.cycleDur, row.burstPct, row.pausePct, row.burstLen, row.burst, row.posStart, row.posEnd, row.docLen, row.categ, row.charBurst, row.ratio])
-                        #print(f"{row.id}\t{row.control}\t{row.tool}\t{row.n_burst}\t{row.burstStart}\t{row.burstDur}\t{row.pauseDur}\t{row.cycleDur}\t{row.burstPct}\t{row.pausePct}\t{row.burstLen}\t{row.burst}{row.posStart}\t{row.posEnd}\t{row.docLen}\t{row.charBurst}\t{row.ratio}")
+                        structure.writerow([row.id, row.control, row.tool, row.n_burst, row.burstStart, row.burstDur, row.pauseDur, row.cycleDur, row.burstPct, row.pausePct, row.burstLen1, row.burstLen2, row.burstLen3, row.posStart, row.posEnd, row.docLen, row.categ, row.charBurst, row.ratio])
+                        #print(f"{row.id}\t{row.control}\t{row.tool}\t{row.n_burst}\t{row.burstStart}\t{row.burstDur}\t{row.pauseDur}\t{row.cycleDur}\t{row.burstPct}\t{row.pausePct}\t{row.burstLen1}\t{row.burstLen2}\t{row.burstLen3}\t{row.posStart}\t{row.posEnd}\t{row.docLen}\t{row.charBurst}\t{row.ratio}")
 
 def main():
     
@@ -649,6 +766,7 @@ def main():
         raw_rows = get_burst_rows(soup, file) 
         bursts = divide_bursts(raw_rows)
         get_categories(bursts)
+        get_len(bursts)
         list_all_bursts.append(bursts)
 
     create_csv(f"../data/tables/{args.corpus}", list_all_bursts)
