@@ -229,7 +229,7 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
     n_burst = 0
 
     # We declare control keys, keys that do not impact the position of the cursor.
-    CTRL_KEYS = ["VK_LMENU", "VK_TAB", "VK_APPS", "VK_ESCAPE", 
+    CTRL_KEYS = ["VK_LMENU", "VK_APPS", "VK_ESCAPE", 
                  "VK_F12", "VK_LCONTROL", "VK_RCONTROL", 
                  "VK_SNAPSHOT", "VK_INSERT"]
                 # VK_LMENU, VK_TAB = menu,
@@ -410,7 +410,26 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                     else:
                         continue
                         # If the pause is not greater than the specified thresold, we keep on building
-                        # our running burst.
+   # Ensure the last burst is appended to raw_rows
+    if running_burst:
+        n_burst += 1
+        burstDur = round(((endTime / 1000) - burstStart), 2)
+        pauseDur = 0  # No pause after the last event
+        cycleDur = burstDur
+        burstPct = 1.0
+        pausePct = 0.0
+        charBurst = running_burst
+        posEnd = position
+        docLen = documentLength
+        ratio = 0  # No ratio since there is no pause
+        burst_row = Row(id=id, control=control, tool=tool, n_burst=n_burst, 
+                        burstStart=burstStart, burstDur=burstDur, 
+                        pauseDur=pauseDur, cycleDur=cycleDur, burstPct=burstPct, 
+                        pausePct=pausePct, totalActions=0, totalChars=0, finalChars=0, 
+                        totalDeletions=0, innerDeletions=0, posStart=posStart, posEnd=posEnd, 
+                        docLen=docLen, categ="", charBurst=charBurst, ratio=ratio)
+        raw_rows.append(burst_row)
+   # our running burst.
     return raw_rows
 
 
@@ -462,7 +481,6 @@ def divide_bursts(raw_rows):
                 list_curr.clear()
 
         bursts.bursts.append(list_burst)
-
     return bursts
 
 def get_len(bursts):
