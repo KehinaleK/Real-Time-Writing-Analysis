@@ -15,14 +15,14 @@ def reconstruction(df):
     deletions = 0
     for index, row in df.iterrows():
     
-        string = row["charBurst"].replace("⇪", "")
+        string = row["charBurst"].replace("⇪", "").replace("␣", " ")
         print("on fait :", string)
         if index == 0:
             list_text += list(string)
             print(list_text)
             continue
         else:
-            current_string_list = list(row["charBurst"].replace("⇪", ""))
+            current_string_list = list(row["charBurst"].replace("⇪", "").replace("␣", " "))
             current_posStart = row["posStart"]
             current_posEnd =  row["posEnd"]
 
@@ -58,7 +58,7 @@ def reconstruction(df):
     print(text)
     return text            
 
-df = open_corpus_csv('../data/tables/test.csv')
+df = open_corpus_csv('../data/tables/planification.csv')
 
         
 grouped = df.groupby('ID')

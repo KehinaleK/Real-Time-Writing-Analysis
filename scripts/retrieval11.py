@@ -123,7 +123,6 @@ def get_idfx_files(corpus_path: str) -> List[str]:
 
 
 def get_file_content(file_path: str) -> bs4.BeautifulSoup:
-
     """
     This function goes through one idfx file and retrieve its content.
     
@@ -158,11 +157,9 @@ def create_accents(value, accent):
 
     # Circumflex accents.
     dict_hat = {
-        "a" : "â", "c" : "ĉ", "e" : "ê",
-        "g" : "ĝ", "h" : "ĥ","i" : "î",
-        "j" : "ĵ", "o" : "ô", "s" : "ŝ",
-        "u" : "û", "w" : "ŵ", "y" : "ŷ",
-        "z" : "ẑ",
+        "a" : "â", "e" : "ê",
+        "i" : "î", "o" : "ô",
+        "u" : "û",
     }
 
     # Trema accents.
@@ -177,6 +174,7 @@ def create_accents(value, accent):
         "^" : dict_hat,
         "¨" : dict_trem
     }
+
     new_value = ""
     # We use the accented character to find the corresponding dictionary.
     for key, val in dict_accents.items():
@@ -222,11 +220,11 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
     # character by character, and then asign it to the charBurst instance of our Row class for now.
     raw_rows = []
     running_burst = []
-    previous_event = ""
     id = file_name.strip(".idfx")
     control = "+"
     tool = "TW"
     n_burst = 0
+    shifts = 0
 
     # We declare control keys, keys that do not impact the position of the cursor.
     CTRL_KEYS = ["VK_LMENU", "VK_APPS", "VK_ESCAPE", 
@@ -243,23 +241,34 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
  
     DIACRITICS = ["^", "¨"]
 
+    PUNCTUATIONS = ["VK_OEM_COMMA", "VK_OEM_PERIOD", "VK_OEM_2", "VK_OEM_8"] # POUR L'INSTANT CELLES QUI MARCHENT PLUS QUAND ON CLIQUE SUR CONTROLE
+
     # We iterate through each event tag in the idfx file.
     # These tags have child elements called "part"
     # Each event has two parts elements, 
     # the first one contains the position of the corresponding character and the length of the document.
     # the second one contains the value (ex: "a"), the start time, the end time and the name of the key (ex: VK_A, VK_UP...).
+    
+    is_replacement = True #je la set à true, donc quand je trouve le premier, elle devient false et on sait qu'on a affaire à une sélection et que du coup on s'en fou on append pas !
+        # puis du coup dès que je trouve le deuxième elle redevient true et là j'append  
+
     for event_tag in soup.find_all("event"):
+        if event_tag["type"] == "selection":
+            shifts = 0
+            continue
+        
         if event_tag["type"] == "keyboard":
+            keyboard_event_tag = event_tag
             # We only keep events with a "keyboard" type, others concern mouse or selection actions.
-            part_tag_1 = event_tag.findNext("part")
-            for child in part_tag_1.children:
+            keyboard_part_tag_1 = keyboard_event_tag.findNext("part")
+            for child in keyboard_part_tag_1.children:
                 if child.name == "position":
-                    position = int(child.text)
+                    position = int(child.text) + shifts
                 elif child.name == "documentLength":
                     documentLength = int(child.text)
                     # We retrieve the position and the docLength
-            part_tag_2 = part_tag_1.findNext("part")
-            for child in part_tag_2.children:
+            keyboard_part_tag_2 = keyboard_part_tag_1.findNext("part")
+            for child in keyboard_part_tag_2.children:
                 if child.name == "startTime":
                     startTime = int(child.text)
                 elif child.name == "endTime":
@@ -270,39 +279,47 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                     value = child.text
                 elif child.name == "keyboardstate":
                     keyboardstate = child.text
-
+    
                     # We retrieve the startTime, endTime and value
-            
-            # We then find the next "event" tag. It allows us to know where a mouvement key such as "DOWN" takes us.
-            # As an example, if our event concerns a DOWN key, its position will be where it is pressed on in the text.
-            # If we wrote a word from position 125 to 130 and press DOWN at position 130, 130 becomes be the position of the DOWN key.
-            # By getting the next "event" element, we are able to retrieve the position of the next character and therefore the position
-            # where we landed after pressing the DOWN key. Really important ! For LEFT, RIGHT and RETURN key, the jump will always be 1 position.
-            next_event_tag = event_tag.findNext("event")
+          
+            list_events = retrieve_next_events(keyboard_event_tag)
+            for next_event_tag in list_events:
+                if next_event_tag["type"] == "keyboard":
+                    next_keyboard_event_tag = next_event_tag
+                    next_keyboard_part_tag_1 = next_keyboard_event_tag.findNext("part")
+                    for next_child in next_keyboard_part_tag_1.children:
+                        if next_child.name == "position":
+                            next_position = int(next_child.text) + shifts
+                        elif next_child.name == "documentLength":
+                            documentLength = int(next_child.text)
+                    
+                    next_keyboard_part_tag_2 = next_keyboard_part_tag_1.findNext("part")
+                    for next_child in next_keyboard_part_tag_2.children:
+                        if next_child.name == "key":
+                            next_key = next_child.text
+                        elif next_child.name == "value":
+                            next_value = next_child.text
 
-            # We take the next "event" element only if its type is "keyboard".
-            while next_event_tag is not None and next_event_tag["type"] != "keyboard":
-                next_event_tag = next_event_tag.findNext("event")
+                elif next_event_tag["type"] == "replacement":
 
-            if next_event_tag is not None and next_event_tag["type"] == "keyboard":
-                next_part_tag_1 = next_event_tag.findNext("part")
-                # When we find it, we retrieve its position.
-                for next_child in next_part_tag_1.children:
-                    if next_child.name == "position":
-                        next_position = next_child.text
-            else:
-                next_position = position
-                # If we do not find a next "keyboard" "event" element, we keep the current position as the next one.
-                # For instance, if the UP key is the last one to be pressed by the user, there is no next event and that 
-                # movement can be considered as "null" since it won't affect the rest.
-            
-            next_part_tag_2 = next_part_tag_1.findNext("part")
-            for next_child in next_part_tag_2.children:
-                if next_child.name == "key":
-                    next_key = next_child.text
-                elif next_child.name == "value":
-                    next_value = next_child.text
+                    is_replacement = not is_replacement
+                    replacement_part = next_event_tag.findNext("part")
+                    for next_child in replacement_part.children:
+                        if next_child.name == "start":
+                            replacement_start = int(next_child.text)
+                        elif next_child.name == "end":
+                            replacement_end = int(next_child.text)
+                        elif next_child.name == "newtext":
+                            new_text = next_child.text
 
+                elif next_event_tag["type"] == "selection":
+                    selection_part = next_event_tag.findNext("part")
+                    for next_child in selection_part.children:
+                        if next_child.name == "start":
+                            selection_start = int(next_child.text)
+                        elif next_child.name == "end":
+                            selection_end = int(next_child.text)
+        
             if value is not None: # Never found a None value but we never know. Might need to add a else condition if you find one.
                 # For mouvement and control characters, we add their corresponding symbols to our running burst alongside their initial and final positions.
                 if key == "VK_LEFT":
@@ -314,7 +331,11 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                 elif key == "VK_DOWN":
                     running_burst.append(("⇩", position, next_position))
                 elif key == "VK_BACK":
-                    running_burst.append(("⌫", position, next_position))
+                    if len(running_burst) > 0 and running_burst[-1][0] in DIACRITICS:
+                        shifts += 1
+                        running_burst.append(("⌫", position + 1, next_position + 1))
+                    else:
+                        running_burst.append(("⌫", position, next_position))
                 elif key == "VK_DELETE":
                     running_burst.append(("⌦", position, next_position))
                 elif key == "VK_SPACE":
@@ -325,6 +346,13 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                     running_burst.append(("⇲", position, next_position))
                 elif key == "VK_TAB":
                     running_burst.append(("↹", position, next_position))
+                elif key == "VK_1" and value != "1":
+                    running_burst.append(("&", position, next_position))
+                elif key in PUNCTUATIONS:
+                    if value == "":
+                        running_burst.append(("∅", position, next_position))
+                    elif value != "":
+                        running_burst.append((value, position, next_position))
                 elif key == "VK_OEM_102":
                     if value == "&lt;":
                         running_burst.append(("<", position, next_position))
@@ -344,30 +372,70 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                     if keyboardstate_value != "":
                         if keyboardstate_value in SHIFT_KEYS:
                             running_burst.append(("¨", position, next_position))
+                    if "^" in next_value:
+                        running_burst.append(("^", position, next_position + 1))
                     else:
-                        running_burst.append(("^", position, next_position))
+                        running_burst.append(("^", position, next_position + 1))
                 else:
                     if len(running_burst) == 0:
                         running_burst.append((value, position, next_position))
                     else:
-                        if running_burst[-1][0] in DIACRITICS:
-                            position = running_burst[-1][1]
+                        if running_burst[-1][0] in DIACRITICS and value in ["a", "e", "i", "o", "u"]:
+                            position = running_burst[-1][1] 
                             new_value = create_accents(value, running_burst[-1][0])
                             running_burst.pop(-1)
                             running_burst.append((new_value, position, next_position))
+                        elif running_burst[-1][0] in DIACRITICS and value in ["â", "ê", "î", "ô", "û"]:
+                            # print(f"ça passe ça ? {file_name}")
+                            position = running_burst[-1][1]
+                            running_burst.pop(-1)
+                            running_burst.append((value, position, next_position))
+                        elif running_burst[-1][0] in DIACRITICS and len(value) == 1 and value not in ["a", "e", "i", "o", "u",""]:
+                            print(f"{file_name} VOYONS)")
+                            shifts += 1
+                            running_burst.append((value, position + 1, next_position + 1))
+                        elif running_burst[-1][0] in DIACRITICS and len(value) == 2 and value != "^^": 
+                            print(f"{file_name} celui là a un accent chelou devant")
+                            letter = value[1]
+                            if letter in ["a", "e", "i", "o", "u"]:
+                                position = running_burst[-1][1] 
+                                new_value = create_accents(value, running_burst[-1][0])
+                                running_burst.pop(-1)
+                                running_burst.append((new_value, position, next_position))
+                            else:
+                                running_burst.append((letter, position + 1, next_position))
+                        elif value == "^^":
+                            print(f"ah, {file_name}")
                         else:
                             running_burst.append((value, position, next_position))
 
-            # After adding the first character (letter, space or any other "keyboard" action),
-            # we define the start time of the burst as the start time of that first character.  
-            # Same logic for the start position of the burst.    
             if len(running_burst) == 1:
                 burstStart = startTime / 1000
                 posStart = position
-    
+
+            for event_tag in list_events:
+                if event_tag["type"] == "replacement":
+                    print(file_name)
+                    if key == "VK_DELETE":
+                        continue
+                    if key in ["VK_RIGHT", "VK_LEFT", "VK_UP", "VK_DOWN"]:
+                        print(running_burst)
+                        running_burst.append((f"↺{new_text}", replacement_start - 1, replacement_end - 1)) #Dans P+S3, quand on a une flêche dans un rempladement, le start est décalé de 1.
+                        continue
+                    if value == new_text: #dans le cas de hello (test du 31/07..) on le remplace par lui même mais avec indication de remplacement
+                        running_burst.pop(-1)
+                        running_burst.append((f"↺{new_text}", replacement_start, replacement_end)) # ici mle end correspond à la position du dernier caractère remplacé !
+                    else:
+                        running_burst.append((f"↺{new_text}", replacement_start, replacement_end))
+
+            # After adding the first character (letter, space or any other "keyboard" action),
+            # we define the start time of the burst as the start time of that first character.  
+            # Same logic for the start position of the burst.  
+           
+
             # We find the second part of the next event to see if the pause between our current character
             # and the next one is greater than the specified thresold. 
-            for next_child in next_part_tag_2.children:
+            for next_child in next_keyboard_part_tag_2.children:
                 if next_child.name == "startTime":
                     next_startTime = int(next_child.text)
                     # We get the start time of the next character
@@ -432,8 +500,36 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                         docLen=docLen, categ="", charBurst=charBurst, ratio=ratio)
         raw_rows.append(burst_row)
    # our running burst.
-    print(raw_rows)
-    return raw_rows
+    # for row in raw_rows:
+    #     print(row)
+    return raw_rows 
+
+def retrieve_next_events(keyboard_event_tag: bs4.element.Tag) -> bs4.element.Tag:
+
+        list_events = [keyboard_event_tag]
+        # We then find the next "event" tag. It allows us to know where a mouvement key such as "DOWN" takes us.
+        # As an example, if our event concerns a DOWN key, its position will be where it is pressed on in the text.
+        # If we wrote a word from position 125 to 130 and press DOWN at position 130, 130 becomes be the position of the DOWN key.
+        # By getting the next "event" element, we are able to retrieve the position of the next character and therefore the position
+        # where we landed after pressing the DOWN key. Really important ! For LEFT, RIGHT and RETURN key, the jump will always be 1 position.
+        next_event_tag = keyboard_event_tag.findNext("event")
+
+
+        # We take the next "event" element only if its type is "keyboard".
+        while next_event_tag is not None and next_event_tag["type"] != "keyboard":
+            if next_event_tag["type"] == "replacement":
+                replacement_event = next_event_tag
+                list_events.append(replacement_event)
+            elif next_event_tag["type"] == "selection":
+                selection_event = next_event_tag
+                list_events.append(selection_event)
+            next_event_tag = next_event_tag.findNext("event")
+
+        if next_event_tag is not None and next_event_tag["type"] == "keyboard":
+            next_keyboard_event_tag = next_event_tag
+            list_events.append(next_keyboard_event_tag)
+
+        return list_events
 
 
 def divide_bursts(raw_rows):
@@ -444,7 +540,7 @@ def divide_bursts(raw_rows):
         list_curr = []
         for i in range(len(burst.charBurst)):
             curr_burst = burst.charBurst[i]
-            if curr_burst[0] in  ["⇦", "⇨", "⇧", "⇩", "⏎", "↹", "⌫", "⌦"]:
+            if curr_burst[0][0] in  ["⇦", "⇨", "⇧", "⇩", "⏎", "↹", "⌫", "⌦", "↺"]:
                 curr = curr_burst
                 burst_part =  Row(id=burst.id, control=burst.control, tool=burst.tool, 
                                     n_burst=burst.n_burst, burstStart=burst.burstStart, 
@@ -464,7 +560,7 @@ def divide_bursts(raw_rows):
                     posEnd = list_curr[-1][2]
                 else: 
                     next_part = burst.charBurst[i+1]
-                    if next_part[0] in ["⇦", "⇨", "⇧", "⇩", "⏎", "⌫", "⌦"]:
+                    if next_part[0][0] in ["⇦", "⇨", "⇧", "⇩", "⏎", "⌫", "⌦", "↺"]:
                         curr = "".join([x[0] for x in list_curr])
                         posStart = list_curr[0][1]
                         posEnd = list_curr[-1][2]
@@ -496,7 +592,6 @@ def get_len(bursts):
         total_len = [0,0,0,0,0]
         #print(f"NOUVEAU BURST")
         burst = bursts.bursts[index]
-        #print(burst.rows)
         intervals_burst = []
         burst_total_chars = 0
         burst_final_chars = 0
@@ -713,7 +808,7 @@ def create_csv(table_path, list_all_bursts):
         for bursts in list_all_bursts:
             for Burst in bursts.bursts: 
                 for row in Burst.rows:
-                    if row.charBurst != "⇦" and row.charBurst != "⇨" and row.charBurst != "⇧" and row.charBurst != "⇩" and row.charBurst != "∅" and row.charBurst != "⇪" and row.charBurst != "":
+                    if row.charBurst != "⇦" and row.charBurst != "⇨" and row.charBurst != "⇧" and row.charBurst != "⇩" and row.charBurst != "∅" and row.charBurst != "⇪" and row.charBurst != "" and row.charBurst != "⇲":
                         structure.writerow([row.id, row.control, row.tool, row.n_burst, row.burstStart, row.burstDur, row.pauseDur, row.cycleDur, row.burstPct, row.pausePct, row.totalActions, row.totalChars, row.finalChars, row.totalDeletions, row.innerDeletions, row.posStart, row.posEnd, row.docLen, row.categ, row.charBurst, row.ratio])
                         #print(f"{row.id}\t{row.control}\t{row.tool}\t{row.n_burst}\t{row.burstStart}\t{row.burstDur}\t{row.pauseDur}\t{row.cycleDur}\t{row.burstPct}\t{row.pausePct}\t{row.burstLen1}\t{row.burstLen2}\t{row.posStart}\t{row.posEnd}\t{row.docLen}\t{row.charBurst}\t{row.ratio}")
                     
@@ -760,7 +855,7 @@ def main():
     files_list = get_idfx_files(corpus_path)
     list_all_bursts = []
     for file in files_list:
-        print(file)
+        print(f"File {file} is being processed...")
         soup = get_file_content(f"{corpus_path}/{file}")
         raw_rows = get_burst_rows(soup, file, thresold) 
         bursts = divide_bursts(raw_rows)

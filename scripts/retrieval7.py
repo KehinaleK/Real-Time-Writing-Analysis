@@ -227,7 +227,6 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
     control = "+"
     tool = "TW"
     n_burst = 0
-    shifts = 0
 
     # We declare control keys, keys that do not impact the position of the cursor.
     CTRL_KEYS = ["VK_LMENU", "VK_APPS", "VK_ESCAPE", 
@@ -255,9 +254,9 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
             part_tag_1 = event_tag.findNext("part")
             for child in part_tag_1.children:
                 if child.name == "position":
-                    position = int(child.text) + shifts
+                    position = int(child.text)
                 elif child.name == "documentLength":
-                    documentLength = int(child.text) + shifts
+                    documentLength = int(child.text)
                     # We retrieve the position and the docLength
             part_tag_2 = part_tag_1.findNext("part")
             for child in part_tag_2.children:
@@ -290,7 +289,7 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                 # When we find it, we retrieve its position.
                 for next_child in next_part_tag_1.children:
                     if next_child.name == "position":
-                        next_position = int(next_child.text) + shifts
+                        next_position = int(next_child.text)
             else:
                 next_position = position
                 # If we do not find a next "keyboard" "event" element, we keep the current position as the next one.
@@ -336,7 +335,19 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                 elif key in SHIFT_KEYS:
                     running_burst.append(("⇪", position, next_position))
                 elif key == "VK_OEM_6":
-                    shifts += 1
+                    print(file_name)
+                    print("CURRENT ELEMENT")
+                    print(part_tag_1)
+                    print(part_tag_2)
+                    print("NEXT ELEMENT")
+                    print(next_part_tag_1)
+                    print(next_part_tag_2)
+                    if position != next_position:
+                        print(f"\t\tPOSITIONS DIFFÉRENTES {position}, {next_position}")
+                    elif value != "":
+                        print("\t\tVALUE PAS NULLE")
+                    elif round(((next_startTime / 1000) - (endTime / 1000)), 2) > 1.0:
+                        print("\t\tPAUSE PLUS ÉLEVÉE QUE 1")
                     keyboardstate_value = ""
                     for char in keyboardstate:
                         if char.isspace():
@@ -345,20 +356,21 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                             keyboardstate_value += char
                     if keyboardstate_value != "":
                         if keyboardstate_value in SHIFT_KEYS:
-                            running_burst.append(("¨", position, next_position + 1))
+                            running_burst.append(("¨", position, next_position))
                     else:
-                        running_burst.append(("^", position, next_position + 1))
+                        
+                        running_burst.append(("^", position, next_position))
                 else:
                     if len(running_burst) == 0:
                         running_burst.append((value, position, next_position))
                     else:
-                        # if running_burst[-1][0] in DIACRITICS:
-                        #     position = running_burst[-1][1]
-                        #     new_value = create_accents(value, running_burst[-1][0])
-                        #     running_burst.pop(-1)
-                        #     running_burst.append((new_value, position, next_position))
-                        # else:
-                        running_burst.append((value, position, next_position))
+                        if running_burst[-1][0] in DIACRITICS:
+                            position = running_burst[-1][1]
+                            new_value = create_accents(value, running_burst[-1][0])
+                            running_burst.pop(-1)
+                            running_burst.append((new_value, position, next_position))
+                        else:
+                            running_burst.append((value, position, next_position))
 
             # After adding the first character (letter, space or any other "keyboard" action),
             # we define the start time of the burst as the start time of that first character.  
@@ -761,6 +773,7 @@ def main():
     files_list = get_idfx_files(corpus_path)
     list_all_bursts = []
     for file in files_list:
+        print(file)
         soup = get_file_content(f"{corpus_path}/{file}")
         raw_rows = get_burst_rows(soup, file, thresold) 
         bursts = divide_bursts(raw_rows)
