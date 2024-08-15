@@ -30,8 +30,7 @@ def reconstruction(df):
             if "⌫" in current_string_list or "⌦" in current_string_list:
                 print(f"Nous avons un effacement en position {current_posEnd}")
                 if current_posEnd >= len(list_text) and len(list_text) != 0:
-                    print("OOOOOOOOOOh")
-                    list_text.pop(-1)
+                    continue
                 elif len(list_text) == 0:
                     continue
                 else:

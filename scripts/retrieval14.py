@@ -249,9 +249,9 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
     # the first one contains the position of the corresponding character and the length of the document.
     # the second one contains the value (ex: "a"), the start time, the end time and the name of the key (ex: VK_A, VK_UP...).
     
+    tabulation = False
     is_replacement = True #je la set à true, donc quand je trouve le premier, elle devient false et on sait qu'on a affaire à une sélection et que du coup on s'en fou on append pas !
         # puis du coup dès que je trouve le deuxième elle redevient true et là j'append  
-
     for event_tag in soup.find_all("event"):
         if event_tag["type"] == "selection":
             shifts = 0
@@ -260,28 +260,38 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
         if event_tag["type"] == "keyboard":
             keyboard_event_tag = event_tag
             # We only keep events with a "keyboard" type, others concern mouse or selection actions.
-            keyboard_part_tag_1 = keyboard_event_tag.findNext("part")
-            for child in keyboard_part_tag_1.children:
-                if child.name == "position":
-                    position = int(child.text) + shifts
-                elif child.name == "documentLength":
-                    documentLength = int(child.text)
-                    # We retrieve the position and the docLength
-            keyboard_part_tag_2 = keyboard_part_tag_1.findNext("part")
-            for child in keyboard_part_tag_2.children:
-                if child.name == "startTime":
-                    startTime = int(child.text)
-                elif child.name == "endTime":
-                    endTime = int(child.text)
-                elif child.name == "key":
-                    key = child.text
-                elif child.name == "value":
-                    value = child.text
-                elif child.name == "keyboardstate":
-                    keyboardstate = child.text
+            part_tags = keyboard_event_tag.find_all("part")
+
+            has_wordlog = False 
+
+            for part in part_tags:
+                if part["type"] == "wordlog":
+                    has_wordlog = True
+                    for child in part:
+                        if child.name == "position":
+                            position = int(child.text) + shifts
+                        elif child.name == "documentLength":
+                            documentLength = int(child.text)
+                            # We retrieve the position and the docLength
     
-                    # We retrieve the startTime, endTime and value
-          
+                elif part["type"] == "winlog":
+                    for child in part.children:
+                        if child.name == "startTime":
+                            startTime = int(child.text)
+                        elif child.name == "endTime":
+                            endTime = int(child.text)
+                        elif child.name == "key":
+                            key = child.text
+                        elif child.name == "value":
+                            value = child.text
+                        elif child.name == "keyboardstate":
+                            keyboardstate = child.text
+            
+            if not has_wordlog: # EN GROS ! SI ON A que winlog alors je pense que c'est qu'on est dans un onglet d'enregistrement cf burst 34-35 p+s7
+                continue
+
+            # We retrieve the startTime, endTime and value
+
             list_events = retrieve_next_events(keyboard_event_tag)
             for next_event_tag in list_events:
                 if next_event_tag["type"] == "keyboard":
@@ -334,6 +344,13 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                     if len(running_burst) > 0 and running_burst[-1][0] in DIACRITICS:
                         shifts += 1
                         running_burst.append(("⌫", position + 1, next_position + 1))
+                    # elif len(running_burst) > 0 and running_burst[-1][0] == "↹":
+                    #     tabulation = False
+                    #     running_burst.append(("⌫", position, next_position))
+                    # elif len(running_burst) > 0 and running_burst[-1][0] == "⏎" and tabulation == True:
+                    #     shifts += 1
+                    #     tabulation = False
+                    #     continue
                     else:
                         running_burst.append(("⌫", position, next_position))
                 elif key == "VK_DELETE":
@@ -345,6 +362,7 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                 elif key == "VK_END":
                     running_burst.append(("⇲", position, next_position))
                 elif key == "VK_TAB":
+                    tabulation = True
                     running_burst.append(("↹", position, next_position))
                 elif key == "VK_1" and value != "1":
                     running_burst.append(("&", position, next_position))
@@ -415,13 +433,14 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
 
             for event_tag in list_events:
                 if event_tag["type"] == "replacement":
-                    print(file_name)
                     if key == "VK_DELETE":
                         continue
-                    if key in ["VK_RIGHT", "VK_LEFT", "VK_UP", "VK_DOWN"]:
-                        print(running_burst)
-                        running_burst.append((f"↺{new_text}", replacement_start - 1, replacement_end - 1)) #Dans P+S3, quand on a une flêche dans un rempladement, le start est décalé de 1.
+                    if key == "VK_LEFT": 
+                        running_burst.append((f"↺{new_text}", replacement_start, replacement_end)) #Dans P+S1
                         continue
+                    if key == "VK_RIGHT":
+                        running_burst.append((f"↺{new_text}", replacement_start - 1, replacement_end - 1)) #Dans P+S3, quand on a une flêche dans un rempladement, le start est décalé de 1.
+                        continue # Dans P+S3
                     if value == new_text: #dans le cas de hello (test du 31/07..) on le remplace par lui même mais avec indication de remplacement
                         running_burst.pop(-1)
                         running_burst.append((f"↺{new_text}", replacement_start, replacement_end)) # ici mle end correspond à la position du dernier caractère remplacé !
@@ -457,7 +476,9 @@ def get_burst_rows(soup: bs4.BeautifulSoup, file_name: str, thresold: int) -> Li
                     if pause > thresold:
                         # If the found pause is greater than the thresold, we end our burst at the current character.
                         # We can define every value that can be found in the csv file.
+                       
                         n_burst += 1
+                   
                         burstDur = round(((endTime / 1000) - burstStart),2)
                         pauseDur = pause
                         cycleDur = round((burstDur + pauseDur), 2)
@@ -560,7 +581,7 @@ def divide_bursts(raw_rows):
                     posEnd = list_curr[-1][2]
                 else: 
                     next_part = burst.charBurst[i+1]
-                    if next_part[0][0] in ["⇦", "⇨", "⇧", "⇩", "⏎", "⌫", "⌦", "↺"]:
+                    if next_part[0][0] in ["⇦", "⇨", "⇧", "⇩", "⏎", "↹", "⌫", "⌦", "↺"]:
                         curr = "".join([x[0] for x in list_curr])
                         posStart = list_curr[0][1]
                         posEnd = list_curr[-1][2]
@@ -580,6 +601,8 @@ def divide_bursts(raw_rows):
                 list_curr.clear()
 
         bursts.bursts.append(list_burst)
+    # for burst in bursts.bursts:
+    #     print(burst)
     return bursts
 
 def get_len(bursts):

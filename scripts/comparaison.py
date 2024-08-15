@@ -26,17 +26,12 @@ def compare_files(reconstructed_files_list, saved_files_list):
 
         words_in_reconstructed = [word for word in reconstructed_lines]
         words_in_saved = [words for words in saved_lines]
-
         if words_in_reconstructed == words_in_saved:
             true += 1
         else:
+            print(reconstructed_file, saved_file)
             false += 1
-            print(reconstructed_file)
-            # for a, b in zip(words_in_reconstructed, words_in_saved):
-            #     if a != b:
-            #         print(f"Reconstructed: {a}, Saved: {b} - difference")
-            #     else:
-            #         print(f"Reconstructed: {a}, Saved: {b}")
+
 
     print(f"True: {true}, False: {false}")
 
