@@ -13,14 +13,14 @@ def get_files(reconstructed_path, saved_path):
 
     return reconstructed_files_list, saved_files_list
 
-reconstructed_files_list, saved_files_list = get_files("../data/reconstructed_texts", "../data/saved_texts_txt")
+reconstructed_files_list, saved_files_list = get_files("../../data/reconstructed_texts", "../../data/saved_texts_txt")
 
 def compare_files(reconstructed_files_list, saved_files_list):
 
     true = 0
     false = 0
     for reconstructed_file, saved_file in zip(reconstructed_files_list, saved_files_list):
-        with open(f"../data/reconstructed_texts/{reconstructed_file}", "r") as rf, open(f"../data/saved_texts_txt/{saved_file}", "r") as sf:
+        with open(f"../../data/reconstructed_texts/{reconstructed_file}", "r") as rf, open(f"../../data/saved_texts_txt/{saved_file}", "r") as sf:
             reconstructed_lines = rf.read().split()
             saved_lines = sf.read().split()
 
