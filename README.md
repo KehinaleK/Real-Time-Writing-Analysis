@@ -9,18 +9,20 @@
 4. [Chunking](#chunking)
 
 
+**Each script, the structure of the repository and the data are further explained in the `manual.md` file (logic, error handling...). If you intend to modify, improve, or use them, I recommend reading the manual.**
+
+
 ## 1 - Introduction <a name="introduction"></a>
 
-This repository concerns a specific branch of the project aiming to find connections between pausal segmentation and specific linguistic features, notably chunks. You can find the main focus on this study in this presentation introduced during the SigWriting 2024 conference. 
-
+This repository concerns a specific branch of the project aiming to find connections between pausal segmentation and specific linguistic features, notably chunks. You can find the main focus on this study in this [presentation](presentation_sig_writing2024.pdf) introduced during the SigWriting 2024 conference. 
 
 
 To get to that point, a few steps were required :
 - Extracting our data to make it "usable"
 - Reconstructing texts while keeping a history of the user's writing behaviours
-- Chunking those texts to find connections between them, pauses, and types of errors
+- Chunking those texts to find connections between chunks, pauses, and types of errors
 
-Mupltiple experiments were conducted on subjects of various age groups. The ones used for this particular study are BA students in psychology. Those subjects were instructed to write texts (from 5 to 20 lines in average) regarding a given topic: student fees, smoking in college, pollution... Some were considered "experts" in those fields whereas others weren't. Each subject is named by the first letter of the corpus, a "+" or "-" symbol to indicate the level of expertise, and a ID number. For instance : P+S2, R-23, F+14...
+Mupltiple experiments were conducted on subjects of various age groups. The ones used for this particular study are BA students in psychology. Those subjects were instructed to write texts (from 5 to 20 lines in average) regarding a given topic: student fees, smoking in college, pollution... Some were considered "experts" in those fields whereas others weren't. Each subject is named by the first letter of the corpus, a "+" or "-" symbol to indicate the level of expertise, and an ID number. For instance : P+S2, R-23, F+14...
 
 The subjects wrote their texts in Word and their movements were recorded thanks to the InputLog software on Windows. No limitations were given, subjects could therefore move throughout their texts, erase elements, select others, and more generally press any key the wanted. Those pressed keys were saved in resulting idfx files.
 
@@ -32,7 +34,7 @@ In order to study each subject's behaviour while writing, we firstly need to use
 
 ## 2 - Data extraction <a name="extraction"></a>
 
-The `retrieval.py` script (STILL IN CONSTRUCTION) aims to retrieve the data from each idfx file to create a resulting csv file containing all the informations needed to recontruct the texts. This csv file would also allow for a new level of division based on bursts.
+The `retrieval.py` script aims to retrieve the data from each idfx file to create a resulting csv file containing all the informations needed to recontruct the texts. This csv file would also allow for a new level of division based on bursts.
 
 This script aims to handle as many cases as possible, some of them requiring different processing. For instance, diacritics, tabulations or replacements required multiple conditions to avoid as many problems as possible during the reconstruction. 
 
@@ -57,7 +59,7 @@ The script requires :
 
 ```python3 retrieval.py -c planification -t 1.5```
 
-(TO COME) **An explanation of the script will be available in a manual dedicated to understand all of the different cases that required a specific processing**
+**An explanation of the script is available in the manual dedicated to understand all of the different cases that required a specific processing**
 
 - The output should look something like this : 
 
@@ -74,7 +76,7 @@ On top of the idfx files, we have access to the texts in their final forms as th
 
 The first step was to reconstruct our texts based on the idfx files and compare the results to the saved texts. For the reconstruction, we use the script `reconstruction.py`.
 
-This script goes through the entire csv and for each text, goes through each row to retrieve the action (add a string, erase something, move...) and the corresponding positions. The text is constructed based on a list that gets updated based on its indexes at each row. The performance of this script depends on the number of specific cases taken into account in the `retrieval` script as well as on some conditions dealing with the specifities on Word and how they may sometimes require some adaptations. 
+This script goes through the entire csv and for each text, goes through each row to retrieve the action (add a string, erase something, move...) and the corresponding positions. The text is constructed based on a list that gets updated based on its indexes at each row. The performance of this script depends on the number of specific cases taken into account in the `retrieval` script as well as on some conditions dealing with the specifities of Word and how they may sometimes require some adaptations. 
 
 The script requires : 
 
@@ -90,5 +92,6 @@ The script requires :
 
 ```python3 reconstruction.py```
 
-CHUNKING IN PROGRESS...
+
+IN PROGRESS ...
 
