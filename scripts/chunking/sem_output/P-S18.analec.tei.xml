@@ -1,0 +1,2441 @@
+<?xml version="1.0" ?>
+<ns0:teiCorpus xmlns:ns0="http://www.tei-c.org/ns/1.0">
+  <ns0:teiHeader>
+    <ns0:fileDesc>
+      <ns0:titleStmt>
+        <ns0:title/>
+        <ns0:respStmt>
+          <ns0:resp/>
+          <ns0:name/>
+        </ns0:respStmt>
+      </ns0:titleStmt>
+      <ns0:publicationStmt>
+        <ns0:publisher/>
+      </ns0:publicationStmt>
+      <ns0:sourceDesc/>
+      <ns0:titleStmt>
+        <ns0:title/>
+        <ns0:respStmt>
+          <ns0:resp/>
+          <ns0:name/>
+        </ns0:respStmt>
+      </ns0:titleStmt>
+      <ns0:publicationStmt>
+        <ns0:publisher/>
+      </ns0:publicationStmt>
+      <ns0:sourceDesc/>
+    </ns0:fileDesc>
+  </ns0:teiHeader>
+  <ns0:TEI>
+    <ns0:teiHeader/>
+    <ns0:text>
+      <ns0:body>
+        <ns0:p>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-1-start"/>
+          ﻿Chers​ lecteurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-1-end"/>
+          ,
+        </ns0:p>
+        <ns0:p>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-1-start"/>
+          ‌﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-1-end"/>
+              
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-1-start"/>
+          ‍Le​ sujet
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-1-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-2-start"/>
+          à l'ordre du jour concerne les ﻿fumoirs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-2-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-2-start"/>
+          ​​​Eh oui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-2-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-3-start"/>
+          ​pour ceux
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-3-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-3-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-3-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-4-start"/>
+          se
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-4-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-1-start"/>
+          sont informés récemment​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-1-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-4-start"/>
+          auprès de la facculté
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-4-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-5-start"/>
+          vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-5-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-2-start"/>
+          avez pu
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-2-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-3-start"/>
+          apprendre
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-3-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-1-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-1-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-6-start"/>
+          la fac
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-6-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-4-start"/>
+          souhaite
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-4-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-5-start"/>
+          installer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-5-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-7-start"/>
+          des fumoirs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-7-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-5-start"/>
+          dans ​tous​​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-5-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-8-start"/>
+          ses locaux
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-8-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-1-start"/>
+          Bonne
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-1-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-2-start"/>
+          ou
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-2-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-9-start"/>
+          mauvaise nouvelle
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-9-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-6-start"/>
+          à vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-6-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-7-start"/>
+          de j​uger​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-7-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-10-start"/>
+          ce
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-10-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-11-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-11-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-6-start"/>
+          est
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-6-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-2-start"/>
+          sûr
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-2-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-3-start"/>
+          c'est que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-3-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-12-start"/>
+          ​cet article
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-12-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-7-start"/>
+          va
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-7-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-13-start"/>
+          vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-13-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-8-start"/>
+          permettre
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-8-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-8-start"/>
+          de vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-8-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-9-start"/>
+          faire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-9-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-14-start"/>
+          un point
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-14-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-9-start"/>
+          de vue
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-9-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-10-start"/>
+          Pour petit rappel​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-10-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-11-start"/>
+          pour les novices
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-11-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-15-start"/>
+          un fumoir​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-15-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-10-start"/>
+          est
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-10-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-16-start"/>
+          une salle close
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-16-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-4-start"/>
+          ﻿où l'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-4-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-17-start"/>
+          on
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-17-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-11-start"/>
+          peut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-11-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-2-start"/>
+          fumer​‌﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-2-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-12-start"/>
+          dans l'enceinte
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-12-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-13-start"/>
+          d‍​'un batiment
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-13-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-18-start"/>
+          ﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-18-end"/>
+        </ns0:p>
+        <ns0:p>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-19-start"/>
+          Premièrement﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-19-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-20-start"/>
+          ﻿nous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-20-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-12-start"/>
+          allons
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-12-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-21-start"/>
+          vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-21-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-13-start"/>
+          exposer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-13-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-22-start"/>
+          les avant​ages
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-22-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-14-start"/>
+          de ce dispositif​​⁠​⁡‌
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-14-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-23-start"/>
+          ‍‌﻿Un fumoi⁠﻿r⁡
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-23-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-14-start"/>
+          étant
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-14-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-24-start"/>
+          un lieu clos
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-24-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-15-start"/>
+          à l'abris‍⁠​⁡‌
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-15-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-5-start"/>
+          et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-5-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-16-start"/>
+          au chaud
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-16-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-25-start"/>
+          cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-25-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-15-start"/>
+          veut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-15-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-3-start"/>
+          bien
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-3-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-4-start"/>
+          évidemment
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-4-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-16-start"/>
+          dire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-16-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-6-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-6-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-26-start"/>
+          les fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-26-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-17-start"/>
+          vont pou‍​voir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-17-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-5-start"/>
+          enfin
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-5-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-27-start"/>
+          ﻿être abrité​s
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-27-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-17-start"/>
+          des vents
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-17-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-18-start"/>
+          de la pluie
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-18-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-7-start"/>
+          et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-7-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-28-start"/>
+          autres désagréments climatiques
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-28-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-29-start"/>
+          qu'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-29-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-18-start"/>
+          impose
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-18-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-30-start"/>
+          le fait
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-30-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-19-start"/>
+          de fumer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-19-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-20-start"/>
+          à l'extérieur​​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-20-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-6-start"/>
+          ​Mais en plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-6-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-21-start"/>
+          d'être
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-21-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-22-start"/>
+          à l'abris​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-22-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-31-start"/>
+          le ﻿fumeur
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-31-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-19-start"/>
+          ﻿pourra
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-19-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-7-start"/>
+          ﻿également
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-7-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-23-start"/>
+          parl​er d​avantage
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-23-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-24-start"/>
+          avec les gens​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-24-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-8-start"/>
+          tout
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-8-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-25-start"/>
+          en ﻿n'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-25-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-20-start"/>
+          étant pas pr​​éssé
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-20-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-32-start"/>
+          ​alors
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-32-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-9-start"/>
+          qu'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-9-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-10-start"/>
+          hab​ituellement
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-10-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-26-start"/>
+          ﻿dans le ​froid
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-26-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-27-start"/>
+          en plein hiver il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-27-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-21-start"/>
+          aura​it
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-21-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-33-start"/>
+          d​û couper court
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-33-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-28-start"/>
+          à une conversation intéressante​⁠​⁡‌
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-28-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-29-start"/>
+          pour se
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-29-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-22-start"/>
+          précipiter
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-22-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-30-start"/>
+          au chaud
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-30-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-34-start"/>
+          ‍﻿De même​﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-34-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-35-start"/>
+          cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-35-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-23-start"/>
+          veut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-23-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-24-start"/>
+          dire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-24-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-36-start"/>
+          un gain
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-36-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-31-start"/>
+          de temps﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-31-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-32-start"/>
+          pour les fumeurs​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-32-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-33-start"/>
+          en hiver
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-33-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-37-start"/>
+          obligé
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-37-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-34-start"/>
+          de s​e dépêcher
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-34-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-35-start"/>
+          à la pause
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-35-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-36-start"/>
+          pour se
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-36-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-25-start"/>
+          vêtir chaudement​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-25-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-8-start"/>
+          alors que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-8-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-11-start"/>
+          là
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-11-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-26-start"/>
+          étant
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-26-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-37-start"/>
+          à l'abris
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-37-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-38-start"/>
+          il​s
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-38-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-27-start"/>
+          pourront
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-27-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-38-start"/>
+          ﻿y aller
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-38-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-39-start"/>
+          s⁠​⁡‌ans‍ avoir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-39-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-40-start"/>
+          à se
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-40-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-28-start"/>
+          soucier
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-28-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-39-start"/>
+          ﻿Ensuite
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-39-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-41-start"/>
+          ﻿il y
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-41-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-42-start"/>
+          en
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-42-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-29-start"/>
+          a
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-29-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-40-start"/>
+          d'autres
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-40-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-41-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-41-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-30-start"/>
+          vont
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-30-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-31-start"/>
+          gagner
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-31-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-42-start"/>
+          du temps
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-42-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-43-start"/>
+          ce
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-43-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-32-start"/>
+          ⁠​⁡‌sont
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-32-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-44-start"/>
+          l‍⁠​⁡‌es personnes
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-44-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-45-start"/>
+          ‍⁠​⁡‌qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-45-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-33-start"/>
+          ‍⁠​⁡‌balayent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-33-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-46-start"/>
+          le so‍⁠​⁡⁠l⁡‌﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-46-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-43-start"/>
+          devant la fac‍‌﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-43-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-47-start"/>
+          cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-47-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-34-start"/>
+          fera
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-34-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-12-start"/>
+          moins
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-12-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-44-start"/>
+          de ‍⁠&quot;⁡‌﻿mégots⁠﻿&quot;⁡
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-44-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-45-start"/>
+          à nettoyer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-45-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-9-start"/>
+          Et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-9-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-13-start"/>
+          de même
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-13-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-48-start"/>
+          la fac
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-48-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-35-start"/>
+          ‍⁠​⁡‌paraitra
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-35-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-14-start"/>
+          donc
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-14-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-15-start"/>
+          plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-15-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-3-start"/>
+          propre
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-3-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-10-start"/>
+          si
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-10-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-49-start"/>
+          les fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-49-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-36-start"/>
+          ne viennent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-36-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-16-start"/>
+          plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-16-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-46-start"/>
+          y
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-46-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-37-start"/>
+          déposer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-37-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-50-start"/>
+          leur‍⁠​⁡‌s déchets
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-50-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-51-start"/>
+          ‍ ‍
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-51-end"/>
+        </ns0:p>
+        <ns0:p>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-11-start"/>
+          ​﻿Comme
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-11-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-52-start"/>
+          nous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-52-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-38-start"/>
+          pourrons
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-38-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-53-start"/>
+          le
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-53-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-39-start"/>
+          voir ​​il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-39-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-17-start"/>
+          n'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-17-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-47-start"/>
+          y
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-47-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-40-start"/>
+          a pas
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-40-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-12-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-12-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-54-start"/>
+          des avantages
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-54-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-48-start"/>
+          à ﻿installer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-48-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-55-start"/>
+          des fumoirs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-55-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-18-start"/>
+          tout d'abord
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-18-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-49-start"/>
+          pour la facculté
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-49-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-41-start"/>
+          elle
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-41-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-19-start"/>
+          même
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-19-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-56-start"/>
+          imaginez
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-56-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-20-start"/>
+          un peu
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-20-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-57-start"/>
+          le coût
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-57-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-50-start"/>
+          ​de ce​s ​salles
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-50-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-58-start"/>
+          ​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-58-end"/>
+          ! 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-42-start"/>
+          ⁠​⁡‌﻿Et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-42-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-51-start"/>
+          pour quels bénéfice‍⁠​⁡⁠​⁡‌s
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-51-end"/>
+           ? 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-59-start"/>
+          ‍‌Eh oui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-59-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-13-start"/>
+          car
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-13-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-60-start"/>
+          il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-60-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-43-start"/>
+          va
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-43-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-21-start"/>
+          bien
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-21-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-44-start"/>
+          falloir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-44-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-45-start"/>
+          inst‍​aller
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-45-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-61-start"/>
+          ﻿un système
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-61-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-52-start"/>
+          d'a​ération
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-52-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-53-start"/>
+          dans ce​s salles
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-53-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-54-start"/>
+          ​pour pas​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-54-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-46-start"/>
+          ​que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-46-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-62-start"/>
+          la facculté entière
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-62-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-47-start"/>
+          ne sente
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-47-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-63-start"/>
+          le tabac​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-63-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-55-start"/>
+          froi​d au bout de deux jours
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-55-end"/>
+          ... 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-64-start"/>
+          ﻿En​suite​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-64-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-65-start"/>
+          il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-65-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-48-start"/>
+          faut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-48-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-49-start"/>
+          dire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-49-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-14-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-14-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-22-start"/>
+          oui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-22-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-23-start"/>
+          effectivement
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-23-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-66-start"/>
+          ﻿les fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-66-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-50-start"/>
+          sont
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-50-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-56-start"/>
+          à l'abris
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-56-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-15-start"/>
+          mais
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-15-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-51-start"/>
+          ne pensez vous pas
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-51-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-16-start"/>
+          qu'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-16-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-67-start"/>
+          une salle
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-67-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-68-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-68-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-69-start"/>
+          ​leur
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-69-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-52-start"/>
+          permet
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-52-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-57-start"/>
+          de fumer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-57-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-24-start"/>
+          ﻿plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-24-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-25-start"/>
+          au moins
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-25-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-58-start"/>
+          au chaud ​ne
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-58-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-53-start"/>
+          va pas
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-53-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-26-start"/>
+          justement
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-26-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-70-start"/>
+          les
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-70-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-54-start"/>
+          inciter
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-54-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-59-start"/>
+          à fumer davan​tage
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-59-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-71-start"/>
+          ﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-71-end"/>
+          ? 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-72-start"/>
+          ﻿Et quan​d
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-72-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-55-start"/>
+          est​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-55-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-73-start"/>
+          -il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-73-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-60-start"/>
+          de ceux
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-60-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-74-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-74-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-56-start"/>
+          ne fument pas
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-56-end"/>
+           ? 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-57-start"/>
+          Ne vont
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-57-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-75-start"/>
+          -ils
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-75-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-27-start"/>
+          pas
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-27-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-58-start"/>
+          vouloir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-58-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-59-start"/>
+          venir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-59-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-61-start"/>
+          avec leur amis
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-61-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-76-start"/>
+          fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-76-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-17-start"/>
+          ﻿parce que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-17-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-77-start"/>
+          les pauses
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-77-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-60-start"/>
+          sont
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-60-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-28-start"/>
+          plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-28-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-4-start"/>
+          agréables
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-4-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-62-start"/>
+          entre amis​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-62-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-18-start"/>
+          et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-18-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-29-start"/>
+          donc
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-29-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-30-start"/>
+          pa​r
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-30-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-78-start"/>
+          conséquent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-78-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-79-start"/>
+          les
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-79-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-61-start"/>
+          inciter
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-61-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-63-start"/>
+          à fumer
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-63-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-80-start"/>
+          eux
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-80-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-31-start"/>
+          aussi
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-31-end"/>
+           ? 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-64-start"/>
+          ​﻿Et nous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-64-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-62-start"/>
+          savon​s
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-62-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-5-start"/>
+          tous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-5-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-65-start"/>
+          à quel
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-65-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-66-start"/>
+          poi​nt la cigarette
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-66-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-63-start"/>
+          est
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-63-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-6-start"/>
+          mauvaise
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-6-end"/>
+          ... 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-81-start"/>
+          ​E​nsuite﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-81-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-82-start"/>
+          les ​personnes
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-82-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-64-start"/>
+          habituées
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-64-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-67-start"/>
+          à fume​r dehors​⁠​⁡‌
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-67-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-65-start"/>
+          ne sont pas habituées
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-65-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-68-start"/>
+          à avoir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-68-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-83-start"/>
+          leurs vêtements
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-83-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-84-start"/>
+          ‍​qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-84-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-66-start"/>
+          sentent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-66-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-85-start"/>
+          le tabac
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-85-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-19-start"/>
+          mais
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-19-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-32-start"/>
+          là il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-32-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-67-start"/>
+          faut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-67-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-68-start"/>
+          savoir​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-68-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-20-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-20-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-33-start"/>
+          même
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-33-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-21-start"/>
+          s'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-21-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-69-start"/>
+          il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-69-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-69-start"/>
+          y
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-69-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-70-start"/>
+          a
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-70-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-86-start"/>
+          un système
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-86-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-70-start"/>
+          d'aération⁠​⁡⁠﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-70-end"/>
+          ,
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-71-start"/>
+          ⁡‌ les v‍​êtements
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-71-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-22-start"/>
+          ainsi que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-22-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-87-start"/>
+          leurs cheveux
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-87-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-71-start"/>
+          sentiront
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-71-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-88-start"/>
+          le tabac​​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-88-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-23-start"/>
+          et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-23-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-89-start"/>
+          ce
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-89-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-72-start"/>
+          n'est pas dit
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-72-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-24-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-24-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-90-start"/>
+          les fumeurs​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-90-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-25-start"/>
+          voire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-25-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-91-start"/>
+          même les non fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-91-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-92-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-92-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-73-start"/>
+          peuvent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-73-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-34-start"/>
+          poten​tiellement
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-34-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-93-start"/>
+          les accompagner​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-93-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-72-start"/>
+          apprécient​ la situation
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-72-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-35-start"/>
+          ﻿De plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-35-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-94-start"/>
+          ​‌﻿cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-94-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-74-start"/>
+          veut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-74-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-36-start"/>
+          dire‍⁠​⁡‌
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-36-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-26-start"/>
+          que si
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-26-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-95-start"/>
+          les non fumeurs ‍‌﻿ne
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-95-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-75-start"/>
+          veulent pas aller
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-75-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-73-start"/>
+          dans ce fumoir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-73-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-96-start"/>
+          ce
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-96-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-97-start"/>
+          qui
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-97-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-76-start"/>
+          serait
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-76-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-7-start"/>
+          compr⁠é⁡h⁠​⁡ensible
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-7-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-98-start"/>
+          ‍‌﻿cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-98-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-77-start"/>
+          signifie
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-77-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-37-start"/>
+          donc
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-37-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-27-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-27-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-99-start"/>
+          ‍⁠​⁡‌des possibles
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-99-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-74-start"/>
+          amitié⁠﻿s⁡ fumeur‍⁠​⁡‌s-non-fumeur‍⁠​⁡‌s
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-74-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-78-start"/>
+          ‍⁠​⁡‌sont mis‍⁠​⁡‌es
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-78-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-75-start"/>
+          à mal‍‌﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-75-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-100-start"/>
+          On
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-100-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-79-start"/>
+          sait
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-79-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-28-start"/>
+          q‍⁠​⁡‌ue
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-28-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-101-start"/>
+          les liens
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-101-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-102-start"/>
+          se
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-102-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-80-start"/>
+          ‍⁠​⁡‌font
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-80-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-76-start"/>
+          ‍⁠​⁡‌et se
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-76-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-81-start"/>
+          défont
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-81-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-38-start"/>
+          vite
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-38-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-77-start"/>
+          à‍⁠​⁡‌ la facculté‍⁠​⁡‌﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-77-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-29-start"/>
+          et si
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-29-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-103-start"/>
+          les fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-103-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-82-start"/>
+          ne passent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-82-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-39-start"/>
+          plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-39-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-78-start"/>
+          de temps
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-78-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-79-start"/>
+          avec l‍​eurs amis non fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-79-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-104-start"/>
+          cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-104-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-83-start"/>
+          signifie
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-83-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-30-start"/>
+          ﻿que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-30-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-105-start"/>
+          les fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-105-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-84-start"/>
+          n'auront
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-84-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-40-start"/>
+          plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-40-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-31-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-31-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-106-start"/>
+          des amis fumeurs ﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-106-end"/>
+          ? 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-32-start"/>
+          ​​​Car
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-32-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-107-start"/>
+          il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-107-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-85-start"/>
+          faut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-85-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-86-start"/>
+          dire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-86-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-33-start"/>
+          qu'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-33-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-108-start"/>
+          il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-108-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-87-start"/>
+          est
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-87-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-41-start"/>
+          plus
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-41-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-8-start"/>
+          agréable
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-8-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-80-start"/>
+          pour un non-fumeur
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-80-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-81-start"/>
+          de venir
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-81-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-88-start"/>
+          ﻿accompagner
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-88-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-109-start"/>
+          son ami
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-109-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-82-start"/>
+          fumeur​ dehors
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-82-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-83-start"/>
+          à l'air libre​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-83-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-84-start"/>
+          où
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-84-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-110-start"/>
+          c'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-110-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-89-start"/>
+          est
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-89-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AP-9-start"/>
+          re​spirable
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AP-9-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-111-start"/>
+          ​Et heure​usement
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-111-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-85-start"/>
+          pour les as﻿th﻿matique​s​﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-85-end"/>
+          ...
+        </ns0:p>
+        <ns0:p>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-86-start"/>
+          ​‌﻿   ‍​En conclusion
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-86-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-112-start"/>
+          ​ce
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-112-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-90-start"/>
+          n'est pas
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-90-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-AdP-42-start"/>
+          forcément
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-AdP-42-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-113-start"/>
+          une mauvaise​ nouvelle
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-113-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-87-start"/>
+          à tous points
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-87-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-88-start"/>
+          de vue
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-88-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-34-start"/>
+          mais
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-34-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-114-start"/>
+          il
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-114-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-91-start"/>
+          faut
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-91-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-92-start"/>
+          prendre
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-92-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-89-start"/>
+          en compte
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-89-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-35-start"/>
+          que
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-35-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-115-start"/>
+          cela
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-115-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-93-start"/>
+          risque
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-93-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-90-start"/>
+          de ​revenir cher
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-90-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-91-start"/>
+          au​x fumeurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-91-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-36-start"/>
+          s'
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-36-end"/>
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-116-start"/>
+          ils
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-116-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-94-start"/>
+          au​gmentent
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-94-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-117-start"/>
+          leur consommation​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-117-end"/>
+          , 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-CONJ-37-start"/>
+          et
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-CONJ-37-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-92-start"/>
+          à la fac⁠​⁡﻿
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-92-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-118-start"/>
+          également‌
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-118-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-119-start"/>
+          ‍​⁠​⁡‌A vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-119-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-93-start"/>
+          de vous
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-93-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-VN-95-start"/>
+          faire
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-VN-95-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-120-start"/>
+          votre avis
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-120-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-94-start"/>
+          grâce à cet article‍​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-94-end"/>
+          . 
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-NP-121-start"/>
+          ​A bientôt chers ​lecteurs
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-NP-121-end"/>
+           
+          <ns0:anchor subtype="UnitStart" type="AnalecDelimiter" xml:id="u-PP-95-start"/>
+          pour un nouveau sujet.﻿   ​​
+          <ns0:anchor subtype="UnitEnd" type="AnalecDelimiter" xml:id="u-PP-95-end"/>
+        </ns0:p>
+      </ns0:body>
+      <ns0:back>
+        <ns0:spanGrp n="AP" type="AnalecUnit">
+          <ns0:span ana="#u-AP-1-fs" from="#u-AP-1-start" to="#u-AP-1-end" xml:id="u-AP-1"/>
+          <ns0:span ana="#u-AP-2-fs" from="#u-AP-2-start" to="#u-AP-2-end" xml:id="u-AP-2"/>
+          <ns0:span ana="#u-AP-3-fs" from="#u-AP-3-start" to="#u-AP-3-end" xml:id="u-AP-3"/>
+          <ns0:span ana="#u-AP-4-fs" from="#u-AP-4-start" to="#u-AP-4-end" xml:id="u-AP-4"/>
+          <ns0:span ana="#u-AP-5-fs" from="#u-AP-5-start" to="#u-AP-5-end" xml:id="u-AP-5"/>
+          <ns0:span ana="#u-AP-6-fs" from="#u-AP-6-start" to="#u-AP-6-end" xml:id="u-AP-6"/>
+          <ns0:span ana="#u-AP-7-fs" from="#u-AP-7-start" to="#u-AP-7-end" xml:id="u-AP-7"/>
+          <ns0:span ana="#u-AP-8-fs" from="#u-AP-8-start" to="#u-AP-8-end" xml:id="u-AP-8"/>
+          <ns0:span ana="#u-AP-9-fs" from="#u-AP-9-start" to="#u-AP-9-end" xml:id="u-AP-9"/>
+        </ns0:spanGrp>
+        <ns0:spanGrp n="AdP" type="AnalecUnit">
+          <ns0:span ana="#u-AdP-1-fs" from="#u-AdP-1-start" to="#u-AdP-1-end" xml:id="u-AdP-1"/>
+          <ns0:span ana="#u-AdP-2-fs" from="#u-AdP-2-start" to="#u-AdP-2-end" xml:id="u-AdP-2"/>
+          <ns0:span ana="#u-AdP-3-fs" from="#u-AdP-3-start" to="#u-AdP-3-end" xml:id="u-AdP-3"/>
+          <ns0:span ana="#u-AdP-4-fs" from="#u-AdP-4-start" to="#u-AdP-4-end" xml:id="u-AdP-4"/>
+          <ns0:span ana="#u-AdP-5-fs" from="#u-AdP-5-start" to="#u-AdP-5-end" xml:id="u-AdP-5"/>
+          <ns0:span ana="#u-AdP-6-fs" from="#u-AdP-6-start" to="#u-AdP-6-end" xml:id="u-AdP-6"/>
+          <ns0:span ana="#u-AdP-7-fs" from="#u-AdP-7-start" to="#u-AdP-7-end" xml:id="u-AdP-7"/>
+          <ns0:span ana="#u-AdP-8-fs" from="#u-AdP-8-start" to="#u-AdP-8-end" xml:id="u-AdP-8"/>
+          <ns0:span ana="#u-AdP-9-fs" from="#u-AdP-9-start" to="#u-AdP-9-end" xml:id="u-AdP-9"/>
+          <ns0:span ana="#u-AdP-10-fs" from="#u-AdP-10-start" to="#u-AdP-10-end" xml:id="u-AdP-10"/>
+          <ns0:span ana="#u-AdP-11-fs" from="#u-AdP-11-start" to="#u-AdP-11-end" xml:id="u-AdP-11"/>
+          <ns0:span ana="#u-AdP-12-fs" from="#u-AdP-12-start" to="#u-AdP-12-end" xml:id="u-AdP-12"/>
+          <ns0:span ana="#u-AdP-13-fs" from="#u-AdP-13-start" to="#u-AdP-13-end" xml:id="u-AdP-13"/>
+          <ns0:span ana="#u-AdP-14-fs" from="#u-AdP-14-start" to="#u-AdP-14-end" xml:id="u-AdP-14"/>
+          <ns0:span ana="#u-AdP-15-fs" from="#u-AdP-15-start" to="#u-AdP-15-end" xml:id="u-AdP-15"/>
+          <ns0:span ana="#u-AdP-16-fs" from="#u-AdP-16-start" to="#u-AdP-16-end" xml:id="u-AdP-16"/>
+          <ns0:span ana="#u-AdP-17-fs" from="#u-AdP-17-start" to="#u-AdP-17-end" xml:id="u-AdP-17"/>
+          <ns0:span ana="#u-AdP-18-fs" from="#u-AdP-18-start" to="#u-AdP-18-end" xml:id="u-AdP-18"/>
+          <ns0:span ana="#u-AdP-19-fs" from="#u-AdP-19-start" to="#u-AdP-19-end" xml:id="u-AdP-19"/>
+          <ns0:span ana="#u-AdP-20-fs" from="#u-AdP-20-start" to="#u-AdP-20-end" xml:id="u-AdP-20"/>
+          <ns0:span ana="#u-AdP-21-fs" from="#u-AdP-21-start" to="#u-AdP-21-end" xml:id="u-AdP-21"/>
+          <ns0:span ana="#u-AdP-22-fs" from="#u-AdP-22-start" to="#u-AdP-22-end" xml:id="u-AdP-22"/>
+          <ns0:span ana="#u-AdP-23-fs" from="#u-AdP-23-start" to="#u-AdP-23-end" xml:id="u-AdP-23"/>
+          <ns0:span ana="#u-AdP-24-fs" from="#u-AdP-24-start" to="#u-AdP-24-end" xml:id="u-AdP-24"/>
+          <ns0:span ana="#u-AdP-25-fs" from="#u-AdP-25-start" to="#u-AdP-25-end" xml:id="u-AdP-25"/>
+          <ns0:span ana="#u-AdP-26-fs" from="#u-AdP-26-start" to="#u-AdP-26-end" xml:id="u-AdP-26"/>
+          <ns0:span ana="#u-AdP-27-fs" from="#u-AdP-27-start" to="#u-AdP-27-end" xml:id="u-AdP-27"/>
+          <ns0:span ana="#u-AdP-28-fs" from="#u-AdP-28-start" to="#u-AdP-28-end" xml:id="u-AdP-28"/>
+          <ns0:span ana="#u-AdP-29-fs" from="#u-AdP-29-start" to="#u-AdP-29-end" xml:id="u-AdP-29"/>
+          <ns0:span ana="#u-AdP-30-fs" from="#u-AdP-30-start" to="#u-AdP-30-end" xml:id="u-AdP-30"/>
+          <ns0:span ana="#u-AdP-31-fs" from="#u-AdP-31-start" to="#u-AdP-31-end" xml:id="u-AdP-31"/>
+          <ns0:span ana="#u-AdP-32-fs" from="#u-AdP-32-start" to="#u-AdP-32-end" xml:id="u-AdP-32"/>
+          <ns0:span ana="#u-AdP-33-fs" from="#u-AdP-33-start" to="#u-AdP-33-end" xml:id="u-AdP-33"/>
+          <ns0:span ana="#u-AdP-34-fs" from="#u-AdP-34-start" to="#u-AdP-34-end" xml:id="u-AdP-34"/>
+          <ns0:span ana="#u-AdP-35-fs" from="#u-AdP-35-start" to="#u-AdP-35-end" xml:id="u-AdP-35"/>
+          <ns0:span ana="#u-AdP-36-fs" from="#u-AdP-36-start" to="#u-AdP-36-end" xml:id="u-AdP-36"/>
+          <ns0:span ana="#u-AdP-37-fs" from="#u-AdP-37-start" to="#u-AdP-37-end" xml:id="u-AdP-37"/>
+          <ns0:span ana="#u-AdP-38-fs" from="#u-AdP-38-start" to="#u-AdP-38-end" xml:id="u-AdP-38"/>
+          <ns0:span ana="#u-AdP-39-fs" from="#u-AdP-39-start" to="#u-AdP-39-end" xml:id="u-AdP-39"/>
+          <ns0:span ana="#u-AdP-40-fs" from="#u-AdP-40-start" to="#u-AdP-40-end" xml:id="u-AdP-40"/>
+          <ns0:span ana="#u-AdP-41-fs" from="#u-AdP-41-start" to="#u-AdP-41-end" xml:id="u-AdP-41"/>
+          <ns0:span ana="#u-AdP-42-fs" from="#u-AdP-42-start" to="#u-AdP-42-end" xml:id="u-AdP-42"/>
+        </ns0:spanGrp>
+        <ns0:spanGrp n="CONJ" type="AnalecUnit">
+          <ns0:span ana="#u-CONJ-1-fs" from="#u-CONJ-1-start" to="#u-CONJ-1-end" xml:id="u-CONJ-1"/>
+          <ns0:span ana="#u-CONJ-2-fs" from="#u-CONJ-2-start" to="#u-CONJ-2-end" xml:id="u-CONJ-2"/>
+          <ns0:span ana="#u-CONJ-3-fs" from="#u-CONJ-3-start" to="#u-CONJ-3-end" xml:id="u-CONJ-3"/>
+          <ns0:span ana="#u-CONJ-4-fs" from="#u-CONJ-4-start" to="#u-CONJ-4-end" xml:id="u-CONJ-4"/>
+          <ns0:span ana="#u-CONJ-5-fs" from="#u-CONJ-5-start" to="#u-CONJ-5-end" xml:id="u-CONJ-5"/>
+          <ns0:span ana="#u-CONJ-6-fs" from="#u-CONJ-6-start" to="#u-CONJ-6-end" xml:id="u-CONJ-6"/>
+          <ns0:span ana="#u-CONJ-7-fs" from="#u-CONJ-7-start" to="#u-CONJ-7-end" xml:id="u-CONJ-7"/>
+          <ns0:span ana="#u-CONJ-8-fs" from="#u-CONJ-8-start" to="#u-CONJ-8-end" xml:id="u-CONJ-8"/>
+          <ns0:span ana="#u-CONJ-9-fs" from="#u-CONJ-9-start" to="#u-CONJ-9-end" xml:id="u-CONJ-9"/>
+          <ns0:span ana="#u-CONJ-10-fs" from="#u-CONJ-10-start" to="#u-CONJ-10-end" xml:id="u-CONJ-10"/>
+          <ns0:span ana="#u-CONJ-11-fs" from="#u-CONJ-11-start" to="#u-CONJ-11-end" xml:id="u-CONJ-11"/>
+          <ns0:span ana="#u-CONJ-12-fs" from="#u-CONJ-12-start" to="#u-CONJ-12-end" xml:id="u-CONJ-12"/>
+          <ns0:span ana="#u-CONJ-13-fs" from="#u-CONJ-13-start" to="#u-CONJ-13-end" xml:id="u-CONJ-13"/>
+          <ns0:span ana="#u-CONJ-14-fs" from="#u-CONJ-14-start" to="#u-CONJ-14-end" xml:id="u-CONJ-14"/>
+          <ns0:span ana="#u-CONJ-15-fs" from="#u-CONJ-15-start" to="#u-CONJ-15-end" xml:id="u-CONJ-15"/>
+          <ns0:span ana="#u-CONJ-16-fs" from="#u-CONJ-16-start" to="#u-CONJ-16-end" xml:id="u-CONJ-16"/>
+          <ns0:span ana="#u-CONJ-17-fs" from="#u-CONJ-17-start" to="#u-CONJ-17-end" xml:id="u-CONJ-17"/>
+          <ns0:span ana="#u-CONJ-18-fs" from="#u-CONJ-18-start" to="#u-CONJ-18-end" xml:id="u-CONJ-18"/>
+          <ns0:span ana="#u-CONJ-19-fs" from="#u-CONJ-19-start" to="#u-CONJ-19-end" xml:id="u-CONJ-19"/>
+          <ns0:span ana="#u-CONJ-20-fs" from="#u-CONJ-20-start" to="#u-CONJ-20-end" xml:id="u-CONJ-20"/>
+          <ns0:span ana="#u-CONJ-21-fs" from="#u-CONJ-21-start" to="#u-CONJ-21-end" xml:id="u-CONJ-21"/>
+          <ns0:span ana="#u-CONJ-22-fs" from="#u-CONJ-22-start" to="#u-CONJ-22-end" xml:id="u-CONJ-22"/>
+          <ns0:span ana="#u-CONJ-23-fs" from="#u-CONJ-23-start" to="#u-CONJ-23-end" xml:id="u-CONJ-23"/>
+          <ns0:span ana="#u-CONJ-24-fs" from="#u-CONJ-24-start" to="#u-CONJ-24-end" xml:id="u-CONJ-24"/>
+          <ns0:span ana="#u-CONJ-25-fs" from="#u-CONJ-25-start" to="#u-CONJ-25-end" xml:id="u-CONJ-25"/>
+          <ns0:span ana="#u-CONJ-26-fs" from="#u-CONJ-26-start" to="#u-CONJ-26-end" xml:id="u-CONJ-26"/>
+          <ns0:span ana="#u-CONJ-27-fs" from="#u-CONJ-27-start" to="#u-CONJ-27-end" xml:id="u-CONJ-27"/>
+          <ns0:span ana="#u-CONJ-28-fs" from="#u-CONJ-28-start" to="#u-CONJ-28-end" xml:id="u-CONJ-28"/>
+          <ns0:span ana="#u-CONJ-29-fs" from="#u-CONJ-29-start" to="#u-CONJ-29-end" xml:id="u-CONJ-29"/>
+          <ns0:span ana="#u-CONJ-30-fs" from="#u-CONJ-30-start" to="#u-CONJ-30-end" xml:id="u-CONJ-30"/>
+          <ns0:span ana="#u-CONJ-31-fs" from="#u-CONJ-31-start" to="#u-CONJ-31-end" xml:id="u-CONJ-31"/>
+          <ns0:span ana="#u-CONJ-32-fs" from="#u-CONJ-32-start" to="#u-CONJ-32-end" xml:id="u-CONJ-32"/>
+          <ns0:span ana="#u-CONJ-33-fs" from="#u-CONJ-33-start" to="#u-CONJ-33-end" xml:id="u-CONJ-33"/>
+          <ns0:span ana="#u-CONJ-34-fs" from="#u-CONJ-34-start" to="#u-CONJ-34-end" xml:id="u-CONJ-34"/>
+          <ns0:span ana="#u-CONJ-35-fs" from="#u-CONJ-35-start" to="#u-CONJ-35-end" xml:id="u-CONJ-35"/>
+          <ns0:span ana="#u-CONJ-36-fs" from="#u-CONJ-36-start" to="#u-CONJ-36-end" xml:id="u-CONJ-36"/>
+          <ns0:span ana="#u-CONJ-37-fs" from="#u-CONJ-37-start" to="#u-CONJ-37-end" xml:id="u-CONJ-37"/>
+        </ns0:spanGrp>
+        <ns0:spanGrp n="NP" type="AnalecUnit">
+          <ns0:span ana="#u-NP-1-fs" from="#u-NP-1-start" to="#u-NP-1-end" xml:id="u-NP-1"/>
+          <ns0:span ana="#u-NP-2-fs" from="#u-NP-2-start" to="#u-NP-2-end" xml:id="u-NP-2"/>
+          <ns0:span ana="#u-NP-3-fs" from="#u-NP-3-start" to="#u-NP-3-end" xml:id="u-NP-3"/>
+          <ns0:span ana="#u-NP-4-fs" from="#u-NP-4-start" to="#u-NP-4-end" xml:id="u-NP-4"/>
+          <ns0:span ana="#u-NP-5-fs" from="#u-NP-5-start" to="#u-NP-5-end" xml:id="u-NP-5"/>
+          <ns0:span ana="#u-NP-6-fs" from="#u-NP-6-start" to="#u-NP-6-end" xml:id="u-NP-6"/>
+          <ns0:span ana="#u-NP-7-fs" from="#u-NP-7-start" to="#u-NP-7-end" xml:id="u-NP-7"/>
+          <ns0:span ana="#u-NP-8-fs" from="#u-NP-8-start" to="#u-NP-8-end" xml:id="u-NP-8"/>
+          <ns0:span ana="#u-NP-9-fs" from="#u-NP-9-start" to="#u-NP-9-end" xml:id="u-NP-9"/>
+          <ns0:span ana="#u-NP-10-fs" from="#u-NP-10-start" to="#u-NP-10-end" xml:id="u-NP-10"/>
+          <ns0:span ana="#u-NP-11-fs" from="#u-NP-11-start" to="#u-NP-11-end" xml:id="u-NP-11"/>
+          <ns0:span ana="#u-NP-12-fs" from="#u-NP-12-start" to="#u-NP-12-end" xml:id="u-NP-12"/>
+          <ns0:span ana="#u-NP-13-fs" from="#u-NP-13-start" to="#u-NP-13-end" xml:id="u-NP-13"/>
+          <ns0:span ana="#u-NP-14-fs" from="#u-NP-14-start" to="#u-NP-14-end" xml:id="u-NP-14"/>
+          <ns0:span ana="#u-NP-15-fs" from="#u-NP-15-start" to="#u-NP-15-end" xml:id="u-NP-15"/>
+          <ns0:span ana="#u-NP-16-fs" from="#u-NP-16-start" to="#u-NP-16-end" xml:id="u-NP-16"/>
+          <ns0:span ana="#u-NP-17-fs" from="#u-NP-17-start" to="#u-NP-17-end" xml:id="u-NP-17"/>
+          <ns0:span ana="#u-NP-18-fs" from="#u-NP-18-start" to="#u-NP-18-end" xml:id="u-NP-18"/>
+          <ns0:span ana="#u-NP-19-fs" from="#u-NP-19-start" to="#u-NP-19-end" xml:id="u-NP-19"/>
+          <ns0:span ana="#u-NP-20-fs" from="#u-NP-20-start" to="#u-NP-20-end" xml:id="u-NP-20"/>
+          <ns0:span ana="#u-NP-21-fs" from="#u-NP-21-start" to="#u-NP-21-end" xml:id="u-NP-21"/>
+          <ns0:span ana="#u-NP-22-fs" from="#u-NP-22-start" to="#u-NP-22-end" xml:id="u-NP-22"/>
+          <ns0:span ana="#u-NP-23-fs" from="#u-NP-23-start" to="#u-NP-23-end" xml:id="u-NP-23"/>
+          <ns0:span ana="#u-NP-24-fs" from="#u-NP-24-start" to="#u-NP-24-end" xml:id="u-NP-24"/>
+          <ns0:span ana="#u-NP-25-fs" from="#u-NP-25-start" to="#u-NP-25-end" xml:id="u-NP-25"/>
+          <ns0:span ana="#u-NP-26-fs" from="#u-NP-26-start" to="#u-NP-26-end" xml:id="u-NP-26"/>
+          <ns0:span ana="#u-NP-27-fs" from="#u-NP-27-start" to="#u-NP-27-end" xml:id="u-NP-27"/>
+          <ns0:span ana="#u-NP-28-fs" from="#u-NP-28-start" to="#u-NP-28-end" xml:id="u-NP-28"/>
+          <ns0:span ana="#u-NP-29-fs" from="#u-NP-29-start" to="#u-NP-29-end" xml:id="u-NP-29"/>
+          <ns0:span ana="#u-NP-30-fs" from="#u-NP-30-start" to="#u-NP-30-end" xml:id="u-NP-30"/>
+          <ns0:span ana="#u-NP-31-fs" from="#u-NP-31-start" to="#u-NP-31-end" xml:id="u-NP-31"/>
+          <ns0:span ana="#u-NP-32-fs" from="#u-NP-32-start" to="#u-NP-32-end" xml:id="u-NP-32"/>
+          <ns0:span ana="#u-NP-33-fs" from="#u-NP-33-start" to="#u-NP-33-end" xml:id="u-NP-33"/>
+          <ns0:span ana="#u-NP-34-fs" from="#u-NP-34-start" to="#u-NP-34-end" xml:id="u-NP-34"/>
+          <ns0:span ana="#u-NP-35-fs" from="#u-NP-35-start" to="#u-NP-35-end" xml:id="u-NP-35"/>
+          <ns0:span ana="#u-NP-36-fs" from="#u-NP-36-start" to="#u-NP-36-end" xml:id="u-NP-36"/>
+          <ns0:span ana="#u-NP-37-fs" from="#u-NP-37-start" to="#u-NP-37-end" xml:id="u-NP-37"/>
+          <ns0:span ana="#u-NP-38-fs" from="#u-NP-38-start" to="#u-NP-38-end" xml:id="u-NP-38"/>
+          <ns0:span ana="#u-NP-39-fs" from="#u-NP-39-start" to="#u-NP-39-end" xml:id="u-NP-39"/>
+          <ns0:span ana="#u-NP-40-fs" from="#u-NP-40-start" to="#u-NP-40-end" xml:id="u-NP-40"/>
+          <ns0:span ana="#u-NP-41-fs" from="#u-NP-41-start" to="#u-NP-41-end" xml:id="u-NP-41"/>
+          <ns0:span ana="#u-NP-42-fs" from="#u-NP-42-start" to="#u-NP-42-end" xml:id="u-NP-42"/>
+          <ns0:span ana="#u-NP-43-fs" from="#u-NP-43-start" to="#u-NP-43-end" xml:id="u-NP-43"/>
+          <ns0:span ana="#u-NP-44-fs" from="#u-NP-44-start" to="#u-NP-44-end" xml:id="u-NP-44"/>
+          <ns0:span ana="#u-NP-45-fs" from="#u-NP-45-start" to="#u-NP-45-end" xml:id="u-NP-45"/>
+          <ns0:span ana="#u-NP-46-fs" from="#u-NP-46-start" to="#u-NP-46-end" xml:id="u-NP-46"/>
+          <ns0:span ana="#u-NP-47-fs" from="#u-NP-47-start" to="#u-NP-47-end" xml:id="u-NP-47"/>
+          <ns0:span ana="#u-NP-48-fs" from="#u-NP-48-start" to="#u-NP-48-end" xml:id="u-NP-48"/>
+          <ns0:span ana="#u-NP-49-fs" from="#u-NP-49-start" to="#u-NP-49-end" xml:id="u-NP-49"/>
+          <ns0:span ana="#u-NP-50-fs" from="#u-NP-50-start" to="#u-NP-50-end" xml:id="u-NP-50"/>
+          <ns0:span ana="#u-NP-51-fs" from="#u-NP-51-start" to="#u-NP-51-end" xml:id="u-NP-51"/>
+          <ns0:span ana="#u-NP-52-fs" from="#u-NP-52-start" to="#u-NP-52-end" xml:id="u-NP-52"/>
+          <ns0:span ana="#u-NP-53-fs" from="#u-NP-53-start" to="#u-NP-53-end" xml:id="u-NP-53"/>
+          <ns0:span ana="#u-NP-54-fs" from="#u-NP-54-start" to="#u-NP-54-end" xml:id="u-NP-54"/>
+          <ns0:span ana="#u-NP-55-fs" from="#u-NP-55-start" to="#u-NP-55-end" xml:id="u-NP-55"/>
+          <ns0:span ana="#u-NP-56-fs" from="#u-NP-56-start" to="#u-NP-56-end" xml:id="u-NP-56"/>
+          <ns0:span ana="#u-NP-57-fs" from="#u-NP-57-start" to="#u-NP-57-end" xml:id="u-NP-57"/>
+          <ns0:span ana="#u-NP-58-fs" from="#u-NP-58-start" to="#u-NP-58-end" xml:id="u-NP-58"/>
+          <ns0:span ana="#u-NP-59-fs" from="#u-NP-59-start" to="#u-NP-59-end" xml:id="u-NP-59"/>
+          <ns0:span ana="#u-NP-60-fs" from="#u-NP-60-start" to="#u-NP-60-end" xml:id="u-NP-60"/>
+          <ns0:span ana="#u-NP-61-fs" from="#u-NP-61-start" to="#u-NP-61-end" xml:id="u-NP-61"/>
+          <ns0:span ana="#u-NP-62-fs" from="#u-NP-62-start" to="#u-NP-62-end" xml:id="u-NP-62"/>
+          <ns0:span ana="#u-NP-63-fs" from="#u-NP-63-start" to="#u-NP-63-end" xml:id="u-NP-63"/>
+          <ns0:span ana="#u-NP-64-fs" from="#u-NP-64-start" to="#u-NP-64-end" xml:id="u-NP-64"/>
+          <ns0:span ana="#u-NP-65-fs" from="#u-NP-65-start" to="#u-NP-65-end" xml:id="u-NP-65"/>
+          <ns0:span ana="#u-NP-66-fs" from="#u-NP-66-start" to="#u-NP-66-end" xml:id="u-NP-66"/>
+          <ns0:span ana="#u-NP-67-fs" from="#u-NP-67-start" to="#u-NP-67-end" xml:id="u-NP-67"/>
+          <ns0:span ana="#u-NP-68-fs" from="#u-NP-68-start" to="#u-NP-68-end" xml:id="u-NP-68"/>
+          <ns0:span ana="#u-NP-69-fs" from="#u-NP-69-start" to="#u-NP-69-end" xml:id="u-NP-69"/>
+          <ns0:span ana="#u-NP-70-fs" from="#u-NP-70-start" to="#u-NP-70-end" xml:id="u-NP-70"/>
+          <ns0:span ana="#u-NP-71-fs" from="#u-NP-71-start" to="#u-NP-71-end" xml:id="u-NP-71"/>
+          <ns0:span ana="#u-NP-72-fs" from="#u-NP-72-start" to="#u-NP-72-end" xml:id="u-NP-72"/>
+          <ns0:span ana="#u-NP-73-fs" from="#u-NP-73-start" to="#u-NP-73-end" xml:id="u-NP-73"/>
+          <ns0:span ana="#u-NP-74-fs" from="#u-NP-74-start" to="#u-NP-74-end" xml:id="u-NP-74"/>
+          <ns0:span ana="#u-NP-75-fs" from="#u-NP-75-start" to="#u-NP-75-end" xml:id="u-NP-75"/>
+          <ns0:span ana="#u-NP-76-fs" from="#u-NP-76-start" to="#u-NP-76-end" xml:id="u-NP-76"/>
+          <ns0:span ana="#u-NP-77-fs" from="#u-NP-77-start" to="#u-NP-77-end" xml:id="u-NP-77"/>
+          <ns0:span ana="#u-NP-78-fs" from="#u-NP-78-start" to="#u-NP-78-end" xml:id="u-NP-78"/>
+          <ns0:span ana="#u-NP-79-fs" from="#u-NP-79-start" to="#u-NP-79-end" xml:id="u-NP-79"/>
+          <ns0:span ana="#u-NP-80-fs" from="#u-NP-80-start" to="#u-NP-80-end" xml:id="u-NP-80"/>
+          <ns0:span ana="#u-NP-81-fs" from="#u-NP-81-start" to="#u-NP-81-end" xml:id="u-NP-81"/>
+          <ns0:span ana="#u-NP-82-fs" from="#u-NP-82-start" to="#u-NP-82-end" xml:id="u-NP-82"/>
+          <ns0:span ana="#u-NP-83-fs" from="#u-NP-83-start" to="#u-NP-83-end" xml:id="u-NP-83"/>
+          <ns0:span ana="#u-NP-84-fs" from="#u-NP-84-start" to="#u-NP-84-end" xml:id="u-NP-84"/>
+          <ns0:span ana="#u-NP-85-fs" from="#u-NP-85-start" to="#u-NP-85-end" xml:id="u-NP-85"/>
+          <ns0:span ana="#u-NP-86-fs" from="#u-NP-86-start" to="#u-NP-86-end" xml:id="u-NP-86"/>
+          <ns0:span ana="#u-NP-87-fs" from="#u-NP-87-start" to="#u-NP-87-end" xml:id="u-NP-87"/>
+          <ns0:span ana="#u-NP-88-fs" from="#u-NP-88-start" to="#u-NP-88-end" xml:id="u-NP-88"/>
+          <ns0:span ana="#u-NP-89-fs" from="#u-NP-89-start" to="#u-NP-89-end" xml:id="u-NP-89"/>
+          <ns0:span ana="#u-NP-90-fs" from="#u-NP-90-start" to="#u-NP-90-end" xml:id="u-NP-90"/>
+          <ns0:span ana="#u-NP-91-fs" from="#u-NP-91-start" to="#u-NP-91-end" xml:id="u-NP-91"/>
+          <ns0:span ana="#u-NP-92-fs" from="#u-NP-92-start" to="#u-NP-92-end" xml:id="u-NP-92"/>
+          <ns0:span ana="#u-NP-93-fs" from="#u-NP-93-start" to="#u-NP-93-end" xml:id="u-NP-93"/>
+          <ns0:span ana="#u-NP-94-fs" from="#u-NP-94-start" to="#u-NP-94-end" xml:id="u-NP-94"/>
+          <ns0:span ana="#u-NP-95-fs" from="#u-NP-95-start" to="#u-NP-95-end" xml:id="u-NP-95"/>
+          <ns0:span ana="#u-NP-96-fs" from="#u-NP-96-start" to="#u-NP-96-end" xml:id="u-NP-96"/>
+          <ns0:span ana="#u-NP-97-fs" from="#u-NP-97-start" to="#u-NP-97-end" xml:id="u-NP-97"/>
+          <ns0:span ana="#u-NP-98-fs" from="#u-NP-98-start" to="#u-NP-98-end" xml:id="u-NP-98"/>
+          <ns0:span ana="#u-NP-99-fs" from="#u-NP-99-start" to="#u-NP-99-end" xml:id="u-NP-99"/>
+          <ns0:span ana="#u-NP-100-fs" from="#u-NP-100-start" to="#u-NP-100-end" xml:id="u-NP-100"/>
+          <ns0:span ana="#u-NP-101-fs" from="#u-NP-101-start" to="#u-NP-101-end" xml:id="u-NP-101"/>
+          <ns0:span ana="#u-NP-102-fs" from="#u-NP-102-start" to="#u-NP-102-end" xml:id="u-NP-102"/>
+          <ns0:span ana="#u-NP-103-fs" from="#u-NP-103-start" to="#u-NP-103-end" xml:id="u-NP-103"/>
+          <ns0:span ana="#u-NP-104-fs" from="#u-NP-104-start" to="#u-NP-104-end" xml:id="u-NP-104"/>
+          <ns0:span ana="#u-NP-105-fs" from="#u-NP-105-start" to="#u-NP-105-end" xml:id="u-NP-105"/>
+          <ns0:span ana="#u-NP-106-fs" from="#u-NP-106-start" to="#u-NP-106-end" xml:id="u-NP-106"/>
+          <ns0:span ana="#u-NP-107-fs" from="#u-NP-107-start" to="#u-NP-107-end" xml:id="u-NP-107"/>
+          <ns0:span ana="#u-NP-108-fs" from="#u-NP-108-start" to="#u-NP-108-end" xml:id="u-NP-108"/>
+          <ns0:span ana="#u-NP-109-fs" from="#u-NP-109-start" to="#u-NP-109-end" xml:id="u-NP-109"/>
+          <ns0:span ana="#u-NP-110-fs" from="#u-NP-110-start" to="#u-NP-110-end" xml:id="u-NP-110"/>
+          <ns0:span ana="#u-NP-111-fs" from="#u-NP-111-start" to="#u-NP-111-end" xml:id="u-NP-111"/>
+          <ns0:span ana="#u-NP-112-fs" from="#u-NP-112-start" to="#u-NP-112-end" xml:id="u-NP-112"/>
+          <ns0:span ana="#u-NP-113-fs" from="#u-NP-113-start" to="#u-NP-113-end" xml:id="u-NP-113"/>
+          <ns0:span ana="#u-NP-114-fs" from="#u-NP-114-start" to="#u-NP-114-end" xml:id="u-NP-114"/>
+          <ns0:span ana="#u-NP-115-fs" from="#u-NP-115-start" to="#u-NP-115-end" xml:id="u-NP-115"/>
+          <ns0:span ana="#u-NP-116-fs" from="#u-NP-116-start" to="#u-NP-116-end" xml:id="u-NP-116"/>
+          <ns0:span ana="#u-NP-117-fs" from="#u-NP-117-start" to="#u-NP-117-end" xml:id="u-NP-117"/>
+          <ns0:span ana="#u-NP-118-fs" from="#u-NP-118-start" to="#u-NP-118-end" xml:id="u-NP-118"/>
+          <ns0:span ana="#u-NP-119-fs" from="#u-NP-119-start" to="#u-NP-119-end" xml:id="u-NP-119"/>
+          <ns0:span ana="#u-NP-120-fs" from="#u-NP-120-start" to="#u-NP-120-end" xml:id="u-NP-120"/>
+          <ns0:span ana="#u-NP-121-fs" from="#u-NP-121-start" to="#u-NP-121-end" xml:id="u-NP-121"/>
+        </ns0:spanGrp>
+        <ns0:spanGrp n="PP" type="AnalecUnit">
+          <ns0:span ana="#u-PP-1-fs" from="#u-PP-1-start" to="#u-PP-1-end" xml:id="u-PP-1"/>
+          <ns0:span ana="#u-PP-2-fs" from="#u-PP-2-start" to="#u-PP-2-end" xml:id="u-PP-2"/>
+          <ns0:span ana="#u-PP-3-fs" from="#u-PP-3-start" to="#u-PP-3-end" xml:id="u-PP-3"/>
+          <ns0:span ana="#u-PP-4-fs" from="#u-PP-4-start" to="#u-PP-4-end" xml:id="u-PP-4"/>
+          <ns0:span ana="#u-PP-5-fs" from="#u-PP-5-start" to="#u-PP-5-end" xml:id="u-PP-5"/>
+          <ns0:span ana="#u-PP-6-fs" from="#u-PP-6-start" to="#u-PP-6-end" xml:id="u-PP-6"/>
+          <ns0:span ana="#u-PP-7-fs" from="#u-PP-7-start" to="#u-PP-7-end" xml:id="u-PP-7"/>
+          <ns0:span ana="#u-PP-8-fs" from="#u-PP-8-start" to="#u-PP-8-end" xml:id="u-PP-8"/>
+          <ns0:span ana="#u-PP-9-fs" from="#u-PP-9-start" to="#u-PP-9-end" xml:id="u-PP-9"/>
+          <ns0:span ana="#u-PP-10-fs" from="#u-PP-10-start" to="#u-PP-10-end" xml:id="u-PP-10"/>
+          <ns0:span ana="#u-PP-11-fs" from="#u-PP-11-start" to="#u-PP-11-end" xml:id="u-PP-11"/>
+          <ns0:span ana="#u-PP-12-fs" from="#u-PP-12-start" to="#u-PP-12-end" xml:id="u-PP-12"/>
+          <ns0:span ana="#u-PP-13-fs" from="#u-PP-13-start" to="#u-PP-13-end" xml:id="u-PP-13"/>
+          <ns0:span ana="#u-PP-14-fs" from="#u-PP-14-start" to="#u-PP-14-end" xml:id="u-PP-14"/>
+          <ns0:span ana="#u-PP-15-fs" from="#u-PP-15-start" to="#u-PP-15-end" xml:id="u-PP-15"/>
+          <ns0:span ana="#u-PP-16-fs" from="#u-PP-16-start" to="#u-PP-16-end" xml:id="u-PP-16"/>
+          <ns0:span ana="#u-PP-17-fs" from="#u-PP-17-start" to="#u-PP-17-end" xml:id="u-PP-17"/>
+          <ns0:span ana="#u-PP-18-fs" from="#u-PP-18-start" to="#u-PP-18-end" xml:id="u-PP-18"/>
+          <ns0:span ana="#u-PP-19-fs" from="#u-PP-19-start" to="#u-PP-19-end" xml:id="u-PP-19"/>
+          <ns0:span ana="#u-PP-20-fs" from="#u-PP-20-start" to="#u-PP-20-end" xml:id="u-PP-20"/>
+          <ns0:span ana="#u-PP-21-fs" from="#u-PP-21-start" to="#u-PP-21-end" xml:id="u-PP-21"/>
+          <ns0:span ana="#u-PP-22-fs" from="#u-PP-22-start" to="#u-PP-22-end" xml:id="u-PP-22"/>
+          <ns0:span ana="#u-PP-23-fs" from="#u-PP-23-start" to="#u-PP-23-end" xml:id="u-PP-23"/>
+          <ns0:span ana="#u-PP-24-fs" from="#u-PP-24-start" to="#u-PP-24-end" xml:id="u-PP-24"/>
+          <ns0:span ana="#u-PP-25-fs" from="#u-PP-25-start" to="#u-PP-25-end" xml:id="u-PP-25"/>
+          <ns0:span ana="#u-PP-26-fs" from="#u-PP-26-start" to="#u-PP-26-end" xml:id="u-PP-26"/>
+          <ns0:span ana="#u-PP-27-fs" from="#u-PP-27-start" to="#u-PP-27-end" xml:id="u-PP-27"/>
+          <ns0:span ana="#u-PP-28-fs" from="#u-PP-28-start" to="#u-PP-28-end" xml:id="u-PP-28"/>
+          <ns0:span ana="#u-PP-29-fs" from="#u-PP-29-start" to="#u-PP-29-end" xml:id="u-PP-29"/>
+          <ns0:span ana="#u-PP-30-fs" from="#u-PP-30-start" to="#u-PP-30-end" xml:id="u-PP-30"/>
+          <ns0:span ana="#u-PP-31-fs" from="#u-PP-31-start" to="#u-PP-31-end" xml:id="u-PP-31"/>
+          <ns0:span ana="#u-PP-32-fs" from="#u-PP-32-start" to="#u-PP-32-end" xml:id="u-PP-32"/>
+          <ns0:span ana="#u-PP-33-fs" from="#u-PP-33-start" to="#u-PP-33-end" xml:id="u-PP-33"/>
+          <ns0:span ana="#u-PP-34-fs" from="#u-PP-34-start" to="#u-PP-34-end" xml:id="u-PP-34"/>
+          <ns0:span ana="#u-PP-35-fs" from="#u-PP-35-start" to="#u-PP-35-end" xml:id="u-PP-35"/>
+          <ns0:span ana="#u-PP-36-fs" from="#u-PP-36-start" to="#u-PP-36-end" xml:id="u-PP-36"/>
+          <ns0:span ana="#u-PP-37-fs" from="#u-PP-37-start" to="#u-PP-37-end" xml:id="u-PP-37"/>
+          <ns0:span ana="#u-PP-38-fs" from="#u-PP-38-start" to="#u-PP-38-end" xml:id="u-PP-38"/>
+          <ns0:span ana="#u-PP-39-fs" from="#u-PP-39-start" to="#u-PP-39-end" xml:id="u-PP-39"/>
+          <ns0:span ana="#u-PP-40-fs" from="#u-PP-40-start" to="#u-PP-40-end" xml:id="u-PP-40"/>
+          <ns0:span ana="#u-PP-41-fs" from="#u-PP-41-start" to="#u-PP-41-end" xml:id="u-PP-41"/>
+          <ns0:span ana="#u-PP-42-fs" from="#u-PP-42-start" to="#u-PP-42-end" xml:id="u-PP-42"/>
+          <ns0:span ana="#u-PP-43-fs" from="#u-PP-43-start" to="#u-PP-43-end" xml:id="u-PP-43"/>
+          <ns0:span ana="#u-PP-44-fs" from="#u-PP-44-start" to="#u-PP-44-end" xml:id="u-PP-44"/>
+          <ns0:span ana="#u-PP-45-fs" from="#u-PP-45-start" to="#u-PP-45-end" xml:id="u-PP-45"/>
+          <ns0:span ana="#u-PP-46-fs" from="#u-PP-46-start" to="#u-PP-46-end" xml:id="u-PP-46"/>
+          <ns0:span ana="#u-PP-47-fs" from="#u-PP-47-start" to="#u-PP-47-end" xml:id="u-PP-47"/>
+          <ns0:span ana="#u-PP-48-fs" from="#u-PP-48-start" to="#u-PP-48-end" xml:id="u-PP-48"/>
+          <ns0:span ana="#u-PP-49-fs" from="#u-PP-49-start" to="#u-PP-49-end" xml:id="u-PP-49"/>
+          <ns0:span ana="#u-PP-50-fs" from="#u-PP-50-start" to="#u-PP-50-end" xml:id="u-PP-50"/>
+          <ns0:span ana="#u-PP-51-fs" from="#u-PP-51-start" to="#u-PP-51-end" xml:id="u-PP-51"/>
+          <ns0:span ana="#u-PP-52-fs" from="#u-PP-52-start" to="#u-PP-52-end" xml:id="u-PP-52"/>
+          <ns0:span ana="#u-PP-53-fs" from="#u-PP-53-start" to="#u-PP-53-end" xml:id="u-PP-53"/>
+          <ns0:span ana="#u-PP-54-fs" from="#u-PP-54-start" to="#u-PP-54-end" xml:id="u-PP-54"/>
+          <ns0:span ana="#u-PP-55-fs" from="#u-PP-55-start" to="#u-PP-55-end" xml:id="u-PP-55"/>
+          <ns0:span ana="#u-PP-56-fs" from="#u-PP-56-start" to="#u-PP-56-end" xml:id="u-PP-56"/>
+          <ns0:span ana="#u-PP-57-fs" from="#u-PP-57-start" to="#u-PP-57-end" xml:id="u-PP-57"/>
+          <ns0:span ana="#u-PP-58-fs" from="#u-PP-58-start" to="#u-PP-58-end" xml:id="u-PP-58"/>
+          <ns0:span ana="#u-PP-59-fs" from="#u-PP-59-start" to="#u-PP-59-end" xml:id="u-PP-59"/>
+          <ns0:span ana="#u-PP-60-fs" from="#u-PP-60-start" to="#u-PP-60-end" xml:id="u-PP-60"/>
+          <ns0:span ana="#u-PP-61-fs" from="#u-PP-61-start" to="#u-PP-61-end" xml:id="u-PP-61"/>
+          <ns0:span ana="#u-PP-62-fs" from="#u-PP-62-start" to="#u-PP-62-end" xml:id="u-PP-62"/>
+          <ns0:span ana="#u-PP-63-fs" from="#u-PP-63-start" to="#u-PP-63-end" xml:id="u-PP-63"/>
+          <ns0:span ana="#u-PP-64-fs" from="#u-PP-64-start" to="#u-PP-64-end" xml:id="u-PP-64"/>
+          <ns0:span ana="#u-PP-65-fs" from="#u-PP-65-start" to="#u-PP-65-end" xml:id="u-PP-65"/>
+          <ns0:span ana="#u-PP-66-fs" from="#u-PP-66-start" to="#u-PP-66-end" xml:id="u-PP-66"/>
+          <ns0:span ana="#u-PP-67-fs" from="#u-PP-67-start" to="#u-PP-67-end" xml:id="u-PP-67"/>
+          <ns0:span ana="#u-PP-68-fs" from="#u-PP-68-start" to="#u-PP-68-end" xml:id="u-PP-68"/>
+          <ns0:span ana="#u-PP-69-fs" from="#u-PP-69-start" to="#u-PP-69-end" xml:id="u-PP-69"/>
+          <ns0:span ana="#u-PP-70-fs" from="#u-PP-70-start" to="#u-PP-70-end" xml:id="u-PP-70"/>
+          <ns0:span ana="#u-PP-71-fs" from="#u-PP-71-start" to="#u-PP-71-end" xml:id="u-PP-71"/>
+          <ns0:span ana="#u-PP-72-fs" from="#u-PP-72-start" to="#u-PP-72-end" xml:id="u-PP-72"/>
+          <ns0:span ana="#u-PP-73-fs" from="#u-PP-73-start" to="#u-PP-73-end" xml:id="u-PP-73"/>
+          <ns0:span ana="#u-PP-74-fs" from="#u-PP-74-start" to="#u-PP-74-end" xml:id="u-PP-74"/>
+          <ns0:span ana="#u-PP-75-fs" from="#u-PP-75-start" to="#u-PP-75-end" xml:id="u-PP-75"/>
+          <ns0:span ana="#u-PP-76-fs" from="#u-PP-76-start" to="#u-PP-76-end" xml:id="u-PP-76"/>
+          <ns0:span ana="#u-PP-77-fs" from="#u-PP-77-start" to="#u-PP-77-end" xml:id="u-PP-77"/>
+          <ns0:span ana="#u-PP-78-fs" from="#u-PP-78-start" to="#u-PP-78-end" xml:id="u-PP-78"/>
+          <ns0:span ana="#u-PP-79-fs" from="#u-PP-79-start" to="#u-PP-79-end" xml:id="u-PP-79"/>
+          <ns0:span ana="#u-PP-80-fs" from="#u-PP-80-start" to="#u-PP-80-end" xml:id="u-PP-80"/>
+          <ns0:span ana="#u-PP-81-fs" from="#u-PP-81-start" to="#u-PP-81-end" xml:id="u-PP-81"/>
+          <ns0:span ana="#u-PP-82-fs" from="#u-PP-82-start" to="#u-PP-82-end" xml:id="u-PP-82"/>
+          <ns0:span ana="#u-PP-83-fs" from="#u-PP-83-start" to="#u-PP-83-end" xml:id="u-PP-83"/>
+          <ns0:span ana="#u-PP-84-fs" from="#u-PP-84-start" to="#u-PP-84-end" xml:id="u-PP-84"/>
+          <ns0:span ana="#u-PP-85-fs" from="#u-PP-85-start" to="#u-PP-85-end" xml:id="u-PP-85"/>
+          <ns0:span ana="#u-PP-86-fs" from="#u-PP-86-start" to="#u-PP-86-end" xml:id="u-PP-86"/>
+          <ns0:span ana="#u-PP-87-fs" from="#u-PP-87-start" to="#u-PP-87-end" xml:id="u-PP-87"/>
+          <ns0:span ana="#u-PP-88-fs" from="#u-PP-88-start" to="#u-PP-88-end" xml:id="u-PP-88"/>
+          <ns0:span ana="#u-PP-89-fs" from="#u-PP-89-start" to="#u-PP-89-end" xml:id="u-PP-89"/>
+          <ns0:span ana="#u-PP-90-fs" from="#u-PP-90-start" to="#u-PP-90-end" xml:id="u-PP-90"/>
+          <ns0:span ana="#u-PP-91-fs" from="#u-PP-91-start" to="#u-PP-91-end" xml:id="u-PP-91"/>
+          <ns0:span ana="#u-PP-92-fs" from="#u-PP-92-start" to="#u-PP-92-end" xml:id="u-PP-92"/>
+          <ns0:span ana="#u-PP-93-fs" from="#u-PP-93-start" to="#u-PP-93-end" xml:id="u-PP-93"/>
+          <ns0:span ana="#u-PP-94-fs" from="#u-PP-94-start" to="#u-PP-94-end" xml:id="u-PP-94"/>
+          <ns0:span ana="#u-PP-95-fs" from="#u-PP-95-start" to="#u-PP-95-end" xml:id="u-PP-95"/>
+        </ns0:spanGrp>
+        <ns0:spanGrp n="VN" type="AnalecUnit">
+          <ns0:span ana="#u-VN-1-fs" from="#u-VN-1-start" to="#u-VN-1-end" xml:id="u-VN-1"/>
+          <ns0:span ana="#u-VN-2-fs" from="#u-VN-2-start" to="#u-VN-2-end" xml:id="u-VN-2"/>
+          <ns0:span ana="#u-VN-3-fs" from="#u-VN-3-start" to="#u-VN-3-end" xml:id="u-VN-3"/>
+          <ns0:span ana="#u-VN-4-fs" from="#u-VN-4-start" to="#u-VN-4-end" xml:id="u-VN-4"/>
+          <ns0:span ana="#u-VN-5-fs" from="#u-VN-5-start" to="#u-VN-5-end" xml:id="u-VN-5"/>
+          <ns0:span ana="#u-VN-6-fs" from="#u-VN-6-start" to="#u-VN-6-end" xml:id="u-VN-6"/>
+          <ns0:span ana="#u-VN-7-fs" from="#u-VN-7-start" to="#u-VN-7-end" xml:id="u-VN-7"/>
+          <ns0:span ana="#u-VN-8-fs" from="#u-VN-8-start" to="#u-VN-8-end" xml:id="u-VN-8"/>
+          <ns0:span ana="#u-VN-9-fs" from="#u-VN-9-start" to="#u-VN-9-end" xml:id="u-VN-9"/>
+          <ns0:span ana="#u-VN-10-fs" from="#u-VN-10-start" to="#u-VN-10-end" xml:id="u-VN-10"/>
+          <ns0:span ana="#u-VN-11-fs" from="#u-VN-11-start" to="#u-VN-11-end" xml:id="u-VN-11"/>
+          <ns0:span ana="#u-VN-12-fs" from="#u-VN-12-start" to="#u-VN-12-end" xml:id="u-VN-12"/>
+          <ns0:span ana="#u-VN-13-fs" from="#u-VN-13-start" to="#u-VN-13-end" xml:id="u-VN-13"/>
+          <ns0:span ana="#u-VN-14-fs" from="#u-VN-14-start" to="#u-VN-14-end" xml:id="u-VN-14"/>
+          <ns0:span ana="#u-VN-15-fs" from="#u-VN-15-start" to="#u-VN-15-end" xml:id="u-VN-15"/>
+          <ns0:span ana="#u-VN-16-fs" from="#u-VN-16-start" to="#u-VN-16-end" xml:id="u-VN-16"/>
+          <ns0:span ana="#u-VN-17-fs" from="#u-VN-17-start" to="#u-VN-17-end" xml:id="u-VN-17"/>
+          <ns0:span ana="#u-VN-18-fs" from="#u-VN-18-start" to="#u-VN-18-end" xml:id="u-VN-18"/>
+          <ns0:span ana="#u-VN-19-fs" from="#u-VN-19-start" to="#u-VN-19-end" xml:id="u-VN-19"/>
+          <ns0:span ana="#u-VN-20-fs" from="#u-VN-20-start" to="#u-VN-20-end" xml:id="u-VN-20"/>
+          <ns0:span ana="#u-VN-21-fs" from="#u-VN-21-start" to="#u-VN-21-end" xml:id="u-VN-21"/>
+          <ns0:span ana="#u-VN-22-fs" from="#u-VN-22-start" to="#u-VN-22-end" xml:id="u-VN-22"/>
+          <ns0:span ana="#u-VN-23-fs" from="#u-VN-23-start" to="#u-VN-23-end" xml:id="u-VN-23"/>
+          <ns0:span ana="#u-VN-24-fs" from="#u-VN-24-start" to="#u-VN-24-end" xml:id="u-VN-24"/>
+          <ns0:span ana="#u-VN-25-fs" from="#u-VN-25-start" to="#u-VN-25-end" xml:id="u-VN-25"/>
+          <ns0:span ana="#u-VN-26-fs" from="#u-VN-26-start" to="#u-VN-26-end" xml:id="u-VN-26"/>
+          <ns0:span ana="#u-VN-27-fs" from="#u-VN-27-start" to="#u-VN-27-end" xml:id="u-VN-27"/>
+          <ns0:span ana="#u-VN-28-fs" from="#u-VN-28-start" to="#u-VN-28-end" xml:id="u-VN-28"/>
+          <ns0:span ana="#u-VN-29-fs" from="#u-VN-29-start" to="#u-VN-29-end" xml:id="u-VN-29"/>
+          <ns0:span ana="#u-VN-30-fs" from="#u-VN-30-start" to="#u-VN-30-end" xml:id="u-VN-30"/>
+          <ns0:span ana="#u-VN-31-fs" from="#u-VN-31-start" to="#u-VN-31-end" xml:id="u-VN-31"/>
+          <ns0:span ana="#u-VN-32-fs" from="#u-VN-32-start" to="#u-VN-32-end" xml:id="u-VN-32"/>
+          <ns0:span ana="#u-VN-33-fs" from="#u-VN-33-start" to="#u-VN-33-end" xml:id="u-VN-33"/>
+          <ns0:span ana="#u-VN-34-fs" from="#u-VN-34-start" to="#u-VN-34-end" xml:id="u-VN-34"/>
+          <ns0:span ana="#u-VN-35-fs" from="#u-VN-35-start" to="#u-VN-35-end" xml:id="u-VN-35"/>
+          <ns0:span ana="#u-VN-36-fs" from="#u-VN-36-start" to="#u-VN-36-end" xml:id="u-VN-36"/>
+          <ns0:span ana="#u-VN-37-fs" from="#u-VN-37-start" to="#u-VN-37-end" xml:id="u-VN-37"/>
+          <ns0:span ana="#u-VN-38-fs" from="#u-VN-38-start" to="#u-VN-38-end" xml:id="u-VN-38"/>
+          <ns0:span ana="#u-VN-39-fs" from="#u-VN-39-start" to="#u-VN-39-end" xml:id="u-VN-39"/>
+          <ns0:span ana="#u-VN-40-fs" from="#u-VN-40-start" to="#u-VN-40-end" xml:id="u-VN-40"/>
+          <ns0:span ana="#u-VN-41-fs" from="#u-VN-41-start" to="#u-VN-41-end" xml:id="u-VN-41"/>
+          <ns0:span ana="#u-VN-42-fs" from="#u-VN-42-start" to="#u-VN-42-end" xml:id="u-VN-42"/>
+          <ns0:span ana="#u-VN-43-fs" from="#u-VN-43-start" to="#u-VN-43-end" xml:id="u-VN-43"/>
+          <ns0:span ana="#u-VN-44-fs" from="#u-VN-44-start" to="#u-VN-44-end" xml:id="u-VN-44"/>
+          <ns0:span ana="#u-VN-45-fs" from="#u-VN-45-start" to="#u-VN-45-end" xml:id="u-VN-45"/>
+          <ns0:span ana="#u-VN-46-fs" from="#u-VN-46-start" to="#u-VN-46-end" xml:id="u-VN-46"/>
+          <ns0:span ana="#u-VN-47-fs" from="#u-VN-47-start" to="#u-VN-47-end" xml:id="u-VN-47"/>
+          <ns0:span ana="#u-VN-48-fs" from="#u-VN-48-start" to="#u-VN-48-end" xml:id="u-VN-48"/>
+          <ns0:span ana="#u-VN-49-fs" from="#u-VN-49-start" to="#u-VN-49-end" xml:id="u-VN-49"/>
+          <ns0:span ana="#u-VN-50-fs" from="#u-VN-50-start" to="#u-VN-50-end" xml:id="u-VN-50"/>
+          <ns0:span ana="#u-VN-51-fs" from="#u-VN-51-start" to="#u-VN-51-end" xml:id="u-VN-51"/>
+          <ns0:span ana="#u-VN-52-fs" from="#u-VN-52-start" to="#u-VN-52-end" xml:id="u-VN-52"/>
+          <ns0:span ana="#u-VN-53-fs" from="#u-VN-53-start" to="#u-VN-53-end" xml:id="u-VN-53"/>
+          <ns0:span ana="#u-VN-54-fs" from="#u-VN-54-start" to="#u-VN-54-end" xml:id="u-VN-54"/>
+          <ns0:span ana="#u-VN-55-fs" from="#u-VN-55-start" to="#u-VN-55-end" xml:id="u-VN-55"/>
+          <ns0:span ana="#u-VN-56-fs" from="#u-VN-56-start" to="#u-VN-56-end" xml:id="u-VN-56"/>
+          <ns0:span ana="#u-VN-57-fs" from="#u-VN-57-start" to="#u-VN-57-end" xml:id="u-VN-57"/>
+          <ns0:span ana="#u-VN-58-fs" from="#u-VN-58-start" to="#u-VN-58-end" xml:id="u-VN-58"/>
+          <ns0:span ana="#u-VN-59-fs" from="#u-VN-59-start" to="#u-VN-59-end" xml:id="u-VN-59"/>
+          <ns0:span ana="#u-VN-60-fs" from="#u-VN-60-start" to="#u-VN-60-end" xml:id="u-VN-60"/>
+          <ns0:span ana="#u-VN-61-fs" from="#u-VN-61-start" to="#u-VN-61-end" xml:id="u-VN-61"/>
+          <ns0:span ana="#u-VN-62-fs" from="#u-VN-62-start" to="#u-VN-62-end" xml:id="u-VN-62"/>
+          <ns0:span ana="#u-VN-63-fs" from="#u-VN-63-start" to="#u-VN-63-end" xml:id="u-VN-63"/>
+          <ns0:span ana="#u-VN-64-fs" from="#u-VN-64-start" to="#u-VN-64-end" xml:id="u-VN-64"/>
+          <ns0:span ana="#u-VN-65-fs" from="#u-VN-65-start" to="#u-VN-65-end" xml:id="u-VN-65"/>
+          <ns0:span ana="#u-VN-66-fs" from="#u-VN-66-start" to="#u-VN-66-end" xml:id="u-VN-66"/>
+          <ns0:span ana="#u-VN-67-fs" from="#u-VN-67-start" to="#u-VN-67-end" xml:id="u-VN-67"/>
+          <ns0:span ana="#u-VN-68-fs" from="#u-VN-68-start" to="#u-VN-68-end" xml:id="u-VN-68"/>
+          <ns0:span ana="#u-VN-69-fs" from="#u-VN-69-start" to="#u-VN-69-end" xml:id="u-VN-69"/>
+          <ns0:span ana="#u-VN-70-fs" from="#u-VN-70-start" to="#u-VN-70-end" xml:id="u-VN-70"/>
+          <ns0:span ana="#u-VN-71-fs" from="#u-VN-71-start" to="#u-VN-71-end" xml:id="u-VN-71"/>
+          <ns0:span ana="#u-VN-72-fs" from="#u-VN-72-start" to="#u-VN-72-end" xml:id="u-VN-72"/>
+          <ns0:span ana="#u-VN-73-fs" from="#u-VN-73-start" to="#u-VN-73-end" xml:id="u-VN-73"/>
+          <ns0:span ana="#u-VN-74-fs" from="#u-VN-74-start" to="#u-VN-74-end" xml:id="u-VN-74"/>
+          <ns0:span ana="#u-VN-75-fs" from="#u-VN-75-start" to="#u-VN-75-end" xml:id="u-VN-75"/>
+          <ns0:span ana="#u-VN-76-fs" from="#u-VN-76-start" to="#u-VN-76-end" xml:id="u-VN-76"/>
+          <ns0:span ana="#u-VN-77-fs" from="#u-VN-77-start" to="#u-VN-77-end" xml:id="u-VN-77"/>
+          <ns0:span ana="#u-VN-78-fs" from="#u-VN-78-start" to="#u-VN-78-end" xml:id="u-VN-78"/>
+          <ns0:span ana="#u-VN-79-fs" from="#u-VN-79-start" to="#u-VN-79-end" xml:id="u-VN-79"/>
+          <ns0:span ana="#u-VN-80-fs" from="#u-VN-80-start" to="#u-VN-80-end" xml:id="u-VN-80"/>
+          <ns0:span ana="#u-VN-81-fs" from="#u-VN-81-start" to="#u-VN-81-end" xml:id="u-VN-81"/>
+          <ns0:span ana="#u-VN-82-fs" from="#u-VN-82-start" to="#u-VN-82-end" xml:id="u-VN-82"/>
+          <ns0:span ana="#u-VN-83-fs" from="#u-VN-83-start" to="#u-VN-83-end" xml:id="u-VN-83"/>
+          <ns0:span ana="#u-VN-84-fs" from="#u-VN-84-start" to="#u-VN-84-end" xml:id="u-VN-84"/>
+          <ns0:span ana="#u-VN-85-fs" from="#u-VN-85-start" to="#u-VN-85-end" xml:id="u-VN-85"/>
+          <ns0:span ana="#u-VN-86-fs" from="#u-VN-86-start" to="#u-VN-86-end" xml:id="u-VN-86"/>
+          <ns0:span ana="#u-VN-87-fs" from="#u-VN-87-start" to="#u-VN-87-end" xml:id="u-VN-87"/>
+          <ns0:span ana="#u-VN-88-fs" from="#u-VN-88-start" to="#u-VN-88-end" xml:id="u-VN-88"/>
+          <ns0:span ana="#u-VN-89-fs" from="#u-VN-89-start" to="#u-VN-89-end" xml:id="u-VN-89"/>
+          <ns0:span ana="#u-VN-90-fs" from="#u-VN-90-start" to="#u-VN-90-end" xml:id="u-VN-90"/>
+          <ns0:span ana="#u-VN-91-fs" from="#u-VN-91-start" to="#u-VN-91-end" xml:id="u-VN-91"/>
+          <ns0:span ana="#u-VN-92-fs" from="#u-VN-92-start" to="#u-VN-92-end" xml:id="u-VN-92"/>
+          <ns0:span ana="#u-VN-93-fs" from="#u-VN-93-start" to="#u-VN-93-end" xml:id="u-VN-93"/>
+          <ns0:span ana="#u-VN-94-fs" from="#u-VN-94-start" to="#u-VN-94-end" xml:id="u-VN-94"/>
+          <ns0:span ana="#u-VN-95-fs" from="#u-VN-95-start" to="#u-VN-95-end" xml:id="u-VN-95"/>
+        </ns0:spanGrp>
+        <ns0:fvLib n="AnalecElementProperties">
+          <ns0:fs xml:id="u-NP-1-fs"/>
+          <ns0:fs xml:id="u-AdP-1-fs"/>
+          <ns0:fs xml:id="u-PP-1-fs"/>
+          <ns0:fs xml:id="u-PP-2-fs"/>
+          <ns0:fs xml:id="u-NP-2-fs"/>
+          <ns0:fs xml:id="u-PP-3-fs"/>
+          <ns0:fs xml:id="u-NP-3-fs"/>
+          <ns0:fs xml:id="u-NP-4-fs"/>
+          <ns0:fs xml:id="u-VN-1-fs"/>
+          <ns0:fs xml:id="u-PP-4-fs"/>
+          <ns0:fs xml:id="u-NP-5-fs"/>
+          <ns0:fs xml:id="u-VN-2-fs"/>
+          <ns0:fs xml:id="u-VN-3-fs"/>
+          <ns0:fs xml:id="u-CONJ-1-fs"/>
+          <ns0:fs xml:id="u-NP-6-fs"/>
+          <ns0:fs xml:id="u-VN-4-fs"/>
+          <ns0:fs xml:id="u-VN-5-fs"/>
+          <ns0:fs xml:id="u-NP-7-fs"/>
+          <ns0:fs xml:id="u-PP-5-fs"/>
+          <ns0:fs xml:id="u-NP-8-fs"/>
+          <ns0:fs xml:id="u-AP-1-fs"/>
+          <ns0:fs xml:id="u-CONJ-2-fs"/>
+          <ns0:fs xml:id="u-NP-9-fs"/>
+          <ns0:fs xml:id="u-PP-6-fs"/>
+          <ns0:fs xml:id="u-PP-7-fs"/>
+          <ns0:fs xml:id="u-NP-10-fs"/>
+          <ns0:fs xml:id="u-NP-11-fs"/>
+          <ns0:fs xml:id="u-VN-6-fs"/>
+          <ns0:fs xml:id="u-AP-2-fs"/>
+          <ns0:fs xml:id="u-CONJ-3-fs"/>
+          <ns0:fs xml:id="u-NP-12-fs"/>
+          <ns0:fs xml:id="u-VN-7-fs"/>
+          <ns0:fs xml:id="u-NP-13-fs"/>
+          <ns0:fs xml:id="u-VN-8-fs"/>
+          <ns0:fs xml:id="u-PP-8-fs"/>
+          <ns0:fs xml:id="u-VN-9-fs"/>
+          <ns0:fs xml:id="u-NP-14-fs"/>
+          <ns0:fs xml:id="u-PP-9-fs"/>
+          <ns0:fs xml:id="u-PP-10-fs"/>
+          <ns0:fs xml:id="u-PP-11-fs"/>
+          <ns0:fs xml:id="u-NP-15-fs"/>
+          <ns0:fs xml:id="u-VN-10-fs"/>
+          <ns0:fs xml:id="u-NP-16-fs"/>
+          <ns0:fs xml:id="u-CONJ-4-fs"/>
+          <ns0:fs xml:id="u-NP-17-fs"/>
+          <ns0:fs xml:id="u-VN-11-fs"/>
+          <ns0:fs xml:id="u-AdP-2-fs"/>
+          <ns0:fs xml:id="u-PP-12-fs"/>
+          <ns0:fs xml:id="u-PP-13-fs"/>
+          <ns0:fs xml:id="u-NP-18-fs"/>
+          <ns0:fs xml:id="u-NP-19-fs"/>
+          <ns0:fs xml:id="u-NP-20-fs"/>
+          <ns0:fs xml:id="u-VN-12-fs"/>
+          <ns0:fs xml:id="u-NP-21-fs"/>
+          <ns0:fs xml:id="u-VN-13-fs"/>
+          <ns0:fs xml:id="u-NP-22-fs"/>
+          <ns0:fs xml:id="u-PP-14-fs"/>
+          <ns0:fs xml:id="u-NP-23-fs"/>
+          <ns0:fs xml:id="u-VN-14-fs"/>
+          <ns0:fs xml:id="u-NP-24-fs"/>
+          <ns0:fs xml:id="u-PP-15-fs"/>
+          <ns0:fs xml:id="u-CONJ-5-fs"/>
+          <ns0:fs xml:id="u-PP-16-fs"/>
+          <ns0:fs xml:id="u-NP-25-fs"/>
+          <ns0:fs xml:id="u-VN-15-fs"/>
+          <ns0:fs xml:id="u-AdP-3-fs"/>
+          <ns0:fs xml:id="u-AdP-4-fs"/>
+          <ns0:fs xml:id="u-VN-16-fs"/>
+          <ns0:fs xml:id="u-CONJ-6-fs"/>
+          <ns0:fs xml:id="u-NP-26-fs"/>
+          <ns0:fs xml:id="u-VN-17-fs"/>
+          <ns0:fs xml:id="u-AdP-5-fs"/>
+          <ns0:fs xml:id="u-NP-27-fs"/>
+          <ns0:fs xml:id="u-PP-17-fs"/>
+          <ns0:fs xml:id="u-PP-18-fs"/>
+          <ns0:fs xml:id="u-CONJ-7-fs"/>
+          <ns0:fs xml:id="u-NP-28-fs"/>
+          <ns0:fs xml:id="u-NP-29-fs"/>
+          <ns0:fs xml:id="u-VN-18-fs"/>
+          <ns0:fs xml:id="u-NP-30-fs"/>
+          <ns0:fs xml:id="u-PP-19-fs"/>
+          <ns0:fs xml:id="u-PP-20-fs"/>
+          <ns0:fs xml:id="u-AdP-6-fs"/>
+          <ns0:fs xml:id="u-PP-21-fs"/>
+          <ns0:fs xml:id="u-PP-22-fs"/>
+          <ns0:fs xml:id="u-NP-31-fs"/>
+          <ns0:fs xml:id="u-VN-19-fs"/>
+          <ns0:fs xml:id="u-AdP-7-fs"/>
+          <ns0:fs xml:id="u-PP-23-fs"/>
+          <ns0:fs xml:id="u-PP-24-fs"/>
+          <ns0:fs xml:id="u-AdP-8-fs"/>
+          <ns0:fs xml:id="u-PP-25-fs"/>
+          <ns0:fs xml:id="u-VN-20-fs"/>
+          <ns0:fs xml:id="u-NP-32-fs"/>
+          <ns0:fs xml:id="u-AdP-9-fs"/>
+          <ns0:fs xml:id="u-AdP-10-fs"/>
+          <ns0:fs xml:id="u-PP-26-fs"/>
+          <ns0:fs xml:id="u-PP-27-fs"/>
+          <ns0:fs xml:id="u-VN-21-fs"/>
+          <ns0:fs xml:id="u-NP-33-fs"/>
+          <ns0:fs xml:id="u-PP-28-fs"/>
+          <ns0:fs xml:id="u-PP-29-fs"/>
+          <ns0:fs xml:id="u-VN-22-fs"/>
+          <ns0:fs xml:id="u-PP-30-fs"/>
+          <ns0:fs xml:id="u-NP-34-fs"/>
+          <ns0:fs xml:id="u-NP-35-fs"/>
+          <ns0:fs xml:id="u-VN-23-fs"/>
+          <ns0:fs xml:id="u-VN-24-fs"/>
+          <ns0:fs xml:id="u-NP-36-fs"/>
+          <ns0:fs xml:id="u-PP-31-fs"/>
+          <ns0:fs xml:id="u-PP-32-fs"/>
+          <ns0:fs xml:id="u-PP-33-fs"/>
+          <ns0:fs xml:id="u-NP-37-fs"/>
+          <ns0:fs xml:id="u-PP-34-fs"/>
+          <ns0:fs xml:id="u-PP-35-fs"/>
+          <ns0:fs xml:id="u-PP-36-fs"/>
+          <ns0:fs xml:id="u-VN-25-fs"/>
+          <ns0:fs xml:id="u-CONJ-8-fs"/>
+          <ns0:fs xml:id="u-AdP-11-fs"/>
+          <ns0:fs xml:id="u-VN-26-fs"/>
+          <ns0:fs xml:id="u-PP-37-fs"/>
+          <ns0:fs xml:id="u-NP-38-fs"/>
+          <ns0:fs xml:id="u-VN-27-fs"/>
+          <ns0:fs xml:id="u-PP-38-fs"/>
+          <ns0:fs xml:id="u-PP-39-fs"/>
+          <ns0:fs xml:id="u-PP-40-fs"/>
+          <ns0:fs xml:id="u-VN-28-fs"/>
+          <ns0:fs xml:id="u-NP-39-fs"/>
+          <ns0:fs xml:id="u-PP-41-fs"/>
+          <ns0:fs xml:id="u-PP-42-fs"/>
+          <ns0:fs xml:id="u-VN-29-fs"/>
+          <ns0:fs xml:id="u-NP-40-fs"/>
+          <ns0:fs xml:id="u-NP-41-fs"/>
+          <ns0:fs xml:id="u-VN-30-fs"/>
+          <ns0:fs xml:id="u-VN-31-fs"/>
+          <ns0:fs xml:id="u-NP-42-fs"/>
+          <ns0:fs xml:id="u-NP-43-fs"/>
+          <ns0:fs xml:id="u-VN-32-fs"/>
+          <ns0:fs xml:id="u-NP-44-fs"/>
+          <ns0:fs xml:id="u-NP-45-fs"/>
+          <ns0:fs xml:id="u-VN-33-fs"/>
+          <ns0:fs xml:id="u-NP-46-fs"/>
+          <ns0:fs xml:id="u-PP-43-fs"/>
+          <ns0:fs xml:id="u-NP-47-fs"/>
+          <ns0:fs xml:id="u-VN-34-fs"/>
+          <ns0:fs xml:id="u-AdP-12-fs"/>
+          <ns0:fs xml:id="u-PP-44-fs"/>
+          <ns0:fs xml:id="u-PP-45-fs"/>
+          <ns0:fs xml:id="u-CONJ-9-fs"/>
+          <ns0:fs xml:id="u-AdP-13-fs"/>
+          <ns0:fs xml:id="u-NP-48-fs"/>
+          <ns0:fs xml:id="u-VN-35-fs"/>
+          <ns0:fs xml:id="u-AdP-14-fs"/>
+          <ns0:fs xml:id="u-AdP-15-fs"/>
+          <ns0:fs xml:id="u-AP-3-fs"/>
+          <ns0:fs xml:id="u-CONJ-10-fs"/>
+          <ns0:fs xml:id="u-NP-49-fs"/>
+          <ns0:fs xml:id="u-VN-36-fs"/>
+          <ns0:fs xml:id="u-AdP-16-fs"/>
+          <ns0:fs xml:id="u-PP-46-fs"/>
+          <ns0:fs xml:id="u-VN-37-fs"/>
+          <ns0:fs xml:id="u-NP-50-fs"/>
+          <ns0:fs xml:id="u-NP-51-fs"/>
+          <ns0:fs xml:id="u-CONJ-11-fs"/>
+          <ns0:fs xml:id="u-NP-52-fs"/>
+          <ns0:fs xml:id="u-VN-38-fs"/>
+          <ns0:fs xml:id="u-NP-53-fs"/>
+          <ns0:fs xml:id="u-VN-39-fs"/>
+          <ns0:fs xml:id="u-AdP-17-fs"/>
+          <ns0:fs xml:id="u-PP-47-fs"/>
+          <ns0:fs xml:id="u-VN-40-fs"/>
+          <ns0:fs xml:id="u-CONJ-12-fs"/>
+          <ns0:fs xml:id="u-NP-54-fs"/>
+          <ns0:fs xml:id="u-PP-48-fs"/>
+          <ns0:fs xml:id="u-NP-55-fs"/>
+          <ns0:fs xml:id="u-AdP-18-fs"/>
+          <ns0:fs xml:id="u-PP-49-fs"/>
+          <ns0:fs xml:id="u-VN-41-fs"/>
+          <ns0:fs xml:id="u-AdP-19-fs"/>
+          <ns0:fs xml:id="u-NP-56-fs"/>
+          <ns0:fs xml:id="u-AdP-20-fs"/>
+          <ns0:fs xml:id="u-NP-57-fs"/>
+          <ns0:fs xml:id="u-PP-50-fs"/>
+          <ns0:fs xml:id="u-NP-58-fs"/>
+          <ns0:fs xml:id="u-VN-42-fs"/>
+          <ns0:fs xml:id="u-PP-51-fs"/>
+          <ns0:fs xml:id="u-NP-59-fs"/>
+          <ns0:fs xml:id="u-CONJ-13-fs"/>
+          <ns0:fs xml:id="u-NP-60-fs"/>
+          <ns0:fs xml:id="u-VN-43-fs"/>
+          <ns0:fs xml:id="u-AdP-21-fs"/>
+          <ns0:fs xml:id="u-VN-44-fs"/>
+          <ns0:fs xml:id="u-VN-45-fs"/>
+          <ns0:fs xml:id="u-NP-61-fs"/>
+          <ns0:fs xml:id="u-PP-52-fs"/>
+          <ns0:fs xml:id="u-PP-53-fs"/>
+          <ns0:fs xml:id="u-PP-54-fs"/>
+          <ns0:fs xml:id="u-VN-46-fs"/>
+          <ns0:fs xml:id="u-NP-62-fs"/>
+          <ns0:fs xml:id="u-VN-47-fs"/>
+          <ns0:fs xml:id="u-NP-63-fs"/>
+          <ns0:fs xml:id="u-PP-55-fs"/>
+          <ns0:fs xml:id="u-NP-64-fs"/>
+          <ns0:fs xml:id="u-NP-65-fs"/>
+          <ns0:fs xml:id="u-VN-48-fs"/>
+          <ns0:fs xml:id="u-VN-49-fs"/>
+          <ns0:fs xml:id="u-CONJ-14-fs"/>
+          <ns0:fs xml:id="u-AdP-22-fs"/>
+          <ns0:fs xml:id="u-AdP-23-fs"/>
+          <ns0:fs xml:id="u-NP-66-fs"/>
+          <ns0:fs xml:id="u-VN-50-fs"/>
+          <ns0:fs xml:id="u-PP-56-fs"/>
+          <ns0:fs xml:id="u-CONJ-15-fs"/>
+          <ns0:fs xml:id="u-VN-51-fs"/>
+          <ns0:fs xml:id="u-CONJ-16-fs"/>
+          <ns0:fs xml:id="u-NP-67-fs"/>
+          <ns0:fs xml:id="u-NP-68-fs"/>
+          <ns0:fs xml:id="u-NP-69-fs"/>
+          <ns0:fs xml:id="u-VN-52-fs"/>
+          <ns0:fs xml:id="u-PP-57-fs"/>
+          <ns0:fs xml:id="u-AdP-24-fs"/>
+          <ns0:fs xml:id="u-AdP-25-fs"/>
+          <ns0:fs xml:id="u-PP-58-fs"/>
+          <ns0:fs xml:id="u-VN-53-fs"/>
+          <ns0:fs xml:id="u-AdP-26-fs"/>
+          <ns0:fs xml:id="u-NP-70-fs"/>
+          <ns0:fs xml:id="u-VN-54-fs"/>
+          <ns0:fs xml:id="u-PP-59-fs"/>
+          <ns0:fs xml:id="u-NP-71-fs"/>
+          <ns0:fs xml:id="u-NP-72-fs"/>
+          <ns0:fs xml:id="u-VN-55-fs"/>
+          <ns0:fs xml:id="u-NP-73-fs"/>
+          <ns0:fs xml:id="u-PP-60-fs"/>
+          <ns0:fs xml:id="u-NP-74-fs"/>
+          <ns0:fs xml:id="u-VN-56-fs"/>
+          <ns0:fs xml:id="u-VN-57-fs"/>
+          <ns0:fs xml:id="u-NP-75-fs"/>
+          <ns0:fs xml:id="u-AdP-27-fs"/>
+          <ns0:fs xml:id="u-VN-58-fs"/>
+          <ns0:fs xml:id="u-VN-59-fs"/>
+          <ns0:fs xml:id="u-PP-61-fs"/>
+          <ns0:fs xml:id="u-NP-76-fs"/>
+          <ns0:fs xml:id="u-CONJ-17-fs"/>
+          <ns0:fs xml:id="u-NP-77-fs"/>
+          <ns0:fs xml:id="u-VN-60-fs"/>
+          <ns0:fs xml:id="u-AdP-28-fs"/>
+          <ns0:fs xml:id="u-AP-4-fs"/>
+          <ns0:fs xml:id="u-PP-62-fs"/>
+          <ns0:fs xml:id="u-CONJ-18-fs"/>
+          <ns0:fs xml:id="u-AdP-29-fs"/>
+          <ns0:fs xml:id="u-AdP-30-fs"/>
+          <ns0:fs xml:id="u-NP-78-fs"/>
+          <ns0:fs xml:id="u-NP-79-fs"/>
+          <ns0:fs xml:id="u-VN-61-fs"/>
+          <ns0:fs xml:id="u-PP-63-fs"/>
+          <ns0:fs xml:id="u-NP-80-fs"/>
+          <ns0:fs xml:id="u-AdP-31-fs"/>
+          <ns0:fs xml:id="u-PP-64-fs"/>
+          <ns0:fs xml:id="u-VN-62-fs"/>
+          <ns0:fs xml:id="u-AP-5-fs"/>
+          <ns0:fs xml:id="u-PP-65-fs"/>
+          <ns0:fs xml:id="u-PP-66-fs"/>
+          <ns0:fs xml:id="u-VN-63-fs"/>
+          <ns0:fs xml:id="u-AP-6-fs"/>
+          <ns0:fs xml:id="u-NP-81-fs"/>
+          <ns0:fs xml:id="u-NP-82-fs"/>
+          <ns0:fs xml:id="u-VN-64-fs"/>
+          <ns0:fs xml:id="u-PP-67-fs"/>
+          <ns0:fs xml:id="u-VN-65-fs"/>
+          <ns0:fs xml:id="u-PP-68-fs"/>
+          <ns0:fs xml:id="u-NP-83-fs"/>
+          <ns0:fs xml:id="u-NP-84-fs"/>
+          <ns0:fs xml:id="u-VN-66-fs"/>
+          <ns0:fs xml:id="u-NP-85-fs"/>
+          <ns0:fs xml:id="u-CONJ-19-fs"/>
+          <ns0:fs xml:id="u-AdP-32-fs"/>
+          <ns0:fs xml:id="u-VN-67-fs"/>
+          <ns0:fs xml:id="u-VN-68-fs"/>
+          <ns0:fs xml:id="u-CONJ-20-fs"/>
+          <ns0:fs xml:id="u-AdP-33-fs"/>
+          <ns0:fs xml:id="u-CONJ-21-fs"/>
+          <ns0:fs xml:id="u-VN-69-fs"/>
+          <ns0:fs xml:id="u-PP-69-fs"/>
+          <ns0:fs xml:id="u-VN-70-fs"/>
+          <ns0:fs xml:id="u-NP-86-fs"/>
+          <ns0:fs xml:id="u-PP-70-fs"/>
+          <ns0:fs xml:id="u-PP-71-fs"/>
+          <ns0:fs xml:id="u-CONJ-22-fs"/>
+          <ns0:fs xml:id="u-NP-87-fs"/>
+          <ns0:fs xml:id="u-VN-71-fs"/>
+          <ns0:fs xml:id="u-NP-88-fs"/>
+          <ns0:fs xml:id="u-CONJ-23-fs"/>
+          <ns0:fs xml:id="u-NP-89-fs"/>
+          <ns0:fs xml:id="u-VN-72-fs"/>
+          <ns0:fs xml:id="u-CONJ-24-fs"/>
+          <ns0:fs xml:id="u-NP-90-fs"/>
+          <ns0:fs xml:id="u-CONJ-25-fs"/>
+          <ns0:fs xml:id="u-NP-91-fs"/>
+          <ns0:fs xml:id="u-NP-92-fs"/>
+          <ns0:fs xml:id="u-VN-73-fs"/>
+          <ns0:fs xml:id="u-AdP-34-fs"/>
+          <ns0:fs xml:id="u-NP-93-fs"/>
+          <ns0:fs xml:id="u-PP-72-fs"/>
+          <ns0:fs xml:id="u-AdP-35-fs"/>
+          <ns0:fs xml:id="u-NP-94-fs"/>
+          <ns0:fs xml:id="u-VN-74-fs"/>
+          <ns0:fs xml:id="u-AdP-36-fs"/>
+          <ns0:fs xml:id="u-CONJ-26-fs"/>
+          <ns0:fs xml:id="u-NP-95-fs"/>
+          <ns0:fs xml:id="u-VN-75-fs"/>
+          <ns0:fs xml:id="u-PP-73-fs"/>
+          <ns0:fs xml:id="u-NP-96-fs"/>
+          <ns0:fs xml:id="u-NP-97-fs"/>
+          <ns0:fs xml:id="u-VN-76-fs"/>
+          <ns0:fs xml:id="u-AP-7-fs"/>
+          <ns0:fs xml:id="u-NP-98-fs"/>
+          <ns0:fs xml:id="u-VN-77-fs"/>
+          <ns0:fs xml:id="u-AdP-37-fs"/>
+          <ns0:fs xml:id="u-CONJ-27-fs"/>
+          <ns0:fs xml:id="u-NP-99-fs"/>
+          <ns0:fs xml:id="u-PP-74-fs"/>
+          <ns0:fs xml:id="u-VN-78-fs"/>
+          <ns0:fs xml:id="u-PP-75-fs"/>
+          <ns0:fs xml:id="u-NP-100-fs"/>
+          <ns0:fs xml:id="u-VN-79-fs"/>
+          <ns0:fs xml:id="u-CONJ-28-fs"/>
+          <ns0:fs xml:id="u-NP-101-fs"/>
+          <ns0:fs xml:id="u-NP-102-fs"/>
+          <ns0:fs xml:id="u-VN-80-fs"/>
+          <ns0:fs xml:id="u-PP-76-fs"/>
+          <ns0:fs xml:id="u-VN-81-fs"/>
+          <ns0:fs xml:id="u-AdP-38-fs"/>
+          <ns0:fs xml:id="u-PP-77-fs"/>
+          <ns0:fs xml:id="u-CONJ-29-fs"/>
+          <ns0:fs xml:id="u-NP-103-fs"/>
+          <ns0:fs xml:id="u-VN-82-fs"/>
+          <ns0:fs xml:id="u-AdP-39-fs"/>
+          <ns0:fs xml:id="u-PP-78-fs"/>
+          <ns0:fs xml:id="u-PP-79-fs"/>
+          <ns0:fs xml:id="u-NP-104-fs"/>
+          <ns0:fs xml:id="u-VN-83-fs"/>
+          <ns0:fs xml:id="u-CONJ-30-fs"/>
+          <ns0:fs xml:id="u-NP-105-fs"/>
+          <ns0:fs xml:id="u-VN-84-fs"/>
+          <ns0:fs xml:id="u-AdP-40-fs"/>
+          <ns0:fs xml:id="u-CONJ-31-fs"/>
+          <ns0:fs xml:id="u-NP-106-fs"/>
+          <ns0:fs xml:id="u-CONJ-32-fs"/>
+          <ns0:fs xml:id="u-NP-107-fs"/>
+          <ns0:fs xml:id="u-VN-85-fs"/>
+          <ns0:fs xml:id="u-VN-86-fs"/>
+          <ns0:fs xml:id="u-CONJ-33-fs"/>
+          <ns0:fs xml:id="u-NP-108-fs"/>
+          <ns0:fs xml:id="u-VN-87-fs"/>
+          <ns0:fs xml:id="u-AdP-41-fs"/>
+          <ns0:fs xml:id="u-AP-8-fs"/>
+          <ns0:fs xml:id="u-PP-80-fs"/>
+          <ns0:fs xml:id="u-PP-81-fs"/>
+          <ns0:fs xml:id="u-VN-88-fs"/>
+          <ns0:fs xml:id="u-NP-109-fs"/>
+          <ns0:fs xml:id="u-PP-82-fs"/>
+          <ns0:fs xml:id="u-PP-83-fs"/>
+          <ns0:fs xml:id="u-PP-84-fs"/>
+          <ns0:fs xml:id="u-NP-110-fs"/>
+          <ns0:fs xml:id="u-VN-89-fs"/>
+          <ns0:fs xml:id="u-AP-9-fs"/>
+          <ns0:fs xml:id="u-NP-111-fs"/>
+          <ns0:fs xml:id="u-PP-85-fs"/>
+          <ns0:fs xml:id="u-PP-86-fs"/>
+          <ns0:fs xml:id="u-NP-112-fs"/>
+          <ns0:fs xml:id="u-VN-90-fs"/>
+          <ns0:fs xml:id="u-AdP-42-fs"/>
+          <ns0:fs xml:id="u-NP-113-fs"/>
+          <ns0:fs xml:id="u-PP-87-fs"/>
+          <ns0:fs xml:id="u-PP-88-fs"/>
+          <ns0:fs xml:id="u-CONJ-34-fs"/>
+          <ns0:fs xml:id="u-NP-114-fs"/>
+          <ns0:fs xml:id="u-VN-91-fs"/>
+          <ns0:fs xml:id="u-VN-92-fs"/>
+          <ns0:fs xml:id="u-PP-89-fs"/>
+          <ns0:fs xml:id="u-CONJ-35-fs"/>
+          <ns0:fs xml:id="u-NP-115-fs"/>
+          <ns0:fs xml:id="u-VN-93-fs"/>
+          <ns0:fs xml:id="u-PP-90-fs"/>
+          <ns0:fs xml:id="u-PP-91-fs"/>
+          <ns0:fs xml:id="u-CONJ-36-fs"/>
+          <ns0:fs xml:id="u-NP-116-fs"/>
+          <ns0:fs xml:id="u-VN-94-fs"/>
+          <ns0:fs xml:id="u-NP-117-fs"/>
+          <ns0:fs xml:id="u-CONJ-37-fs"/>
+          <ns0:fs xml:id="u-PP-92-fs"/>
+          <ns0:fs xml:id="u-NP-118-fs"/>
+          <ns0:fs xml:id="u-NP-119-fs"/>
+          <ns0:fs xml:id="u-PP-93-fs"/>
+          <ns0:fs xml:id="u-VN-95-fs"/>
+          <ns0:fs xml:id="u-NP-120-fs"/>
+          <ns0:fs xml:id="u-PP-94-fs"/>
+          <ns0:fs xml:id="u-NP-121-fs"/>
+          <ns0:fs xml:id="u-PP-95-fs"/>
+        </ns0:fvLib>
+      </ns0:back>
+    </ns0:text>
+  </ns0:TEI>
+</ns0:teiCorpus>
