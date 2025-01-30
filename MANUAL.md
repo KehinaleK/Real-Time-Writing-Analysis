@@ -1,68 +1,95 @@
-This document can be used as a manual to understand more deeply each script and code.
-Given the nature of the studied data, some codes would deserve improvements and others might raise questions. 
-For this exact reason, this document will details each script and gives examples. Reading it might greatly help any new member of this project.
-
+This document serves as a manual to provide a deeper understanding of each script and piece of code.
+Given the nature of the studied data, some scripts could be improved, while others may raise questions.
+For this reason, this document explains each script in detail and includes examples. Reading it will be highly beneficial for any new member joining this project.
 
 # Table of contents
 1. [IDFX EXTRACTION](#extraction)
 2. [TEXT RECONSTRUCTION](#reconstruction)
-3. [Text reconstruction](#reconstruction)
-4. [Chunking](#chunking)
+3. [CHUNKING](#chunking)
+4. [Chunking
 
 
-Before going into each part of the process. I will quickly summarise each step.
+**Before diving into each part of the process, I will first provide a brief summary of each step.**
 
 - ### IDFX EXTRACTION
 
-The first step was to extract the information contained in the IDFX files. These files were retrieved using the InputLog Software and its Microsoft Word version. In this document, I will explain how to download the software and use it to simplify working on the give data. I will also present how the files are structured. I will then go through the `retrieval.py` script to explain how the data was retrieved and processed to be stored in CSV files such as the one shown in the `README`. I will go through the script to explain each step and how it could be adapted for further processing. I will give you insight as to how check errors and exceptions so that you can directly start from the existing scripts. 
+The first step involved extracting information from the IDFX files. These files were obtained using the **InputLog Software** and its Microsoft Word version. In this document, I will explain how to download and use this software to facilitate working with the provided data. I will also describe the structure of the files.
+
+Next, I will go through the `retrieval.py` script, explaining how the data was retrieved and processed before being stored in CSV files, such as those referenced in the `README`. I will break down the script step by step, highlighting how it can be adapted for further processing. Additionally, I will provide guidance on identifying and handling errors and exceptions so that you can efficiently build upon the existing scripts.
 
 - ### TEXT RECONSTRUCTION
 
-The second step was to use the resulting CSV file to rescontruct each text. Reconstructing each texts consists in mimicking each of the user's actions (adding characters, deletionsn movements...) up until getting the final version of the text, there is to say the version that was saved as a txt file. The `reconstruction.py` script will be explained in depth to show how exceptions were handled and hopefully allow you to adapt it as you wish. I will also present the `compararison.py` script allowing you to check texts with reconstruction errors. 
-This script also aimed to reconstructing text while adding special characters to represent actions. `~` were for instance used to represent deletions. 
+The second step involved using the **resulting CSV files** to reconstruct each text. This process consists of **replicating each user action** (e.g., inserting characters, deleting text, moving the cursor) until the final version of the text is obtained—the version saved as a `.txt` file.  
+
+The `reconstruction.py` script will be explained in detail, covering how exceptions were managed and how the script can be adapted as needed. 
+Additionally, this step aimed to reconstruct text while adding **special characters to represent different actions**. For example, `~` was used to indicate deletions.  
 
 - ### CHUNKING 
 
-The third step was to use `SEM` to chunk our texts. The reconstruction step allowed us to get data that could trace the actions of a user while keeping the final texte, and therefore allow us to see if some words were for instance most often found after deletions. Chunking our text could give use another analysis layer, allowing us to identify grammatical chunk and see, for instance, if deletions were most often found before verbal chunks. I will explain the `chunking.py` script as well as the steps required to use SEM. 
+The third step involved **chunking** the texts using **SEM**. Thanks to the **reconstruction step**, we were able to trace the user's actions while preserving the final text. This allowed us to analyze patterns, such as identifying whether certain words frequently appeared after deletions.  
+
+Chunking the text provides an additional **layer of analysis**, helping us identify **grammatical chunks**. For example, we can examine whether **deletions most commonly occur before verbal chunks**. I will explain the `chunking.py` script and outline the steps required to use **SEM** effectively.  
 
 - ### STATISTICS 
 
-This step is the less finalized step of the projet. It aims to get numbers regarding possible connections between types of errors or actions and grammatical units. 
-
-
-
+This step remains the least finalized part of the project. Its goal is to generate **statistical insights** on potential relationships between different **types of errors or actions** and **grammatical units**.
 
 
 # 1 - IDFX EXTRACTION <a name="extraction"></a>
 
-In order to vizualize and study writing behaviours, the first step is to retrieve the data from the idfx files created by InputLog.
+The first step in analyzing writing behaviors is retrieving data from the **IDFX files** generated by **InputLog**.  
 
-**This extraction is handled by the `retrieval.py` script.**
-This script is long and may require modifications if you intend to retrieve aditional data (that can be found in the idfx files or within another corpus).
+## **Data Extraction**  
 
-## InputLog
+**This extraction is handled by the `retrieval.py` script.**  
+This script is extensive and may require modifications if you intend to retrieve additional data (either from the IDFX files or another corpus).  
 
-InputLog is available on Windows and Mac. On LINUX, I would recommend installing a Virtual Machine to be able to use it. Furthermore, the corpora used in this repository were collected using InputLog with MicrosoftWord. Word, as a software, has multiple specificites that require specific processing during the retrieval. These exceptions will be listed down below.
 
-It can be downloaded on the [InputLog Website](https://www.inputlog.net/). You'll need to ask for a login to use the software, the process is detailed on the website as well. The login is fast to get but you need to make the request and use your research or academic credentials to be granted one. 
+## **InputLog**  
 
-Using InputLog is not complicated but it could get a little while to get used to it. I used the Word version (because it was the one used during the collection of the data). You therefore need Word on Mac or on Windows. 
+InputLog is available for **Windows** and **Mac**. On **Linux**, I recommend using a **Virtual Machine** to run it.  
 
-To lauch InputLog, click on its icon. It will open a window asking for some information. 
-![InputLogMenu](media/manual/input_log.png)
-Once you provided the desired info, click on `Record`.
-![WordDoc](media/manual/word_input_log.png)
-It will open a blank Microsoft Word document. To check that InputLog is indeed recording your actions, you can click on the littler InputLog icon that can be found in your toolbar. It will open a window where you should see `stop recording`.
-![Example](media/manual/stop_recording.png)
-After writing you text, click on the InputLog icon and click on stop recording. You document should be automatically saved, but you can presse `CTRL` + `S` in case. You can close InputLog.
-Your Word document, as well as an InputLog object should be saved somewhere on your computer. They normally should be saved in the `Documents` directory and ordered by users and sessions. 
-![Output](media/manual/output.png)
-You can open the InputLog document with any text app such as `blocnote` to see the data formatted just like the IDFX files. 
+The corpora used in this repository were collected using **InputLog with Microsoft Word**. Since Word has **specific behaviors** that require special processing during data retrieval, these exceptions will be outlined below.  
 
-**Using InputLog is extremely useful to understand how some errors might occur in the retrieval or in the reconstruction of the texts.** Trying to write the text yourself, by following the IDFX files, is probably the best way to understand errors. Using InputLog yourself can be however extremly consuming and it might be easy to loose track of what you're writing. I suggest recording your screen and using Macros to create a dedicated function that could display the index the characters you're writing in the bottom left corner of your window. Such function can easily be found on Google. 
+You can download InputLog from the [InputLog Website](https://www.inputlog.net/).  
+To use the software, you need to **request a login** (details available on the website). The login process is quick but requires **research or academic credentials** for approval.  
 
-It might not work but here is an example :
+### **Getting Started with InputLog**  
 
+Using InputLog is straightforward but may take some time to get familiar with.  
+Since the data collection was performed using the **Word version**, you will need **Microsoft Word** on **Mac** or **Windows**.  
+
+To launch InputLog:  
+
+1. Click on the **InputLog icon** to open it.  
+2. A window will appear, prompting you to enter some details.  
+   ![InputLog Menu](media/manual/input_log.png)  
+3. After providing the required information, click on **"Record"**.  
+4. This will open a **blank Microsoft Word document**.  
+   ![Word Document](media/manual/word_input_log.png)  
+5. To confirm that InputLog is recording your actions, click on the **InputLog icon** in the toolbar.  
+   - A window should appear displaying **"Stop Recording"**.  
+   ![Stop Recording](media/manual/stop_recording.png)  
+6. After writing your text, click on the **InputLog icon** again and select **"Stop Recording"**.  
+7. Your document should be **automatically saved**, but you can press `CTRL + S` just in case.  
+8. Close InputLog.  
+9. Your **Word document** and an **InputLog data file** will be saved on your computer.  
+   - They are typically stored in the `Documents` directory, organized by **user and session**.  
+   ![Output Files](media/manual/output.png)  
+10. You can open the **InputLog file** with any text editor (e.g., **Notepad**) to see the **IDFX format**.  
+
+Using **InputLog** is extremely helpful for understanding how certain **errors** may occur during **retrieval** or **reconstruction**.  
+One of the best ways to analyze these errors is to **manually follow an IDFX file** and try to **rewrite the text yourself**.  
+
+However, manually recording text can be **time-consuming**, and it’s easy to lose track of what you're writing.  
+
+### **Tips for Efficient Analysis**  
+
+- **Record your screen** while writing.  
+- **Use Macros** to display the **character index** in the bottom-left corner of your window.  
+- Many **macro functions** for this purpose can be found online.  
+
+It might not always work, but here’s an example:
 ``` Dim NextUpdate As Date 
     Sub StartTracking() ' Start the tracking process 
     Call TrackCharacterIndex 
@@ -87,125 +114,342 @@ Good luck !
 
 ## IDFX Files
 
-I will now try to explain as best as possible how the IDFX files (resulting from using InputLog) are structured and how these structures need to be taken into account for further processing.
 
-### Basic structure
+I will now explain in detail how **IDFX files** (generated by InputLog) are structured and how these structures should be considered for further processing.  
+
+---
+
+### **Basic Structure**  
 
 ![idfx output](media/readme/letter_example.png)
 
-Each IDFX file contains a sequence of actions recorded on Word. For instance, in this example, you can see that the user pressed the D key, in position 0. IDFX files are structured around tags. 
+Each **IDFX file** contains a sequence of **actions recorded in Word**.  
+For example, in the image above, the user pressed the `D` key at **position 0**.  
 
-The ones that you'll see the most while working on those files are the `keyboard` event.
-These events correspond to the action of pressing a key on the keyboard. Each `keyboard` event is composed of two `part` tags. 
-The first `part` tag, with the `wordlog` type, gives information about the position of the cursor for the given key, and the length of the document after that key was pressed. The `replay` tag is set to `False` for control keys such as `SHIFT` or `BACK`.
+IDFX files are structured around **tags**.  
 
-The second `part` tag, the `winlog` one, is used to give information about the starttime of the action (so here, the key was pressed at 941 303 ms), the endtime, the name of the key `VK_D`, and its corresponding grapheme, here, `D`. You'll also find information in the `keyboardstate` tag that we'll explained further down in this document. The `winlog` tag is also used for other actions, notably ones involving the mouse. These actions do not concern us.
+The most common tag in these files is the **`keyboard` event**, which corresponds to pressing a key on the keyboard.  
 
-**To understand better those files**, it is important to recognize more special keys :
+Each `keyboard` event consists of **two** `<part>` tags:  
 
-- Letters are represented by keys such as : `VK_D`. Upper case letters are represented in the same way but can be preceeded by a `SHIFT` key. 
+1. **`wordlog` part tag**  
+   - Provides information about **cursor position** for the pressed key.  
+   - Records the **length of the document** after that key press.  
+   - The `<replay>` tag is set to `False` for control keys like `SHIFT` or `BACK`.  
 
-- Control characters, such as the ones used to move, delete, or add spaces have their own keys.
-    - `VK_SPACE` are for regular spaces.
-    - `VK_TAB` are used for tabulations.
-    - `VK_BACK` are used for deletions (with the common deletion key on the right part of the keyboard).
-    - `VK_DELETE` are used for foward deletion (with the use od the `suppr` key on most keyboard).
-    - `VK_LEFT` are used to move to the left (one position).
-    - `VK_RIGHT` are used to move to the right (one position).
-    - `VK_UP` are used to move to the top (positions vary).
-    - `VK_DOWN` are used to move to the bottom (positions vary).
-    - `VK_RETURN` are used for line breaks.
-    - `VK_END` are rare, but seem to represent `end` keys that can be found on Mac. They keys allow the user to go to the very bottom of the document.
+2. **`winlog` part tag**  
+   - Gives information about:  
+     - **Start time** (e.g., 941,303 ms)  
+     - **End time**  
+     - **Key name** (e.g., `VK_D`)  
+     - **Corresponding grapheme** (e.g., `D`)  
+   - Includes the **keyboard state**, which will be explained later.  
+   - Used for **mouse actions**, but those do not concern us.  
 
-- Special characters.
-    - `VK_RSHIFT` when pressing the right shift key.
-    - `VK_LSHIFT` when pressing the left shift key.
-    - `VK_CAPITAL` when pressing the caps lock key.
-    - `VK_OEM_` keys are used for accents and other diacritics.
-        - `VK_OEM_2` is used to create `:` or `/` when the `VK_CAPITAL` key was pressed right before. 
-        - `VK_OEM_3` is used to create the accented u `ù` and `%` when a shift key was pressed right before. 
-        - `VK_OEM_4` creates the right paranthesis `)`.  
-        - `VK_OEM_5` creates an aterix `*`.
-        - `VK_OEM_6` used for hat accents (accent circonflexe) such as `ê`. A lot of problems stem from cases where accents are not processed correctly. I would avise trying to collect data without using them in the futur. Some of these problems were dealt with (as I explained it further down below) but not all cases were covered. 
-        - `VK_OEM_6` is also used for diaeresis accents (accent trema) such as `ï`. Just like for the hat accents, the accents might cause multiple processing problems. They are created just like the hat ones but with a keyboard state containing a `SHIFT` key. The user needs to press one of the upper case key before pressing the `¨` key on  the keyboard. 
-        - `VK_OEM_8` is used to create an exclamation mark `!`.
-        - There are probably more accented characters that should be properly processed such as an eventual `~`. Refer to the explanations down below to deal with such cases.
-    - `VK_OEM_` keys are furthermore used for punctuation marks.
-        - `VK_OEM_COMMA` is used for commas `,`.
-        - `VK_OEM_COMMA` is used for question marks when used after pressing the `VK_CAPITAL` key.
-        - `VK_OEM_PLUS` is used to create the equal symbol `=`. 
+---
 
-    - `VK_DECIMAL` keys are used for full stops `.`.
-    - Keys with numbers correspond to the sequence of keys with numbers at the top of the keyboard. 
-        - `VK_1` creates the character `&` when pressed. 
-        - `VK_2` creates an acute e `é` when pressed.
-        - `VK_3` creates double quotes `"` when pressed.
-        - `VK_4` creates an apostrophe `'` when pressed.
-        - `VK_5` creates a left paranthesis `(` when pressed.
-        - `VK_6` creates a hyphen `-` when pressed.
-        - `VK_7` creates a grave e `è` when pressed.
-        - `VK_8` creates a underscore `_` when pressed.
-        - `VK_9` creates a cedilla c `ç` when pressed.
-        - `VK_0` ceates an accented a `à` when pressed. 
+## **Special Keys**  
 
-    Many characters haven't been found or haven't been processed in the studied corpora. Most of them probably can be dealt with by handling key combinations such as `VK_RSHIFT` followed by `VK_OEM_PLUS` to create `+` for instance. 
+To properly process these files, you need to recognize **special keys**:  
 
-- Some keys are also used for other type of actions. These keys do not change the position of the user within the idfx file. They are mostly easy to handle.
-    - `VK_LMENU` and `VK_APPS` open a menu.
-    - `VK_ESCAPE` is the escape key.
-    - `VK_F12` is a shortcut to save the file.
-    - `VK_SNAPSHOT` is used to take a screenshot.
-    - `VK_INSERT` changes the writing mode.
-    - `VK_LCONTROL` and `VK_RCONTROL` are the control keys located on the left and right part of the keyboard.
+### **Letters & Control Characters**  
+
+- **Letters** are represented as `VK_X`, where `X` is the letter.  
+- **Uppercase letters** are represented the same way but preceded by a `SHIFT` key.  
+
+| Action           | Key Name   |
+|-----------------|-----------|
+| Space          | `VK_SPACE` |
+| Tabulation     | `VK_TAB` |
+| Delete         | `VK_BACK` |
+| Forward Delete | `VK_DELETE` |
+| Move Left      | `VK_LEFT` |
+| Move Right     | `VK_RIGHT` |
+| Move Up        | `VK_UP` |
+| Move Down      | `VK_DOWN` |
+| Line Break     | `VK_RETURN` |
+| Jump to End    | `VK_END` (rare) |
+
+### **Special & Accent Keys**  
+
+| Key Name      | Function |
+|--------------|----------|
+| `VK_RSHIFT`  | Right Shift key |
+| `VK_LSHIFT`  | Left Shift key |
+| `VK_CAPITAL` | Caps Lock |
+| `VK_OEM_2`   | `:` or `/` (with `SHIFT`) |
+| `VK_OEM_3`   | `ù` or `%` (with `SHIFT`) |
+| `VK_OEM_4`   | `)` |
+| `VK_OEM_5`   | `*` |
+| `VK_OEM_6`   | `^` (circumflex) or `¨` (diaeresis) |
+| `VK_OEM_8`   | `!` |
+
+### **Punctuation & Number Keys**  
+
+- `VK_OEM_COMMA`: **`,`**  
+- `VK_OEM_COMMA` (with `VK_CAPITAL`): **`?`**  
+- `VK_OEM_PLUS`: **`=`**  
+- `VK_DECIMAL`: **`.`**  
+
+#### **Number Keys**  
+
+| Key | Character |
+|-----|----------|
+| `VK_1` | `&` |
+| `VK_2` | `é` |
+| `VK_3` | `"` |
+| `VK_4` | `'` |
+| `VK_5` | `(` |
+| `VK_6` | `-` |
+| `VK_7` | `è` |
+| `VK_8` | `_` |
+| `VK_9` | `ç` |
+| `VK_0` | `à` |
+
+**Note:** Many other characters are created using **key combinations** (e.g., `VK_RSHIFT + VK_OEM_PLUS` for `+`).  
+
+### **Other Functional Keys**  
+
+| Key Name      | Function |
+|--------------|----------|
+| `VK_LMENU` / `VK_APPS` | Opens a menu |
+| `VK_ESCAPE`  | Escape key |
+| `VK_F12`     | Save shortcut |
+| `VK_SNAPSHOT` | Screenshot key |
+| `VK_INSERT`  | Toggles writing mode |
+| `VK_LCONTROL` / `VK_RCONTROL` | Control keys |
+
+
+The `keyboardstate` element is useful when handling characters created by pressing a `SHIFT` key beforehand. This "state", so the fact that we are in the UPPER case mode, is stored in the `keyboardstate` element.
+
+---
 
 ## retrieval.py
 
-Let's now get into the `retrieval.py` script. The script is heavily commented so I recommend following these explanations while reading the code.
+Now, let's analyze the **`retrieval.py`** script.  
 
-This script is long and contains really long functions. 
-The script might return an error if there is a processing error in one of the file. These kind of errors mostly concern characteers that were not handled previously. If you want to deal with those errors, I recommend removing the `Try Except` in the `main` function. However, the script works (does not return errors) for all of the files of the `planification` corpus.
+The script is **heavily commented**, so I recommend following these explanations while reading the code.  
 
+- The script is **long** and contains **large functions**.  
+- Errors may occur if the script encounters **unhandled characters**.  
+- To debug, remove the `Try Except` block in the `main` function.  
+- **It has been tested and works for all files in the `planification` corpus.**  
 
-The scripts uses an argparse that requires two arguments : `-c` the name of the folder containing the idfx files. `-t` the pause thresold, there is to say the value of the pauses taken into acount to divide the data into bursts. 
+## **Running the Script**  
 
-Example : `python3 retrieval.py -c planification -t 1.5`
+The script uses **argparse** and requires two arguments:  
 
-Running the script should create a CSV file named after the chosen corpus in the `data/table/` directory. 
+- `-c` → The **name of the folder** containing the IDFX files.  
+- `-t` → The **pause threshold** (in seconds) to segment the data into bursts.  
 
-Let's go through each step of the script.
+Example: ```python3 retrieval.py -c planification -t 1.5```
 
-A burst can be on multiple rows in the resulting CSV file. This is because each row has its start and end position in two columns. However, you'll see that the user sometimes use control characters (`VK_LEFT`, `VK_RETURN`) while writing. These keys create huge jumps in positions and therefore completely mess up the reconstruction process. To take these jumps into account, as soon as a non linear movement (so a 1 position movement to the right) is seen, a new row in the CSV file is created.
+This script processes IDFX files and generates a CSV file named after the chosen corpus in the `data/table/` directory. It reconstructs the writing process while handling various complexities such as control characters and position shifts.
 
-These rows and bursts are handled by dedicated dataclass. 
-The `Row` dataclass represents one row in the CSV file.
-The `Burst` dataclass is a list of Row that together create a Burst. Since some bursts are simply represented by one row, we can have lists with only one element.
-The `Bursts` dataclass is a list of `Burst objects`. A `Bursts` objects is the list of all of the bursts in a file. There is as many burst as there are IDFX files given as inputs. 
+## **How Bursts and Rows are Handled**
 
-After importing the content of the IDFX file, the `get_burst_rows` function goes through it to retrieve each action (key) and its associated info (positions, keyboard states...). A huge work had to be done regarding the concerned event and the one following as sometimes, an event is not enough to process the info. For instance, the next event needs to be retrieved to calculate the value of the pause between the current character and the following one. Sometimes, the next event won't have a `StartTime`, sometimes, the next event won't be a keyboard one... There is also the case of the `selection`. I struggled to understand how these events work and what they represent. However, let's look at how accents are handled : 
+A **burst** can span multiple rows in the resulting CSV file. Each row has **start** and **end** positions. However, some control characters (e.g., `VK_LEFT`, `VK_RETURN`) cause jumps in positions, disrupting text reconstruction. To address this, whenever a **non-linear movement** (any movement other than a 1-position right shift) is detected, a new row is created.
 
-![accents](media/manual/accents.png)
+The script uses dedicated **dataclasses** to manage these structures:
+- **`Row`**: Represents one row in the CSV file.
+- **`Burst`**: A list of `Row` objects that together form a burst. Some bursts may contain only one row.
+- **`Bursts`**: A collection of all bursts in a file. Each IDFX file corresponds to a separate `Burst` instance.
 
-You can see that for some cases, a value of one is added to a `shifts` variable. This is because hat accents can mess up the position counting. For instance, a single `^` is not counted as its own position. When a `e` is added after it, it's fine, since we get a single character and therefore a single position. However, if a `t` is added after the accent, we'll get `^t`, two characters, but with only one position incremented. These cases shift the counting of the positions and mess up the reconstruction of the texts. Multiple similar exceptions can be found `^ê`, `^t`... I tried to handle as many cases as possible as you'll see in the script. The positions that you can find ine the IDFX files **are the correct positions of the characters AT THE MOMENT at which the event is happening**. So, if I add a sentence to the beginning of the document and later add something at position 0, it will be added to the current 0 position. It might seem logic but is really important to understand since the positions of each character change as the user add content to the document. The positions in the CSV file are true for a sequence of characters only at the time at which this sequence was written. This is why they cannot be used for reconstruction directly and a complete reenacment of the writing process is needed. The `selection` event restart the counter. If a `^t` completely shifted the positions, and let's say position 501 was supposed to be 502 (which was artificially done by the `shifts` variable), if a `selection` event occurs, position 501 becomes 502, as it should have been if `^t` was counted correctly as two characters originally. 
+## **Processing IDFX Files**
 
-Those kind of problems will mostly be noticed while recontructing the text. I'll detail below how to check and correct them. 
+The script extracts actions from IDFX files using the `get_burst_rows` function. This function:
+- Retrieves each **keystroke event** and its associated information (position, keyboard state, etc.).
+- Handles cases where the next event is required to compute pauses.
+- Deals with **missing timestamps** and **non-keyboard events**.
+- Manages **selection events**, which reset position tracking.
 
-With the `divide_bursts` function, each burst is divided into rows to deal with movements within a single burst. The `get_len` function allows to retrieve info about the number of actions made within a single row, the number of deletions, the number of movements, the number of added characters... All of those within the burst (so in positions that were already concerned by the current burst) or those outside of it. These numbers require additional functions such as `first_deletions`.
+### **Handling Accents and Position Shifts**
 
-The `get_categories` function allows to retrieve the type of a burst.
-  A burst can be categorized as three different types :
+Accents complicate position counting. For example:
+- Typing `^` alone does **not** count as a position.
+- Typing `ê` after `^` correctly registers **one position**.
+- Typing `t` after `^` results in `^t`, which **takes two positions** but might be miscounted.
 
-    - Production (P) : the burst is production added to the text directly after its last character.
-    It can contains control characters, deletions or normal characters.
-    - Edge Revision (ER) : the burst is a revision of the preceeding burst. It can contain control characters, deletions or normal characters.
-    - Revision (R) : the burst is a revision of a higher burst. It can contain control characters, deletions or normal characters.
+To correct such shifts, the script adjusts a `shifts` variable. The **positions recorded in IDFX files reflect the character positions at the time of typing**, so a complete reenactment of writing is required for accurate reconstruction. **Selection events reset the position counter**, fixing previously introduced shifts.
 
+Many, many, many, cases needed to be handled individually. Each case corresponds to the `if` conditions in the function. Most of them concern adjusting positions by handling cases where modifying the current element requires modifying the preceeding one. I highly recommend listing those exceptions. I can tell you, for instance, that problems seem to arise when the `TAB` key is used by the user. I recommend trying to find all of the "special" keys in the IDFX files before processing to try to find inacuraccies in the position counting or in any other aspect. 
 
-Revisions can be adding a caracter, a string of caracters, a space, deleting a character or a string of characters.
-A burst can have multiple types since the user can use control characters to navigate through the text and make changes.
-The beginning of a burst can be a production for instance and then the user moves towards the beginning of the text to make a revision.
+## **Segmenting Bursts into Rows**
 
-Finally, all of the extracted data is stored in a CSV file.
+The `divide_bursts` function splits bursts into **rows**, handling intra-burst movements. The `get_len` function calculates:
+- **Number of actions** in a row.
+- **Number of deletions** and **movements**.
+- Characters added inside and outside the burst.
+
+The `first_deletions` function provides additional deletion-related metrics.
+
+## **Categorizing Bursts**
+
+Bursts fall into three categories:
+- **Production (P)**: New content added at the end of the text.
+- **Edge Revision (ER)**: Edits made to the previous burst.
+- **Revision (R)**: Edits made to an earlier burst.
+
+Revisions can involve:
+- **Adding** characters or spaces.
+- **Deleting** characters or words.
+- **Using control characters** to navigate the text.
+
+A burst may contain **multiple types** since a user can move through the text and modify different sections within the same burst.
+
+## **Generating the CSV Output**
+
+Finally, the extracted data is saved into a CSV file in `data/table/`. The output structure ensures that:
+- Each **burst** and its corresponding rows are correctly categorized.
+- **Position shifts** are accounted for.
+- **Control characters and deletions** are properly handled.
+
+### **Example CSV Output:**
 
 ![csv](media/readme/csv_example.png)
 
+This structured format allows for accurate **text reconstruction and analysis**.
+
 # 2 - TEXT RECONSTRUCTION <a name="reconstruction"></a>
+
+Multiple choices and parts of the code in the `retrieval.py` script can be explained by problems that were raised while working on the text reconstruction. 
+
+## Main logic
+
+Dividing bursts into multiple rows was a choice made to allow text reconstruction.
+To do so, the most logical process seemed to go trhough each row of the CSV file and simply add or delete each string of characters by using the corresponding positions in the position columns. 
+This linear process was made impossible by the movements within a single burst and by many other elements regarding the combination of characters for diacritics for instance. 
+
+![reconstruction](media/manual/reconstruction_error.png)
+
+The original retrieval script ignored most of these exceptions and led to reconstruction errors such as the one presented above. 
+
+
+![csv](media/readme/csv_example.png)
+
+Dividing bursts into multiple rows and isolating actions such as deletions (by keeping only one deletion by line) seems to significantly improve text reconstruction. However, there are still many cases to handle and understand.
+
+## Legend
+
+The interesting aspect of text reconstruction was to find a way to represent actions that did not appear in the saved text. For instance, if a saved text was only 4 lines long because half of it was deleted before saving, we wanted to be able to show the number of deleted characters.
+
+With this goal in mind, we decided on multiple symbols to represent different actions : 
+- `|` were used to represent pauses, and therefore the boundaries between each burst. *Working on how to represent those is an interesting point of interest. Indeed, if a user makes a pause, and goes back to the very beginning of the text, it becomes impossible to use the final texts as a way to study what preceeds or follows a pause. In this case, a pause may not be connected to its spatial surrouning but more to the top section of the text that led to the pause. It's important to take that into account at one point and find a way to track the start of the pause and where it led the user if they did not directly continue to write after the current sequence. This point higlights the difference between burst of actions and burst of writing.*
+- `~` were used to represent deletions. When a character (letter, space...) is deleted, then it will be represented by a ~ instead. *An interesting followup would be to keep track of the deelted characters to see which ones are most often deleted*.
+- `<` and `>` were used to represent single character insertions. If a single `s` is added to a former burst, it will be represented as such `<s>`. Chevrons can be found around single inserted deletions and spaces.
+- `{` and `}` were used to represent string insertions. When a string of characters is added to a former burst, it will be represented as such `{ent.}`.
+
+![example](media/manual/reconstruction_ex.png)
+
+## reconstruction.py
+
+Multiple choices and parts of the code in the `retrieval.py` script were influenced by issues encountered during text reconstruction.
+
+### **Challenges in Text Reconstruction**
+
+Dividing bursts into multiple rows was necessary to facilitate accurate text reconstruction. Initially, a linear process was planned where each row of the CSV file would simply add or delete characters based on the recorded positions. However, this approach was disrupted by:
+- **Movements within a single burst**
+- **Special cases like diacritic combinations**
+
+![reconstruction](media/manual/reconstruction_error.png)
+
+The original script ignored most exceptions, leading to reconstruction errors such as the one above. The refined approach isolates actions such as deletions (keeping only one deletion per line), significantly improving reconstruction accuracy. However, many edge cases remain to be analyzed and addressed.
+
+## **Legend**
+
+An essential part of text reconstruction is representing actions that do not appear in the saved text. For example, if half of a text is deleted before saving, the deleted characters should still be accounted for.
+
+To achieve this, we introduced specific symbols to denote different actions:
+
+- **`|`** represents pauses, marking burst boundaries. *If a user pauses and then moves to the start of the text, tracking its impact becomes challenging. Instead of linking a pause to adjacent text, it might be connected to an earlier section that led to the pause. This distinction highlights the difference between bursts of actions and bursts of writing.*
+- **`~`** represents deletions. Deleted characters (letters, spaces, etc.) are replaced with `~`. *A possible improvement would be tracking which characters are most frequently deleted.*
+- **`<` and `>`** denote single-character insertions. If an `s` is added later, it appears as `<s>`. These brackets also surround single inserted deletions and spaces.
+- **`{` and `}`** denote string insertions. When a sequence of characters is added, it is shown as `{ent.}`.
+
+![example](media/manual/reconstruction_ex.png)
+
+This approach enhances visibility into the text editing process, aiding in understanding user behavior and improving reconstruction accuracy.
+
+---
+
+## Reconstruction.py
+
+
+The script starts by grouping the rows in the CSV file based on users. Each user is then processed individually within the main function.
+
+The CSV file is converted into a dataframe that marks:
+- The **beginning of each burst**.
+- The **boundaries of revisions**.
+
+
+To accurately track text modifications, a list is created where each **letter** is stored as an element. Each letter's **position** corresponds to its **index in the list**, which matches the positions in the IDFX file.
+
+Each element is stored as a **tuple with three components**, allowing the script to track modifications, even when characters are deleted. For example, consider the word **"Écoutes"**:
+
+1. If the **"s"** is removed, its corresponding tuple `("", "s", "")` is deleted based on its position.
+2. A deletion marker (`~`) is added to the **third element** of the preceding character's tuple. The "e" tuple changes to: `("", "e", "~")`.
+3. When the list is converted back into a string, the result is: **"Écoute~"**, indicating that a character was removed at the end of the word.
+
+This method ensures that the **number of indices remains consistent** with positions in both the IDFX and CSV files at any point in the process.
+
+
+Since **deletions and insertions** constantly modify positions, tracking them is crucial. Following each row of the CSV allows for real-time position updates.
+
+- Positions **change dynamically** throughout the writing process.
+- The **index in the list** must always be used for deletions or insertions.
+- **Obsolete positions** from previous CSV rows or the original IDFX file should never be relied upon.
+
+This approach ensures precise **text reconstruction and modification tracking**, preventing inconsistencies that could arise from outdated position references.
+
+
+For each row in the dataframe, the script retrieves:
+- The **string of characters**.
+- The **category of the burst**.
+- The **start and end positions**.
+
+Different types of rows require different handling strategies:
+
+- The **first row** is simply added to the list.
+- If a **deletion** is detected, several conditions must be checked:
+  - Does the deletion occur **before any text is written**?
+  - Does it occur **beyond the text boundaries** (e.g., at the very bottom of the document)?
+  - Does it affect a **character at the boundary of an insertion**?
+
+### **Handling Deletions at Insert Boundaries**
+
+Consider the string:  
+**"Je {ne} sais pas trop quoi faire"**  
+
+If the user deletes the character at **position 3** (`"n"`), we need to consider the **curly bracket** associated with it in the tuple:  
+`("{", "n", "")`
+
+- The **opening curly bracket (`{`)** must be moved to the `"e"` tuple.
+- If `"e"` is subsequently deleted, the **curly brackets must be completely removed**.
+
+All these edge cases are handled by the **`deletions_string_insertions`** function.
+
+### **Executing Deletions**
+
+After processing special cases, each row is passed through the **`deletions`** function, which **removes the character from the list based on its index**. This ensures that text modifications are correctly reflected throughout the reconstruction process.
+
+
+Similar processes are required in the **`insertions`** function to correctly add characters while maintaining structural consistency. When a character is inserted:
+- It must be associated with a **pipe (`|`)** if it appears at a **burst boundary**.
+- It must be enclosed within **curly brackets (`{}`) or chevrons (`<>`)** if it is part of a **revision burst**.
+
+**Validating the Reconstruction Process**
+
+The **`validate`** function compares each **reconstructed text** (after replacing all special symbols) with its **saved version**. If the two texts are not identical, an **error in reconstruction** has occurred, and the reconstructed text is **removed from the directory**.
+
+By removing the option to delete failed reconstructions, you may notice that some errors appear **minor**, such as:
+- A **missing line break**.
+- A **single misplaced letter**.
+
+However, even small shifts can **disrupt annotation accuracy**, causing **symbols to be misplaced** and **falsifying further analyses**.
+
+The reconstruction step is **complex to refine**. For example, **handling replacements** is not entirely resolved but functions well in most cases. 
+To improve the script and adapt it to **new edge cases**, it is highly recommended to **use the debugging function**.
+
+# 3 - CHUNKING <a name="chunking"></a>
+
+
