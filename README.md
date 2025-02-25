@@ -92,6 +92,3 @@ The script requires :
 
 ```python3 reconstruction.py```
 
-
-IN PROGRESS ...
-
