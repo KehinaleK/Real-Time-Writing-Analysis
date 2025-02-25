@@ -6,7 +6,6 @@
 1. [Introduction](#introduction)
 2. [Data extraction](#extraction)
 3. [Text reconstruction](#reconstruction)
-4. [Chunking](#chunking)
 
 
 **Each script, the structure of the repository and the data are further explained in the `manual.md` file (logic, error handling...). If you intend to modify, improve, or use them, I recommend reading the manual.**
@@ -70,7 +69,7 @@ The script requires :
 This output allows for the reconstruction of our texts as well as for a better understanding of the user's behaviours. 
 
 
-## 1 - Text reconstruction <a name="reconstruction"></a>
+## 3 - Text reconstruction <a name="reconstruction"></a>
 
 On top of the idfx files, we have access to the texts in their final forms as they have been saved on Word by the users. These documents were converted from `docx` to `txt` using the script `docx_to_txt`. (TO COMPLETE).
 
