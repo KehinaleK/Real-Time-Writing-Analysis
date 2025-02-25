@@ -6,7 +6,7 @@ For this reason, this document explains each script in detail and includes examp
 1. [IDFX EXTRACTION](#extraction)
 2. [TEXT RECONSTRUCTION](#reconstruction)
 3. [CHUNKING](#chunking)
-4. [Chunking
+4. [STATS](#statistics)
 
 
 **Before diving into each part of the process, I will first provide a brief summary of each step.**
@@ -449,7 +449,74 @@ However, even small shifts can **disrupt annotation accuracy**, causing **symbol
 
 The reconstruction step is **complex to refine**. For example, **handling replacements** is not entirely resolved but functions well in most cases. 
 To improve the script and adapt it to **new edge cases**, it is highly recommended to **use the debugging function**.
+# 3 - Chunking <a name="chunking"></a>
 
-# 3 - CHUNKING <a name="chunking"></a>
+Following the reconstruction phase, the next step involves chunking the reconstructed texts. 
 
+Chunking is a linguistic segmentation process that divides text into non-recursive units. Various chunking conventions exist, and for this project, we have adopted the convention used in the **SEM** software.
 
+SEM is an annotation tool for French that supports **part-of-speech (PoS) tagging, chunking, and named entity recognition (NER)**.
+
+![SEM](media/manual/sem_convention.png)
+
+Implementing chunking adds a **new layer of linguistic analysis**, enabling us to examine the relationship between **pauses, behavioral markers, and linguistic units**. Specifically, this allows us to investigate whether pauses predominantly occur before specific chunk types.
+
+### Chunking Workflow
+
+The chunking process consists of several key steps:
+
+1. **Installing SEM**  
+   SEM can be installed from its official [GitHub repository](https://github.com/YoannDupont/SEM).
+
+2. **Preprocessing the Input Text**  
+   Once SEM is installed, the chunking process is executed through the `chunking.py` script. This script consolidates all steps into a single automated pipeline using **subprocess** to streamline execution.
+
+   - The first step involves **replacing punctuation marks from the reconstruction phase with invisible characters**. This improves chunking accuracy since punctuation can significantly influence results.
+
+3. **Applying Chunking with SEM**  
+   After preprocessing, the SEM command for chunking is executed on each input text. The raw output from SEM is stored as an **XML file**, which is immediately reformatted within `chunking.py` for easier extraction and processing.
+
+4. **Post-Processing and Cleaning the Output**  
+   Once XML files are generated and structured, the script extracts relevant **XML tags** and applies several modifications. Chunks are stored as **a list of tuples**, each containing the chunk’s string representation and its corresponding type.
+
+   Example output:
+
+   ![chunking](media/manual/chunking.png)
+
+   Several additional processing steps are applied for better analysis:
+
+   - **Isolating Pauses**  
+     Pauses occurring at chunk boundaries are extracted and stored separately. This facilitates counting and analyzing **inter-chunk pauses** more effectively.
+
+     ![isolated_pause](media/manual/isolated_pause.png)
+
+   - **Reintegrating Behavioral Punctuation**  
+     Punctuation marks used to indicate behaviors are adjusted when necessary. For instance, **curly brackets at chunk boundaries** are reattached to the previous or following chunk when needed.
+
+     ![curly_bracket](media/manual/bracket.png)
+
+   Further refinements may be required depending on the analysis needs.  
+   Finally, the structured output is **saved as a JSON file** for further reuse and exploration.
+
+---
+
+# 4 - Statistics <a name="statistics"></a>
+
+As previously mentioned, this stage requires significant customization. The resulting JSON file serves as a **foundation for various types of analyses**.
+
+Within the `scripts/stats/` directory, multiple scripts are available to generate **preliminary insights**. These scripts allow for the examination of **pauses in relation to linguistic chunks, behavioral markers, or a combination of both**. They can also be used for **descriptive statistical analyses**.
+
+At this stage, the scripts provide useful initial insights into factors influencing pauses in written production.
+
+### Example Analyses:
+
+- **Pauses and Chunk Boundaries**  
+  ![ex1](media/manual/ex1.png)
+
+- **Pauses and Behavioral Patterns**  
+  ![ex2](media/manual/ex2.png)
+
+- **Comprehensive Analysis of Pauses**  
+  ![ex3](media/manual/ex2.png.png)
+
+These scripts offer an initial overview and can be extended to explore deeper relationships between **linguistic structures and pauses**.
